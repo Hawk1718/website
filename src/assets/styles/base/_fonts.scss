@@ -1,0 +1,45 @@
+/* src/assets/styles/base/_fonts.scss  */
+
+/*
+  Quicksand
+*/
+
+@font-face {
+  font-family: 'Barlow';
+  font-weight: 700;
+  src: url('@~fonts/Barlow-Bold.woff');
+}
+
+@font-face {
+  font-family: 'Barlow';
+  font-weight: 500;
+  src: url('@~fonts/Barlow-Medium.woff');
+}
+
+@font-face {
+  font-family: 'Barlow';
+  font-weight: 400;
+  src: url('@~fonts/Barlow-Regular.woff');
+}
+
+@font-face {
+  font-family: 'Barlow';
+  font-weight: 300;
+  src: url('@~fonts/Barlow-Light.woff');
+}
+
+@font-face {
+  font-family: 'InterUI';
+  font-weight: 700;
+  src: url('@~fonts/Inter-Bold.woff');
+}
+
+@font-face {
+  font-family: 'InterUI';
+  font-weight: 400;
+  src: url('@~fonts/Inter-Regular.woff');
+}
+
+$barlow: 'Barlow', sans-serif;
+$interui: 'InterUI', sans-serif;
+
