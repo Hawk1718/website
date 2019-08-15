@@ -3,8 +3,10 @@
 .clean-button {
   border: none;
   background: none;
+  cursor: pointer;
 }
 
-.button {
-
+.button--green {
+  @extend .clean-button;
+  background: $grass;
 }

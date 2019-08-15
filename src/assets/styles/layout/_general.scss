@@ -4,13 +4,22 @@
   box-sizing: border-box;
   outline: none;
 }
+.pattern-background {
+  background-image: linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px);
+  background-size: 180px;
+  background-position: 50px;
+}
 html,
 body {
   height: 100%;
 }
 body {
+  @extend .pattern-background;
   font-family: $barlow;
-  background: $dark-navy-blue;
+  background-color: $dark-navy-blue;
+  // background-image: linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px);
+  // background-size: 180px;
+  // background-position: 50px;
   color: white;
   margin: 0;
   padding: 0;
@@ -30,4 +39,10 @@ ul {
 }
 li {
   list-style: none;
+}
+
+
+// Text
+.upper {
+  text-transform: uppercase;
 }

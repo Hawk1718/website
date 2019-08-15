@@ -1,6 +1,219 @@
 /* src/assets/styles/pages/_index.scss  */
 
 .home__page {
+  .hero {
+    background: radial-gradient(circle 700px at 100% 0, $charcoal-grey, $dark-navy-blue),
+                      linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px);
+    height: 700px;
+    padding-top: 26px;
+  }
+  .hero__container {
+    @include isFlex(flex-start, center);
+    flex: 1;
+    margin-top: 100px;
+  }
+  .hero__globe {
+    width: 380px;
+  }
+
+  .hero__info {
+    max-width: 500px;
+    margin-left: 170px;
+  }
+  .hero__backedby-text {
+    @extend .upper;
+    font-weight: 700;
+    font-size: 10px;
+    background: $goldenrod;
+    color: $black;
+    padding: 0 8px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    display: inline-block;
+  }
+  .hero__backedby-img {
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .hero__title {
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 1.11;
+    color: white;
+    margin-top: 16px;
+  }
+  .hero__description {
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: $light-periwinkle;
+  }
+  .hero__signup {
+    @include isFlex(center, flex-start);
+    margin-top: 40px;
+  }
+  .hero__form {
+  }
+  .hero__input {
+    width: 0px;
+    display: none;
+  }
+  .hero__button {
+    @include isFlex(center, center);
+    @extend .button--green;
+    height: 40px;
+    width: 40px;
+  }
+  .hero__button-svg {
+
+  }
+  .hero__signup-text {
+    @extend .upper;
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 1px;
+    margin-left: 17px;
+    display: inline-block;
+  }
+
+
+  // Features
+  .features {
+    margin-top: 37px;
+  }
+  .features__container {
+    @include isFlex(flex-start, space-between);
+    max-width: $grid-width;
+    margin: 0 auto;
+  }
+  .feature {
+    @include isFlex(flex-start, space-between);
+    flex: 1;
+    max-width: 355px;
+    & + .feature {
+      margin-left: 50px;
+    }
+  }
+  .feature__icon {
+    width: 40px;
+  }
+  .feature__info {
+    margin-left: 24px;
+    flex: 1;
+  }
+  .feature__title {
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+  }
+  .feature__description {
+    max-width: 280px;
+    margin-top: 21px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $light-periwinkle;
+  }
+
+  // Platform
+
+  .platform {
+    background-image: radial-gradient(circle 700px at 0 0, $charcoal-grey, $dark-navy-blue);
+    padding-top: 100px;
+    margin-top: 120px;
+    position: relative;
+  }
+  .platform__container {
+    @include isFlex(center, initial);
+    max-width: $grid-width;
+    margin: 0 auto;
+    padding-left: 100px;
+  }
+
+  .platform__title {
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 1.1;
+    max-width: 300px;
+  }
+  .platform__list {
+    margin-top: 70px;
+    max-width: 385px;
+  }
+  .platform__item {
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      top: -25px;
+      left: -100px;
+      width: 160px;
+      height: 53px;
+      opacity: 0.2;
+      background-image: linear-gradient(to right, rgba(200, 220, 255, 0), $light-periwinkle);
+    }
+    & + .platform__item {
+      margin-top: 75px;
+    }
+  }
+
+  .platform__item-title {
+    font-size: 20px;
+    font-weight: 500;
+    display: block;
+  }
+  .platform__item-title--last {
+    max-width: 350px;
+  }
+  .platform__item-description {
+    font-size: 16px;
+    font-weight: 400;
+    color: $light-periwinkle;
+    margin-top: 8px;
+    max-width: 352px;
+    line-height: 1.38;
+  }
+  .platform__item-description--first {
+    max-width: 310px;
+  }
+
+  .platform__technologies {
+    @include isFlex(center, initial);
+    margin-top: 24px;
+  }
+  .platform__technology-img {
+    & + .platform__technology-img {
+      margin-left: 24px;
+    }
+  }
+
+  .platform__graphic {
+    margin-left: 93px;
+    flex: 1;
+    position: absolute;
+    max-width: 850px;
+    right: -180px;
+  }
+  .platform__graphic-img {
+    max-width: 100%;
+    display: block;
+    z-index: 2;
+    position: relative;
+  }
+  .platform__graphic-wave {
+    position: relative;
+    right: -30px;
+  }
+  .platform__graphic-wave--top {
+    bottom: -60px;
+    z-index: 1;
+  }
+  .platform__graphic-wave--bottom {
+    top: -60px;
+    z-index: 1;
+  }
 
 }
 
