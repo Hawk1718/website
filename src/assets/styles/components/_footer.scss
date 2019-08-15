@@ -1,7 +1,21 @@
 /* src/assets/styles/components/_footer.scss  */
 
 .footer {
+  margin-top: 160px;
+  .menu__logo {
+    .menu__link {
+      vertical-align: middle;
+    }
+  }
 
+  .copyright {
+    font-size: 16px;
+    font-weight: 400;
+    color: $light-periwinkle;
+    margin-left: 25px;
+    display: inline-block;
+    vertical-align: middle;
+  }
 }
 
 /*

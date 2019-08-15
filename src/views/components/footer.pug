@@ -1,4 +1,16 @@
 //- src/views/components/footer.pug
 
 footer.footer
-  //- p Footer
+  .menu__container
+    span.menu__logo
+      a.menu__link(href='/')
+        img.menu__logo-img(src=require('images/logo.png'), title='Injective Procotol', alt='Injective Procotol')
+      span.copyright &copy; Injective Protocol Inc., 2018
+    .menu__right
+      ul.menu__ul
+        li.menu__item
+          a.menu__link.scrollto(href='#exchange') Exchange
+        li.menu__item
+          a.menu__link(href='#whitepaper') White Paper
+        li.menu__item
+          a.menu__link.highlighted.scrollto(href='#contactus') Contact us

@@ -1,9 +1,6 @@
 /* src/assets/styles/components/_menu.scss  */
 
 .menu {
-  max-width: $grid-width;
-  width: 100%;
-  margin: 0 auto;
   transition: 0.25s ease-in-out padding;
   position: relative;
   z-index: 100;
@@ -11,6 +8,8 @@
 }
 .menu__container {
   @include isFlex(center, initial);
+  max-width: $grid-width;
+  margin: 0 auto;
   flex: 1;
 }
 .menu__logo-img {
