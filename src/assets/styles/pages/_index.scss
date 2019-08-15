@@ -53,29 +53,13 @@
     @include isFlex(center, flex-start);
     margin-top: 40px;
   }
-  .hero__form {
-  }
-  .hero__input {
-    width: 0px;
+  .hero__label {
+    width: 0;
     display: none;
   }
-  .hero__button {
-    @include isFlex(center, center);
-    @extend .button--green;
-    height: 40px;
-    width: 40px;
-  }
-  .hero__button-svg {
-
-  }
-  .hero__signup-text {
-    @extend .upper;
-    font-size: 12px;
-    font-weight: 700;
-    color: white;
-    letter-spacing: 1px;
-    margin-left: 17px;
-    display: inline-block;
+  .hero__input {
+    width: 0;
+    display: none;
   }
 
 
@@ -219,6 +203,7 @@
   // Computer
   .computer {
     margin-top: 195px;
+    padding-bottom: 150px;
     position: relative;
   }
   .computer__container {
@@ -301,6 +286,63 @@
   .computer__wires--right {
     right: 0;
     transform: scaleX(-1);
+  }
+
+  // Signup
+  .signup {
+    margin-top: 80px;
+  }
+  .signup__container {
+    max-width: $grid-width;
+    margin: 0 auto;
+    padding-left: 130px;
+  }
+  .signup__title {
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 1.1;
+    max-width: 500px;
+  }
+
+
+  // Form
+  .form {
+    margin-top: 45px;
+    max-width: 650px;
+  }
+  .form__label {
+    @extend .upper;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  .form__input-button {
+    @include isFlex(center, initial);
+    margin-top: 8px;
+  }
+  .form__input {
+    height: 40px;
+    border: solid 1px #4a90e2;
+    background-color: $pale-grey;
+    padding: 0 13px;
+    max-width: 360px;
+    flex: 1;
+  }
+  .form__button {
+    @include isFlex(center, center);
+    @extend .button--green;
+    height: 40px;
+    width: 40px;
+  }
+  .form__button-svg {
+
+  }
+  .form__text {
+    @extend .upper;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-left: 17px;
   }
 
 }
