@@ -1,0 +1,37 @@
+import { TweenMax, Power0 } from 'gsap'
+
+
+function drawSvg() {
+
+  const paths = document.querySelectorAll('.computer__wires path');
+
+  paths.forEach(path => {
+    const mainPath = {
+      length: 0,
+      pathLength: path.getTotalLength()
+    };
+
+    function drawLineMain() {
+      path.style.strokeDasharray = [mainPath.length, mainPath.pathLength].join(' ');
+    }
+
+    TweenMax.to(
+      mainPath,
+      10,
+      {
+        delay: Math.floor(Math.random() * Math.floor(10)),
+        length: mainPath.pathLength,
+        onUpdate: drawLineMain,
+        ease: Power0.EaseOut,
+        repeat: -1,
+        repeatDelay: 1
+      }
+    );
+  })
+}
+
+function init() {
+  drawSvg()
+}
+
+init()
