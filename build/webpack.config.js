@@ -134,6 +134,12 @@ module.exports = env => {
     },
 
     plugins: [
+      new CopyWebpackPlugin([
+        { from: 'assets/data/rank.json', to: 'assets/data/rank.json' },
+        { from: 'assets/lib/Detector.js', to: 'assets/lib/Detector.js' },
+        { from: 'assets/lib/globe.js', to: 'assets/lib/globe.js' },
+
+      ]),
       new MiniCssExtractPlugin({
         filename: 'assets/css/[name].[hash:7].bundle.css',
         chunkFilename: '[id].css',
