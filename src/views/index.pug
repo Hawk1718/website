@@ -37,11 +37,12 @@ block content
           form.form
             .form__block
               .form__label.hero__label#hero__form-label Input your email
-              .form__input-button
-                input.form__input.hero__input#hero__form-input(type='email')
-                button.form__button#hero__form-button(type='submit')
-                  svg.form__button-svg(xmlns='http://www.w3.org/2000/svg' width='10' height='16' viewBox='0 0 10 16')
-                    path(fill='#FFF' fill-rule='nonzero' d='M.098 13.362l1.795 1.795 7.264-7.264L1.893.63.098 2.424l5.469 5.47z')
+              .form__inputwithbutton
+                .form__inputwithbutton-input#hero__form-inputwithbutton__input
+                  input.form__input.hero__input#hero__form-input(type='email')
+                  button.form__button#hero__form-button(type='submit')
+                    svg.form__button-svg(xmlns='http://www.w3.org/2000/svg' width='10' height='16' viewBox='0 0 10 16')
+                      path(fill='#FFF' fill-rule='nonzero' d='M.098 13.362l1.795 1.795 7.264-7.264L1.893.63.098 2.424l5.469 5.47z')
 
                 .form__text Sign up for our testnet waitlist
 
@@ -1132,14 +1133,15 @@ block content
     .signup
       .signup__container
         h2.signup__title Build with us the future of decentralized exchange.
-        form.form
+        form.form(method='POST', netlify)
           .form__block
             .form__label Input your email
-            .form__input-button
-              input.form__input(type='email')
-              button.form__button(type='submit')
-                svg.form__button-svg(xmlns='http://www.w3.org/2000/svg' width='10' height='16' viewBox='0 0 10 16')
-                  path(fill='#FFF' fill-rule='nonzero' d='M.098 13.362l1.795 1.795 7.264-7.264L1.893.63.098 2.424l5.469 5.47z')
+            .form__inputwithbutton
+              .form__inputwithbutton-input
+                input.form__input(name='EMAIL', type='email')
+                button.form__button(type='submit')
+                  svg.form__button-svg(xmlns='http://www.w3.org/2000/svg' width='10' height='16' viewBox='0 0 10 16')
+                    path(fill='#FFF' fill-rule='nonzero' d='M.098 13.362l1.795 1.795 7.264-7.264L1.893.63.098 2.424l5.469 5.47z')
 
               .form__text Sign up for our testnet waitlist
 

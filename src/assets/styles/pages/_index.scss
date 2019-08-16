@@ -40,9 +40,7 @@
     vertical-align: middle;
   }
   .hero__title {
-    font-size: 36px;
-    font-weight: 300;
-    line-height: 1.11;
+    @extend .section__title;
     color: white;
     margin-top: 16px;
   }
@@ -55,6 +53,9 @@
   .hero__signup {
     @include isFlex(center, flex-start);
     margin-top: 40px;
+  }
+  #hero__form-inputwithbutton__input {
+    flex: unset;
   }
   #hero__form-label {
     width: 0;
@@ -123,9 +124,7 @@
   }
 
   .platform__title {
-    font-size: 36px;
-    font-weight: 300;
-    line-height: 1.1;
+    @extend .section__title;
     max-width: 300px;
   }
   .platform__list {
@@ -223,10 +222,7 @@
     z-index: 2;
   }
   .computer__title {
-    font-size: 36px;
-    font-weight: 300;
-    line-height: 1.1;
-
+    @extend .section__title;
   }
   .computer__description {
     font-size: 16px;
@@ -312,11 +308,10 @@
     max-width: $grid-width;
     margin: 0 auto;
     padding-left: 130px;
+    transition: $transition25;
   }
   .signup__title {
-    font-size: 36px;
-    font-weight: 300;
-    line-height: 1.1;
+    @extend .section__title;
     max-width: 500px;
   }
 
@@ -332,9 +327,14 @@
     font-weight: 700;
     letter-spacing: 1px;
   }
-  .form__input-button {
+  .form__inputwithbutton {
     @include isFlex(center, initial);
     margin-top: 8px;
+    transition: $transition25;
+  }
+  .form__inputwithbutton-input {
+    @include isFlex(center, initial);
+    flex: 1;
   }
   .form__input {
     height: 40px;
@@ -371,14 +371,47 @@
 */
 
 @media screen and(max-width:  $grid-width) {
+  .signup {
+    padding-left: 15px;
+    padding-right: 15px;
 
+  }
 }
 
 @media screen and(max-width: 720px) {
   .home__page {
+
+    // Hero
     .hero {
       padding-top: 15px;
     }
+
+    // Signup
+    .signup__container {
+      padding-left: 0;
+    }
+
+    // Form
+    .form__label {
+      text-align: center;
+    }
+    .form__inputwithbutton {
+      flex-direction: column;
+      justify-content: center;
+      width: 90%;
+      margin: 8px auto 0;
+    }
+    .form__input {
+      max-width: 100%;
+    }
+    .form__inputwithbutton-input {
+      align-self: stretch;
+    }
+    .form__text {
+      margin-top: 5px;
+      margin-left: 0;
+    }
+
   }
 }
 
@@ -386,6 +419,26 @@
   .home__page {
     .hero {
       padding-top: 10px;
+    }
+  }
+}
+
+@media screen and(max-width: 500px) {
+  .home__page {
+    // Signup
+    .signup__title {
+      max-width: 100%;
+    }
+  }
+}
+
+
+@media screen and(max-width: 480px) {
+  .home__page {
+
+    // Form
+    .form__inputwithbutton {
+      width: 100%;
     }
   }
 }
