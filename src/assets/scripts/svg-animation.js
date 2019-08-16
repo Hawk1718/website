@@ -1,9 +1,18 @@
 import { TweenMax, Power0 } from 'gsap'
 
 
-function drawSvg() {
+const drawWave = function() {
+  const groups = document.querySelectorAll('.platform__graphic-wave g')
 
-  const paths = document.querySelectorAll('.computer__wires path');
+  groups.forEach(g => {
+    const tl = new TimelineMax({ repeat: -1, yoyo: true })
+    tl.from(g, 6, { opacity: 0, ease: Power0.easeOut })
+  })
+}
+
+const drawWires = function() {
+
+  const paths = document.querySelectorAll('.computer__wires path')
 
   paths.forEach(path => {
     const mainPath = {
@@ -12,7 +21,7 @@ function drawSvg() {
     };
 
     function drawLineMain() {
-      path.style.strokeDasharray = [mainPath.length, mainPath.pathLength].join(' ');
+      path.style.strokeDasharray = [mainPath.length, mainPath.pathLength].join(' ')
     }
 
     TweenMax.to(
@@ -26,12 +35,13 @@ function drawSvg() {
         repeat: -1,
         repeatDelay: 1
       }
-    );
+    )
   })
 }
 
 function init() {
-  drawSvg()
+  drawWires()
+  drawWave()
 }
 
 init()
