@@ -41,7 +41,7 @@ const drawWires = function() {
 
 function init() {
   drawWires()
-  drawWave()
+  // drawWave()
 }
 
 init()
