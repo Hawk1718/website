@@ -292,8 +292,8 @@
     top: 250px;
   }
   .computer__wires path {
-    stroke-dasharray: 850;
-    stroke-dashoffset: 850;
+    stroke-dasharray: 700;
+    stroke-dashoffset: 700;
     animation: dash 6s ease-in-out infinite alternate;
   }
   .computer__wires--left {
