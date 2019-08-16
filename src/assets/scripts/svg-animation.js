@@ -6,7 +6,7 @@ const drawWaves = function() {
 
   groups.forEach(g => {
     const tl = new TimelineMax({ repeat: -1, yoyo: true })
-    tl.from(g, 6, { opacity: 0, ease: Power0.easeOut })
+    tl.from(g, 6, { opacity: 0 })
   })
 }
 
@@ -44,7 +44,7 @@ const drawWires = function() {
 
 function init() {
   // drawWires()
-  // drawWaves()
+  drawWaves()
 }
 
 init()
