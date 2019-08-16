@@ -7,6 +7,15 @@
   }
 }
 
+@keyframes largeInput {
+  from {
+    width: 0;
+  }
+  to {
+    width: 360px;
+  }
+}
+
 @keyframes floating {
   from {
     transform: translate(0,  0px);

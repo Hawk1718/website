@@ -17,7 +17,6 @@ body {
   margin: 0;
   padding: 0;
   padding-bottom: 100px;
-  overflow-x: hidden;
 }
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
@@ -40,4 +39,12 @@ li {
 // Text
 .upper {
   text-transform: uppercase;
+}
+
+
+// Responsive
+@media screen and(max-width:  720px) {
+  body {
+    padding-bottom: 50px;
+  }
 }
