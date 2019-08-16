@@ -12,13 +12,15 @@
     flex: 1;
     margin-top: 100px;
   }
-  .hero__globe {
+  #globe {
     width: 380px;
+    height: 380px;
   }
 
   .hero__info {
     max-width: 500px;
     margin-left: 170px;
+    padding-top: 35px;
   }
   .hero__backedby-text {
     @extend .upper;

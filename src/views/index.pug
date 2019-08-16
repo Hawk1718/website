@@ -6,6 +6,11 @@ include ./components/menu.pug
 block title
   title Injective protocol - Home
 
+block scripts
+  script(src='assets/scripts/Detector.js')
+  script(src='assets/scripts/globe.js')
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/three.js/107/three.min.js')
+
 //- block manifestBrowserconfigFiles
 //-   link(href='../manifest.json', rel='manifest')
 //-   meta(name='msapplication-config' content='../browserconfig.xml')
@@ -21,7 +26,7 @@ block content
       +menu()
 
       .hero__container
-        .hero__globe
+        .hero__globe#globe
 
         .hero__info
           .hero__backedby
