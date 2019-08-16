@@ -250,7 +250,7 @@
     position: absolute;
     animation-name: floating;
     animation-iteration-count: infinite;
-    animation-timing-function: ease-out;
+    animation-timing-function: ease-in-out;
   }
   .computer__parts-screen2 {
     top: -40px;
@@ -258,7 +258,6 @@
     z-index: 1;
     max-width: 322px;
     animation-duration: 7s;
-
   }
   .computer__parts-screen1 {
     top: -30px;
@@ -291,6 +290,11 @@
   .computer__wires {
     position: absolute;
     top: 250px;
+  }
+  .computer__wires path {
+    stroke-dasharray: 850;
+    stroke-dashoffset: 850;
+    animation: dash 6s ease-in-out infinite alternate;
   }
   .computer__wires--left {
     left: 0;

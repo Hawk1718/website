@@ -27,3 +27,9 @@
     transform: translate(0, -0px);
   }
 }
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}

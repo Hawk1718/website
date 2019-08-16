@@ -1,7 +1,7 @@
 import { TweenMax, Power0 } from 'gsap'
 
-
-const drawWave = function() {
+// Function: Draw waves
+const drawWaves = function() {
   const groups = document.querySelectorAll('.platform__graphic-wave g')
 
   groups.forEach(g => {
@@ -10,6 +10,7 @@ const drawWave = function() {
   })
 }
 
+// Function: Draw wires
 const drawWires = function() {
 
   const paths = document.querySelectorAll('.computer__wires path')
@@ -19,6 +20,8 @@ const drawWires = function() {
       length: 0,
       pathLength: path.getTotalLength()
     };
+
+    console.log(mainPath)
 
     function drawLineMain() {
       path.style.strokeDasharray = [mainPath.length, mainPath.pathLength].join(' ')
@@ -40,8 +43,8 @@ const drawWires = function() {
 }
 
 function init() {
-  drawWires()
-  // drawWave()
+  // drawWires()
+  drawWaves()
 }
 
 init()
