@@ -235,7 +235,7 @@
   .computer__parts-container {
     position: relative;
     top: -50px;
-    left: 0;
+    left: 40px;
     right: 0;
     margin: auto;
     max-width: 520px;
@@ -248,36 +248,45 @@
   }
   .computer__part {
     position: absolute;
+    animation-name: floating;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
   }
   .computer__parts-screen2 {
     top: -40px;
     left: 20px;
     z-index: 1;
     max-width: 322px;
+    animation-duration: 7s;
+
   }
   .computer__parts-screen1 {
     top: -30px;
     left: 50px;
     z-index: 2;
     max-width: 292px;
+    animation-duration: 6s;
   }
   .computer__parts-lock {
     left: 0;
     bottom: 20px;
     z-index: 2;
     max-width: 137px;
+    animation-duration: 6.5s;
   }
   .computer__parts-shield {
     bottom: 80px;
     right: -10px;
     z-index: 2;
     max-width: 178px;
+    animation-duration: 5.5s;
   }
   .computer__parts-key {
     right: 50px;
     bottom: 70px;
     z-index: 2;
     max-width: 175px;
+    animation-duration: 5s;
   }
   .computer__wires {
     position: absolute;
