@@ -1,4 +1,4 @@
-import { TweenMax, Power0 } from 'gsap'
+// import { TweenMax, Power0 } from 'gsap'
 
 // Function: Draw waves
 const drawWaves = function() {
@@ -20,8 +20,6 @@ const drawWires = function() {
       length: 0,
       pathLength: path.getTotalLength()
     };
-
-    console.log(mainPath)
 
     function drawLineMain() {
       path.style.strokeDasharray = [mainPath.length, mainPath.pathLength].join(' ')

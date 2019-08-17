@@ -7,6 +7,15 @@
   }
 }
 
+@keyframes waveOpacity {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.2;
+  }
+}
+
 @keyframes largeInput {
   from {
     width: 0;
