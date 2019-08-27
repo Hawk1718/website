@@ -71,15 +71,38 @@
   }
   #hero__form-label {
     width: 0;
-    display: none;
+    opacity: 0;
+    transition: $transition25;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    display: inline-block;
+    &.active {
+      top: -20px;
+      opacity: 1;
+      width: auto;
+    }
   }
   #hero__form-input {
     width: 0;
     display: none;
     &.active {
       display: block;
-      animation: largeInput 2s 1;
+      animation: largeInput 0.6s 1;
+      animation-fill-mode: forwards;
+      animation-timing-function: ease-out;
     }
+  }
+  #hero__form-text {
+    position: absolute;
+    left: 57px;
+    transition: $transition25;
+    margin-left: 0;
+    &.active {
+      bottom: -25px;
+      left: 0;
+    }
+
   }
 
   // Features
@@ -423,13 +446,11 @@
   }
 
   // Signup
-  .signup {
-    margin-top: 80px;
-  }
   .signup__container {
     max-width: $grid-width;
     margin: 0 auto;
     padding-left: 130px;
+    padding-top: 80px;
     transition: $transition25;
   }
   .signup__title {
@@ -443,6 +464,7 @@
   .form {
     margin-top: 45px;
     max-width: 650px;
+    position: relative;
   }
   .form__label {
     @extend .upper;
@@ -454,6 +476,7 @@
     @include isFlex(center, initial);
     margin-top: 8px;
     transition: $transition25;
+    position: relative;
   }
   .form__inputwithbutton-input {
     @include isFlex(center, initial);
@@ -473,10 +496,10 @@
     @extend .button--green;
     height: 40px;
     width: 40px;
+    position: relative;
+    z-index: 1;
   }
-  .form__button-svg {
 
-  }
   .form__text {
     @extend .upper;
     font-size: 12px;
@@ -484,6 +507,9 @@
     letter-spacing: 1px;
     margin-left: 17px;
     transition: $transition25;
+    &.active {
+
+    }
   }
 
 }
@@ -575,6 +601,11 @@
       max-width: 100%;
       margin-left: 0;
       margin-top: 20px;
+      width: 100%;
+    }
+    .hero__description {
+      max-width: 100%;
+      width: 100%;
     }
 
     // Features
@@ -725,6 +756,15 @@
       width: auto;
       display: block;
     }
+    #hero__form-label {
+      top: -20px;
+      opacity: 1;
+      width: auto;
+    }
+    #hero__form-text {
+      bottom: -25px;
+      left: 0;
+    }
 
     // Signup
     .signup__container {
@@ -732,13 +772,11 @@
     }
 
     // Form
-    .form__label {
-      text-align: center;
-    }
     .form__inputwithbutton {
       flex-direction: column;
       justify-content: center;
-      width: 90%;
+      align-items: flex-start;
+      width: 100%;
       margin: 8px auto 0;
     }
     .form__input {
@@ -750,6 +788,11 @@
     .form__text {
       margin-top: 5px;
       margin-left: 0;
+    }
+
+    // Platform
+    .platform {
+      margin-top: 60px;
     }
 
     // Computer
@@ -768,6 +811,15 @@
     }
     .computer__wires--right {
       right: -130px;
+    }
+
+    // Team
+    .team__container {
+      padding-bottom: 40px;
+    }
+
+    .signup__container {
+      padding-top: 40px;
     }
   }
 }
@@ -788,7 +840,7 @@
 
 @media screen and(max-width: 600px) {
   .home__page {
-  
+
   }
 }
 
@@ -854,7 +906,7 @@
 
 @media screen and(max-width: 400px) {
   .home__page {
-    
+
     // Hero
     #globe {
       width: 320px;
