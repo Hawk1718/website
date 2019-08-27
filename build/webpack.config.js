@@ -138,7 +138,8 @@ module.exports = env => {
         { from: 'assets/data/rank.json', to: 'assets/data/rank.json' },
         { from: 'assets/lib/Detector.js', to: 'assets/lib/Detector.js' },
         { from: 'assets/lib/globe.js', to: 'assets/lib/globe.js' },
-
+        { from: 'assets/lib/Tween.js', to: 'assets/lib/Tween.js' },
+        { from: 'assets/lib/three.min.js', to: 'assets/lib/three.min.js' },
       ]),
       new MiniCssExtractPlugin({
         filename: 'assets/css/[name].[hash:7].bundle.css',
