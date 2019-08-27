@@ -140,6 +140,8 @@ module.exports = env => {
         { from: 'assets/lib/globe.js', to: 'assets/lib/globe.js' },
         { from: 'assets/lib/Tween.js', to: 'assets/lib/Tween.js' },
         { from: 'assets/lib/three.min.js', to: 'assets/lib/three.min.js' },
+        { from: 'assets/images/world.jpg', to: 'assets/images/world.jpg' },
+
       ]),
       new MiniCssExtractPlugin({
         filename: 'assets/css/[name].[hash:7].bundle.css',
