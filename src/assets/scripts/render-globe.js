@@ -18,14 +18,14 @@
 // }
 
 const addGlobe = function () {
-//   if (!Detector.webgl) {
+  if (!Detector.webgl) {
 
-//     var globeDiv = document.getElementById("globe-container");
-//     globeDiv.innerHTML = "<img id=\"globe-image\" width=\"380px\" src=\"img/globe.png\" />";
+    var globeDiv = document.getElementById("globe-container");
+    globeDiv.innerHTML = "<img id=\"globe-image\" width=\"380px\" src=\"assets/globe.png\" />";
 
-//     var recommendedDiv = document.getElementById("recommendedBrowsers");
-//     recommendedDiv.innerHTML = "Recommended browsers: <a href=\"http://www.google.com/chrome\">Google&nbsp;Chrome&nbsp;9.0+</a>, <a href=\"http://www.mozilla.org/ru/firefox/new/\">Mozilla&nbsp;Firefox&nbsp;4.0+</a>, <a href=\"http://www.opera.com/ru\">Opera&nbsp;13.0+</a>, <a href=\"http://windows.microsoft.com/ru-ru/internet-explorer/ie-11-worldwide-languages\">Internet&nbsp;Explorer&nbsp;11.0+</a>";
-//   } else {
+    var recommendedDiv = document.getElementById("recommendedBrowsers");
+    recommendedDiv.innerHTML = "Recommended browsers: <a href=\"http://www.google.com/chrome\">Google&nbsp;Chrome&nbsp;9.0+</a>, <a href=\"http://www.mozilla.org/ru/firefox/new/\">Mozilla&nbsp;Firefox&nbsp;4.0+</a>, <a href=\"http://www.opera.com/ru\">Opera&nbsp;13.0+</a>, <a href=\"http://windows.microsoft.com/ru-ru/internet-explorer/ie-11-worldwide-languages\">Internet&nbsp;Explorer&nbsp;11.0+</a>";
+  } else {
 
     var container = document.getElementById('globe');
 
@@ -39,20 +39,20 @@ const addGlobe = function () {
       container.removeChild(glimage);*/
 
       // Make the globe
-      var newGlobe = new DAT.Globe(container);
+      var globe = new DAT.Globe(container);
 
       // Tell the globe about your JSON data
-      newGlobe.addData(data, { format: 'magnitude' });
+      globe.addData(data, { format: 'magnitude' });
 
       // Create the geometry
-      newGlobe.createPoints();
+      globe.createPoints();
 
       // Begin animation
-      newGlobe.animate();
+      globe.animate();
     })
 
 
-  // };
+  };
 };
 
 addGlobe();

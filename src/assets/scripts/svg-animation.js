@@ -1,48 +1,20 @@
-// import { TweenMax, Power0 } from 'gsap'
+import { TweenMax, Linear } from 'gsap'
 
 // Function: Draw waves
 const drawWaves = function() {
-  const groups = document.querySelectorAll('.platform__graphic-wave g')
+  const groups = document.querySelectorAll('#wave-g__top g')
 
-  groups.forEach(g => {
-    const tl = new TimelineMax({ repeat: -1, yoyo: true })
-    tl.from(g, 6, { opacity: 0 })
+  groups.forEach((g, index) => {
+    const tl = new TimelineMax({ repeat: -1})
+    tl.from(g, 1, { delay: 0.25, opacity: 0.2, ease: Linear.easeNone })
+    // tl.to(g, 4, { delay: 0.25, opacity: 1, ease: Linear.easeNone })
   })
 }
 
-// Function: Draw wires
-const drawWires = function() {
-
-  const paths = document.querySelectorAll('.computer__wires path')
-
-  paths.forEach(path => {
-    const mainPath = {
-      length: 0,
-      pathLength: path.getTotalLength()
-    };
-
-    function drawLineMain() {
-      path.style.strokeDasharray = [mainPath.length, mainPath.pathLength].join(' ')
-    }
-
-    TweenMax.to(
-      mainPath,
-      10,
-      {
-        delay: Math.floor(Math.random() * Math.floor(10)),
-        length: mainPath.pathLength,
-        onUpdate: drawLineMain,
-        ease: Power0.EaseOut,
-        repeat: -1,
-        repeatDelay: 1
-      }
-    )
-  })
-}
-
+// Function: Init
 function init() {
-  // drawWires()
-  // drawWaves()
+  drawWaves()
 }
 
-init()
+// Call init
+// init()

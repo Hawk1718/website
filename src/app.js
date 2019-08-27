@@ -9,7 +9,7 @@ $(document).ready(() => {
   if ($('.home__page').length > 0) {
     require('scripts/home')
     require('scripts/render-globe')
-    require('scripts/svg-animation')
+    // require('scripts/svg-animation')
 
   }
 })

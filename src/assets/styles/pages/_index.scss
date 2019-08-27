@@ -3,8 +3,7 @@
 .home__page {
   overflow-x: hidden;
   .hero {
-    background: radial-gradient(circle 700px at 100% 0, $charcoal-grey, $dark-navy-blue),
-                      linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px);
+    background: $patternLines, radial-gradient(circle 700px at 100% 0, $charcoal-grey, $dark-navy-blue);
     height: 700px;
     padding-top: 26px;
   }
@@ -12,16 +11,20 @@
     @include isFlex(flex-start, center);
     flex: 1;
     margin-top: 100px;
+    transition: $transition25;
   }
   #globe {
-    width: 380px;
-    height: 380px;
+    width: 600px;
+    height: 600px;
+    background: transparent;
+    margin-top: -100px;
   }
-
   .hero__info {
     max-width: 500px;
-    margin-left: 170px;
+    margin-left: 50px;
     padding-top: 35px;
+    flex: 1;
+    transition: $transition25;
   }
   .hero__backedby-text {
     @extend .upper;
@@ -49,6 +52,7 @@
     font-size: 14px;
     line-height: 1.5;
     color: $light-periwinkle;
+    max-width: 457px;
   }
   .hero__signup {
     @include isFlex(center, flex-start);
@@ -73,11 +77,13 @@
   // Features
   .features {
     margin-top: 37px;
+    // display: none;
   }
   .features__container {
     @include isFlex(flex-start, space-between);
     max-width: $grid-width;
     margin: 0 auto;
+    transition: $transition25;
   }
   .feature {
     @include isFlex(flex-start, space-between);
@@ -111,7 +117,7 @@
   // Platform
 
   .platform {
-    background-image: radial-gradient(circle 700px at 0 0, $charcoal-grey, $dark-navy-blue);
+    background: $patternLines, radial-gradient(circle 700px at 0 0, $charcoal-grey, $dark-navy-blue);
     padding-top: 100px;
     margin-top: 120px;
     position: relative;
@@ -121,6 +127,7 @@
     max-width: $grid-width;
     margin: 0 auto;
     padding-left: 100px;
+    transition: $transition25;
   }
 
   .platform__title {
@@ -179,11 +186,12 @@
   }
 
   .platform__graphic {
-    margin-left: 93px;
+    // margin-left: 93px;
     flex: 1;
     position: absolute;
-    max-width: 850px;
-    right: -180px;
+    max-width: 1000px;
+    right: -250px;
+    transition: $transition25;
   }
   .platform__graphic-img {
     max-width: 100%;
@@ -191,25 +199,27 @@
     z-index: 2;
     position: relative;
   }
-  @for $i from 80 through 1 {
-    #wave-g__top--#{80 - $i} {
-      animation-name: waveOpacity;
-      animation-iteration-count: infinite;
-      animation-duration: 5s;
-      animation-delay: $i * 0.065 + 0.25s;
-    }
-  }
-  @for $i from 80 through 1 {
-    #wave-g__bottom--#{80 - $i} {
-      animation-name: waveOpacity;
-      animation-iteration-count: infinite;
-      animation-duration: 5s;
-      animation-delay: $i * 0.065 + 0.25s;
-    }
-  }
+  // @for $i from 80 through 1 {
+  //   #wave-g__top--#{80 - $i} {
+  //     animation-name: waveOpacity;
+  //     animation-iteration-count: infinite;
+  //     animation-duration: 5s;
+  //     animation-delay: $i * 0.065 + 0.25s;
+  //   }
+  // }
+  // @for $i from 80 through 1 {
+  //   #wave-g__bottom--#{80 - $i} {
+  //     animation-name: waveOpacity;
+  //     animation-iteration-count: infinite;
+  //     animation-duration: 5s;
+  //     animation-delay: $i * 0.065 + 0.25s;
+  //   }
+  // }
   .platform__graphic-wave {
     position: relative;
-    right: -30px;
+    right: 80px;
+    display: block;
+    width: 100%;
   }
   .platform__graphic-wave--top {
     bottom: -60px;
@@ -248,6 +258,9 @@
     margin-top: 24px;
     max-width: 436px;
   }
+  .computer__parts {
+    position: relative;
+  }
   .computer__parts-container {
     position: relative;
     top: -50px;
@@ -257,9 +270,10 @@
     max-width: 520px;
     min-height: 530px;
     z-index: 1;
+    transition: $transition25;
   }
   .computer__parts-laptop {
-    max-width: 520px;
+    max-width: 100%;
     display: block;
   }
   .computer__part {
@@ -305,12 +319,12 @@
   }
   .computer__wires {
     position: absolute;
-    top: 250px;
+    top: 80px;
   }
   .computer__wires path {
-    stroke-dasharray: 700;
-    stroke-dashoffset: 690;
-    animation: dash 6s ease-in-out infinite alternate;
+    // stroke-dasharray: 700;
+    // stroke-dashoffset: 690;
+    // animation: dash 6s ease-in-out infinite alternate;
   }
   .computer__wires--left {
     left: 0;
@@ -318,6 +332,86 @@
   .computer__wires--right {
     right: 0;
     transform: scaleX(-1);
+  }
+
+  // Team
+  .team {
+    background: $patternLines, radial-gradient(circle 700px at 100% 100%, $charcoal-grey, $dark-navy-blue);
+    transition: $transition25;
+    position: relative;
+  }
+  .team__container {
+    transition: $transition25;
+    max-width: $grid-width;
+    margin: 0 auto;
+    padding-left: 100px;
+    padding-bottom: 80px;
+  }
+  .team__title {
+    @extend .section__title;
+    max-width: 340px;
+  }
+  .team__list {
+    @include isFlex(initial, initial, column);
+    margin-top: 10px;
+  }
+  .team__members {
+    @include isFlex(flex-start, space-between);
+  }
+  .team__members--justify {
+    margin-top: -140px;
+  }
+  .team__members--center {
+    justify-content: center;
+  }
+  .team__members--center:not(:first-child) {
+    margin-top: -40px;
+  }
+  .member__photo {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    width: 180px;
+    height: 180px;
+    z-index: 2;
+    &:before {
+      @extend .pseudo-100;
+      top: -45px;
+      left: -45px;
+      width: 180px;
+      height: 180px;
+      background-image: radial-gradient(rgba(255,255,255,0.25) 1px, transparent 1px), radial-gradient(rgba(255,255,255,0.25) 1px, transparent 1px);
+      background-size: 20px 20px;
+      z-index: -1;
+    }
+  }
+  .member__photo-image {
+    width: 100%;
+  }
+  .member__info {
+    color: $light-grey-blue;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 1.38;
+    & + .member__info {
+      margin-top: 2px;
+    }
+  }
+  .member__name-container {
+    font-size: 21px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    margin-top: 24px;
+  }
+  .member__name {
+    display: inline-block;
+    color: white;
+    padding-right: 10px;
+  }
+  .member__role {
+    font-style: italic;
+    color: $light-periwinkle;
+    padding-left: 10px;
   }
 
   // Signup
@@ -334,6 +428,7 @@
     @extend .section__title;
     max-width: 500px;
   }
+
 
 
   // Form
@@ -391,10 +486,222 @@
 */
 
 @media screen and(max-width:  $grid-width) {
-  .signup {
-    padding-left: 15px;
-    padding-right: 15px;
+  .home__page {
+    .signup,
+    .features,
+    .team,
+    .hero__container {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
 
+    // Hero
+    .hero__info {
+      margin-left: -20px;
+    }
+  }
+}
+
+@media screen and(max-width: 1366px) {
+
+  .home__page {
+
+    // Platform
+    .platform__graphic {
+      max-width: 850px;
+    }
+    .platform__graphic-wave {
+      width: 70%;
+      right: -20px;
+    }
+  }
+
+}
+
+@media screen and(max-width: 1280px) {
+  .home__page {
+
+    // Computer
+    .computer {
+      padding-bottom: 50px;
+    }
+    .computer__parts-container {
+      transform: scale(0.8);
+    }
+    .computer__wires--left {
+      left: -100px;
+      transform: scale(0.8);
+    }
+    .computer__wires--right {
+      right: -100px;
+      transform: scale(0.8) scaleX(-1);
+    }
+
+  }
+}
+
+@media screen and(max-width: 1100px) {
+  .home__page {
+    // Platform
+    .platform__container {
+      padding-left: 50px;
+    }
+    .platform__list {
+      max-width: 320px;
+    }
+  }
+}
+
+@media screen and(max-width: 1000px) {
+  .home__page {
+
+    // Hero
+    .hero {
+      height: auto;
+    }
+    .hero__container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .hero__info {
+      max-width: 100%;
+      margin-left: 0;
+      margin-top: -60px;
+    }
+
+    // Features
+    .features {
+      margin-top: 100px;
+    }
+
+    // Platform
+    .platform__container {
+      flex-direction: column;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .platform__title {
+      max-width: 100%;
+    }
+    .platform__details {
+      align-self: stretch;
+    }
+    .platform__list {
+      @include isFlex(flex-start, space-between, row, nowrap);
+      max-width: 100%;
+      width: 100%;
+    }
+    .platform__item {
+      & + .platform__item {
+        margin-top: 0;
+        margin-left: 15px;
+      }
+    }
+    .platform__graphic {
+      position: relative;
+      max-width: 100%;
+      right: 0;
+      margin-left: 0;
+    }
+    .platform__graphic-wave {
+      width: 100%;
+      right: 0;
+    }
+
+    // Computer
+    .computer {
+      margin-top: 80px;
+    }
+
+    // Team
+    .team__container {
+      padding-left: 0;
+    }
+
+  }
+}
+
+@media screen and(max-width: 900px) {
+  .home__page {
+    // Computer
+    .computer {
+      padding-bottom: 0;
+    }
+    .computer__container {
+      padding: 0 15px;
+    }
+
+    // Team
+    .team__list {
+      @include isFlex(initial, center, row);
+      margin-top: 20px;
+    }
+    .team__members {
+      justify-content: center;
+    }
+    .team__member {
+      margin: 15px;
+      padding-top: 45px;
+    }
+    .team__members--center {
+      margin-top: 0;
+      order: 2;
+    }
+    .team__members--center:not(:first-child) {
+      margin-top: 0;
+    }
+    .team__members--main {
+      order: 1;
+    }
+    .team__members--justify {
+      margin-top: 0;
+    }
+  }
+}
+
+@media screen and(max-width: 768px) {
+  .home__page {
+    // Features
+    .features__container {
+      flex-direction: column;
+    }
+    .feature__description {
+      max-width: 100%;
+      width: 100%;
+    }
+    .feature {
+      max-width: 100%;
+      width: 100%;
+      & + .feature {
+        margin-left: 0;
+        margin-top: 20px;
+      }
+    }
+
+    // Platform
+    .platform {
+      padding-top: 40px;
+    }
+    .platform__list {
+      flex-direction: column;
+    }
+    .platform__item {
+      & + .platform__item {
+        margin-left: 0;
+        margin-top: 35px;
+      }
+    }
+    .platform__item-description {
+      max-width: 100%;
+    }
+    .platform__item-title--last {
+      max-width: 100%;
+    }
+
+    // Computer
+    .computer {
+      margin-top: 0;
+    }
   }
 }
 
@@ -404,6 +711,11 @@
     // Hero
     .hero {
       padding-top: 15px;
+    }
+    #hero__form-input,
+    #hero__form-label {
+      width: auto;
+      display: block;
     }
 
     // Signup
@@ -432,14 +744,43 @@
       margin-left: 0;
     }
 
+    // Computer
+    .computer__description {
+      max-width: 100%;
+    }
+    .computer__parts-container {
+      top: 0;
+      transform: scale(0.6);
+    }
+    .computer__wires {
+      top: 160px;
+    }
+    .computer__wires--left {
+      left: -130px;
+    }
+    .computer__wires--right {
+      right: -130px;
+    }
   }
 }
 
 @media screen and(max-width: 640px) {
   .home__page {
+    // Hero
     .hero {
       padding-top: 10px;
     }
+    // Hero
+    #globe {
+      width: 390px;
+      height: 390px;
+    }
+  }
+}
+
+@media screen and(max-width: 600px) {
+  .home__page {
+  
   }
 }
 
@@ -456,9 +797,61 @@
 @media screen and(max-width: 480px) {
   .home__page {
 
+    // Hero
+    #globe {
+      width: 380px;
+      height: 380px;
+    }
     // Form
     .form__inputwithbutton {
       width: 100%;
     }
+
+    // Computer
+    .computer__parts {
+      height: 330px;
+    }
+    .computer__parts-container {
+      transform: scale(0.45);
+      left: 0;
+      top: -60px;
+    }
+    .computer__parts-screen2 {
+      width: 260px;
+    }
+    .computer__parts-screen1 {
+      width: 230px;
+      left: 35px;
+    }
+
+    .computer__wires {
+      top: 0;
+    }
+    .computer__wires--left {
+      left: -60px;
+      transform: scale(1);
+      top: 100px;
+    }
+    .computer__wires--right {
+      right: -200px;
+      display: none;
+    }
+
+     // Team
+     .team__container {
+       padding-top: 60px;
+     }
   }
 }
+
+@media screen and(max-width: 400px) {
+  .home__page {
+    
+    // Hero
+    #globe {
+      width: 320px;
+      height: 320px;
+    }
+  }
+}
+
