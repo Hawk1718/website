@@ -27,9 +27,11 @@ function onWindowLoadResize() {
 // Function: init
 function init() {
   onWindowLoadResize()
-
   window.addEventListener('load', onWindowLoadResize)
   window.addEventListener('resize', onWindowLoadResize)
+
+
 }
 
 init()
+

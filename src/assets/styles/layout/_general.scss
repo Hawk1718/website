@@ -51,6 +51,15 @@ li {
   display: block;
 }
 
+// Flip x
+.flip-x {
+  transform: scaleX(-1);
+}
+// Flip y
+.flip-y {
+  transform: scaleY(-1);
+}
+
 // Responsive
 @media screen and(max-width:  720px) {
   body {

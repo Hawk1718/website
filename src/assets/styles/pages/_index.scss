@@ -20,6 +20,87 @@
     margin-top: -100px;
     pointer-events: none;
   }
+  .hero__globe-container {
+    position: relative;
+  }
+  // Globe particles
+  .hero__globe-particles {
+    height: 275px;
+    position: absolute;
+    left: -150px;
+    top: 150px;
+    transition: $transition25;
+    opacity: 0;
+  }
+  .globe__particles-column {
+    position: relative;
+    width: 70px;
+    display: inline-block;
+  }
+  // Globe particle columns
+  .globe__particles-column--1 {
+    height: 100px;
+  }
+  .globe__particles-column--2 {
+    height: 100px;
+    top: -20px;
+    left: -20px;
+  }
+  .globe__particles-column--3 {
+    height: 100px;
+    top: 20px;
+    left: -55px
+  }
+  .globe__particles-column--4 {
+    height: 100px;
+    top: -75px;
+    left: -80px
+  }
+  .globe__particles-column--5 {
+    height: 100px;
+    bottom: -50px;
+    left: -130px
+  }
+  .globe__particles-column--6 {
+    height: 100px;
+    top: -55px;
+    left: -160px
+  }
+  .globe__particles-column--7 {
+    height: 100px;
+    bottom: -100px;
+    left: -240px
+  }
+  .globe__particles-column--8 {
+    height: 100px;
+    top: -100px;
+    left: -240px
+  }
+  .globe__particles-column--9 {
+    height: 100px;
+    bottom: -90px;
+    left: -310px
+  }
+
+  // Globe particle
+  .globe__particle {
+    position: absolute;
+    &.animated {
+      animation-name: blinker;
+      animation-duration: 0.5s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-out;
+    }
+  }
+  .globe__particle--top {
+    top: 0;
+    left: 0;
+  }
+  .globe__particle--bottom {
+    bottom: 0;
+    left: 0;
+  }
+
   .hero__globe-info {
     font-size: 12px;
     color: $light-periwinkle;
