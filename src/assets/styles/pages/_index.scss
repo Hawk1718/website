@@ -298,8 +298,9 @@
     left: 40px;
     right: 0;
     margin: auto;
-    max-width: 520px;
-    min-height: 530px;
+    width: 520px;
+    height: 530px;
+    // min-height: 530px;
     z-index: 1;
     transition: $transition25;
   }
@@ -317,35 +318,37 @@
     top: -40px;
     left: 20px;
     z-index: 1;
-    max-width: 322px;
+    // max-width: 322px;
+    max-width: 61%;
     animation-duration: 7s;
   }
   .computer__parts-screen1 {
     top: -30px;
     left: 50px;
     z-index: 2;
-    max-width: 292px;
+    // max-width: 292px;
+    max-width: 56%;
     animation-duration: 6s;
   }
   .computer__parts-lock {
     left: 0;
     bottom: 20px;
     z-index: 2;
-    max-width: 137px;
+    width: 137px;
     animation-duration: 6.5s;
   }
   .computer__parts-shield {
     bottom: 80px;
     right: -10px;
     z-index: 2;
-    max-width: 178px;
+    width: 178px;
     animation-duration: 5.5s;
   }
   .computer__parts-key {
     right: 50px;
     bottom: 70px;
     z-index: 2;
-    max-width: 175px;
+    width: 175px;
     animation-duration: 5s;
   }
   .computer__wires {
@@ -838,9 +841,26 @@
   }
 }
 
-@media screen and(max-width: 600px) {
+@media screen and(max-width: 520px) {
   .home__page {
-
+    // Computer
+    .computer__parts-container {
+      left: 0;
+      width: 450px;
+      height: 450px;
+      transform: scale(0.6);
+    }
+    .computer__parts-screen2 {
+      width: 59%;
+    }
+    .computer__parts-screen1 {
+      width: 53%;
+      left: 35px;
+      top: -10px;
+    }
+    .computer__parts-shield {
+      width: 150px;
+    }
   }
 }
 
@@ -869,19 +889,7 @@
 
     // Computer
     .computer__parts {
-      height: 330px;
-    }
-    .computer__parts-container {
-      transform: scale(0.45);
-      left: 0;
-      top: -60px;
-    }
-    .computer__parts-screen2 {
-      width: 260px;
-    }
-    .computer__parts-screen1 {
-      width: 230px;
-      left: 35px;
+      // height: 330px;
     }
 
     .computer__wires {
@@ -904,6 +912,13 @@
   }
 }
 
+@media screen and(max-width: 450px) {
+  .home__page {
+    // Computer
+
+  }
+}
+
 @media screen and(max-width: 400px) {
   .home__page {
 
@@ -912,6 +927,39 @@
       width: 320px;
       height: 320px;
     }
+
+    // Computer
+    .computer__parts-container {
+      width: 380px;
+      height: 450px;
+    }
+    .computer__parts-shield {
+      width: 130px;
+      top: -90px;
+      bottom: auto;
+    }
+    .computer__parts-lock {
+      width: 110px;
+      bottom: 60px;
+    }
+    .computer__parts-key {
+      width: 150px;
+      bottom: 100px;
+      right: 40px;
+    }
+    .computer__wires--left {
+      left: -100px;
+    }
   }
 }
 
+
+@media screen and(max-width: 340px) {
+  .home__page {
+
+    // Computer
+    .computer__parts-container {
+      left: -20px;
+    }
+  }
+}
