@@ -1,21 +1,19 @@
-import { TweenMax, TimelineMax, Power4, Back } from 'gsap'
-// import anime from 'animejs/lib/anime.es.js'
+import { TweenMax } from 'gsap'
 
 // Function: Draw waves
 const drawWaves = function() {
-  const tlTop = new TimelineMax({ repeat: -1 });
+  const topBars = [].slice.call(document.querySelectorAll('#wave-g__top g')).reverse()
+  const bottomBars = [].slice.call(document.querySelectorAll('#wave-g__bottom g')).reverse()
 
-  tlTop
-    .staggerFrom('#wave-g__top g', 0.7, { opacity: 0.2, ease: Power4.easeOut}, 0.06)
-    .add(TweenMax.to('#wave-g__top g', 0.7, { opacity: 0.2, ease: Power4.easeOut }))
-    // .staggerTo('#wave-g__top g', 1, { opacity: 0.2 }, .15)
-    // .staggerFrom('#wave-g__top g', 1, { opacity: 0.2 }, .15)
+  topBars.forEach((b, index) => {
+    const delay = index * 0.065 + 0.25
+    TweenMax.fromTo(b, 5, { opacity: 1 }, { opacity: 0.2, immediateRender: false, delay: delay, repeat: -1 })
+  })
 
-  const tlBottom = new TimelineMax({ repeat: -1 });
-
-  tlBottom
-    .staggerFrom('#wave-g__bottom g', 0.7, { opacity: 0.2, ease: Power4.easeOut }, 0.06)
-    .add(TweenMax.to('#wave-g__bottom g', 0.7, { opacity: 0.2, ease: Power4.easeOut }))
+  bottomBars.forEach((b, index) => {
+    const delay = index * 0.065 + 0.25
+    TweenMax.fromTo(b, 5, { opacity: 1 }, { opacity: 0.2, immediateRender: false, delay: delay, repeat: -1 })
+  })
 
   // anime({
   //   targets: '#wave-g__top g',
@@ -25,8 +23,6 @@ const drawWaves = function() {
   //   direction: 'reverse',
   //   loop: true
   // });
-
-
 }
 
 // Function: Init

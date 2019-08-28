@@ -311,24 +311,24 @@
     z-index: 2;
     position: relative;
   }
-  @for $i from 80 through 1 {
-    #wave-g__top--#{80 - $i} {
-      animation-name: waveOpacity;
-      animation-iteration-count: infinite;
-      animation-duration: 5s;
-      animation-delay: $i * 0.065 + 0.25s;
-      transform: translateZ(0);
-    }
-  }
-  @for $i from 80 through 1 {
-    #wave-g__bottom--#{80 - $i} {
-      animation-name: waveOpacity;
-      animation-iteration-count: infinite;
-      animation-duration: 5s;
-      animation-delay: $i * 0.065 + 0.25s;
-      transform: translateZ(0);
-    }
-  }
+  // @for $i from 80 through 1 {
+  //   #wave-g__top--#{80 - $i} {
+  //     animation-name: waveOpacity;
+  //     animation-iteration-count: infinite;
+  //     animation-duration: 5s;
+  //     animation-delay: $i * 0.065 + 0.25s;
+  //     transform: translateZ(0);
+  //   }
+  // }
+  // @for $i from 80 through 1 {
+  //   #wave-g__bottom--#{80 - $i} {
+  //     animation-name: waveOpacity;
+  //     animation-iteration-count: infinite;
+  //     animation-duration: 5s;
+  //     animation-delay: $i * 0.065 + 0.25s;
+  //     transform: translateZ(0);
+  //   }
+  // }
   .platform__graphic-wave {
     position: relative;
     right: 80px;
