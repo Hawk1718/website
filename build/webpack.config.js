@@ -136,6 +136,7 @@ module.exports = env => {
     plugins: [
       new CopyWebpackPlugin([
         { from: 'assets/data/rank.json', to: 'assets/data/rank.json' },
+        { from: 'assets/data/rank2.json', to: 'assets/data/rank2.json' },
         { from: 'assets/lib/Detector.js', to: 'assets/lib/Detector.js' },
         { from: 'assets/lib/globe.js', to: 'assets/lib/globe.js' },
         { from: 'assets/lib/Tween.js', to: 'assets/lib/Tween.js' },
