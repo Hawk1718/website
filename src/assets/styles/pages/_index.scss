@@ -1,7 +1,6 @@
 /* src/assets/styles/pages/_index.scss  */
 
 .home__page {
-  overflow-x: hidden;
   .hero {
     background: $patternLines, radial-gradient(circle 700px at 100% 0, $charcoal-grey, $dark-navy-blue);
     height: 700px;
@@ -979,10 +978,6 @@
     }
 
     // Computer
-    .computer__parts {
-      // height: 330px;
-    }
-
     .computer__wires {
       top: 0;
     }
@@ -1000,13 +995,6 @@
      .team__container {
        padding-top: 60px;
      }
-  }
-}
-
-@media screen and(max-width: 450px) {
-  .home__page {
-    // Computer
-
   }
 }
 
