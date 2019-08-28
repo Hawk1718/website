@@ -29,18 +29,19 @@ const addGlobe = function () {
 
     const container = document.getElementById('globe');
 
-    $.getJSON('assets/data/rank.json', function (data) {
+    $.getJSON('assets/data/rank2.json', function (data) {
+
       // Make the globe
       const globe = new DAT.Globe(container)
 
       // Tell the globe about your JSON data
       globe.addData(data, { format: 'magnitude' })
 
-      // Create the geometry
-      globe.createPoints()
-
       // Begin animation
       globe.animate()
+
+      // Create the geometry
+      globe.createPoints()
 
       setTimeout(() => {
         $('.hero__globe-particles').css('opacity', 1)
