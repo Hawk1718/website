@@ -11,6 +11,6 @@ $(document).ready(() => {
 
     require('scripts/home')
     require('scripts/render-globe')
-    // require('scripts/svg-animation')
+    require('scripts/svg-animation')
   }
 })

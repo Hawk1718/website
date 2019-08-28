@@ -920,6 +920,10 @@
       width: 390px;
       height: 390px;
     }
+    .hero__globe-particles {
+      top: 20px;
+      transform: scale(0.8);
+    }
   }
 }
 
@@ -964,6 +968,11 @@
       width: 380px;
       height: 380px;
     }
+    .hero__globe-particles {
+      top: 10px;
+      transform: scale(0.6);
+    }
+
     // Form
     .form__inputwithbutton {
       width: 100%;
@@ -1008,6 +1017,10 @@
     #globe {
       width: 320px;
       height: 320px;
+    }
+    .hero__globe-particles {
+      top: -20px;
+      transform: scale(0.6);
     }
 
     // Computer
