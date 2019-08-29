@@ -10,7 +10,7 @@ const addGlobe = function () {
 
     const container = document.getElementById('globe');
 
-    $.getJSON('assets/data/rank2.json', function (data) {
+    $.getJSON('assets/data/rank.json', function (data) {
       // Make the globe
       const globe = new DAT.Globe(container)
 

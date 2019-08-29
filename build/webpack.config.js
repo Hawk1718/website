@@ -136,10 +136,8 @@ module.exports = env => {
     plugins: [
       new CopyWebpackPlugin([
         { from: 'assets/data/rank.json', to: 'assets/data/rank.json' },
-        { from: 'assets/data/rank2.json', to: 'assets/data/rank2.json' },
         { from: 'assets/lib/Detector.js', to: 'assets/lib/Detector.js' },
         { from: 'assets/lib/globe.js', to: 'assets/lib/globe.js' },
-        { from: 'assets/lib/Tween.js', to: 'assets/lib/Tween.js' },
         { from: 'assets/lib/three.min.js', to: 'assets/lib/three.min.js' },
         { from: 'assets/images/world.jpg', to: 'assets/images/world.jpg' },
 
@@ -153,15 +151,15 @@ module.exports = env => {
         Pages
       */
 
-      // // Desktop page
+      // Desktop page
       new HtmlWebpackPlugin({
         filename: 'index.html',
         template: 'views/index.pug',
         inject: true
       }),
 
-      // ...utils.pages(env),
-      // ...utils.pages(env, 'blog'),
+      // ...utils.pages(env), Pages from /views/*.pug
+      // ...utils.pages(env, 'blog'), Blog page from /views/blog/index.pug
 
       new webpack.ProvidePlugin({
         $: 'jquery',
