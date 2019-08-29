@@ -475,6 +475,9 @@
   .team__members {
     @include isFlex(flex-start, space-between);
   }
+  .team__members--first {
+    z-index: 1;
+  }
   .team__members--justify {
     margin-top: -140px;
   }
