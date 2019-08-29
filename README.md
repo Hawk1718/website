@@ -1,38 +1,3 @@
-Webpack project starter with Pug, Sass/Stylus, jQuery, Babel and Yarn
-===================
-
-The purpose if this webpack starter is to allow people to create websites without frameworks/libraries like React, Angular, Vue and only using simple but powerful technologies to build quality websites.
-
-## Technologies used
-
-- Templating: `Pug`
-- Styling: `Sass` *but you can also use stylus*
-- Scripting: `jQuery or plain Javascript`
-- JS Compiler: `Babel ES6`
-
-## Features
-
-- Well organized folder structure for view, styles and assets.
-- Webpack notifier on every compilation.
-- Compatibility with `manifest`, `browserconfig` and other external files you wish to include.
-- `Babel module resolver` configured to use alias and simplify the paths you need to import.
-- `Editorconfig`
-- Yarn instead NPM
-- PostCSS
-
-## Contributions
-
-You can contribute directly to this repository or create a fork and peform your own modifications.
-
-## Terms of use
-
-Feel free to use it in the way you want just be sure to add a link/mention to original repository or the author, me :)
-
-## Donations
-
-You can of course help a little bit with some donation to buy more coffee :)
-
-<a href="https://www.buymeacoffee.com/edgardo" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
 This guide is a template that contains steps to install the project, technologies used, folder structure, etc.
 ===================
 
@@ -110,7 +75,7 @@ This guide is a template that contains steps to install the project, technologie
   * `files`: Contain the PDFs of the guides.
   * `styles`: All the CSS(SASS) styles separated into folders to have a modular structure.
   * `views`: You can create more pages in this folder using JADE (.jade) instead of writing pure HTML.
-    * `guides`: The JADE file for each guide page, you can add more guides in this place or edit their content of the current ones.
+    * `sections`: Sections of pages in separated files.
     * `layouts`: The main template files which contain your header and your footer used for all the guides. This is very useful to avoid putting the same header and footer in each guide, or webpage.
     * `mixins`: Pieces of JADE files that are used for the same purpose of the layouts, which is to avoid repeat code in each guide template and instead use a mixing to place the same menu, share bar, page title, etc. just passing an attribute for each one.
 * `.editorconfig`: Used to set a configuration for your editor code, like use spaces instead tabs, the charset, of the files, etc.
