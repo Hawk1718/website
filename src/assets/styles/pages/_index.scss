@@ -9,7 +9,7 @@
   .hero__container {
     @include isFlex(flex-start, center);
     flex: 1;
-    margin-top: 100px;
+    padding-top: 100px;
     transition: $transition25;
   }
   #globe {
@@ -187,15 +187,12 @@
   }
 
   // Features
-  .features {
-    margin-top: 37px;
-    // display: none;
-  }
   .features__container {
     @include isFlex(flex-start, space-between);
     max-width: $grid-width;
     margin: 0 auto;
     transition: $transition25;
+    padding-top: 60px;
   }
   .feature {
     @include isFlex(flex-start, space-between);
@@ -230,7 +227,6 @@
 
   .platform {
     background: $patternLines, radial-gradient(circle 700px at 0 0, $charcoal-grey, $dark-navy-blue);
-    padding-top: 100px;
     margin-top: 120px;
     position: relative;
   }
@@ -239,6 +235,7 @@
     max-width: $grid-width;
     margin: 0 auto;
     padding-left: 100px;
+    padding-top: 120px;
     transition: $transition25;
   }
 
@@ -311,24 +308,6 @@
     z-index: 2;
     position: relative;
   }
-  // @for $i from 80 through 1 {
-  //   #wave-g__top--#{80 - $i} {
-  //     animation-name: waveOpacity;
-  //     animation-iteration-count: infinite;
-  //     animation-duration: 5s;
-  //     animation-delay: $i * 0.065 + 0.25s;
-  //     transform: translateZ(0);
-  //   }
-  // }
-  // @for $i from 80 through 1 {
-  //   #wave-g__bottom--#{80 - $i} {
-  //     animation-name: waveOpacity;
-  //     animation-iteration-count: infinite;
-  //     animation-duration: 5s;
-  //     animation-delay: $i * 0.065 + 0.25s;
-  //     transform: translateZ(0);
-  //   }
-  // }
   .platform__graphic-wave {
     position: relative;
     right: 80px;
@@ -347,7 +326,7 @@
 
   // Computer
   .computer {
-    margin-top: 195px;
+    margin-top: 220px;
     padding-bottom: 150px;
     position: relative;
   }
@@ -463,6 +442,7 @@
     margin: 0 auto;
     padding-left: 100px;
     padding-bottom: 80px;
+    padding-top: 75px;
   }
   .team__title {
     @extend .section__title;
@@ -539,7 +519,7 @@
     max-width: $grid-width;
     margin: 0 auto;
     padding-left: 130px;
-    padding-top: 80px;
+    padding-top: 116px;
     transition: $transition25;
   }
   .signup__title {
@@ -698,8 +678,8 @@
     }
 
     // Features
-    .features {
-      margin-top: 100px;
+    .features__container {
+      padding-top: 100px;
     }
 
     // Platform
@@ -807,7 +787,7 @@
     }
 
     // Platform
-    .platform {
+    .platform__container {
       padding-top: 40px;
     }
     .platform__list {
