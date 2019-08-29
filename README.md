@@ -12,7 +12,7 @@ This guide is a template that contains steps to install the project, technologie
 #### Technologies used
 * Pug/Jade https://pugjs.org (This is a template engine and is a fastest way to write HTML)
 * Sass http://sass-lang.com/ (This is a CSS preprocessor which is used to write styles)
-* Webpack 3.x https://webpack.js.org (A module bundler to manager all the dependencies of your website)
+* Webpack 4 https://webpack.js.org (A module bundler to manager all the dependencies of your website)
 
 #### Dependencies
 
