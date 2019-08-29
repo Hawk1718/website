@@ -1,4 +1,5 @@
-const addGlobe = function () {
+// Function: Render globe
+const renderGlobe = function () {
   if (!Detector.webgl) {
 
     let globeDiv = document.getElementById("globe-container")
@@ -11,6 +12,7 @@ const addGlobe = function () {
     const container = document.getElementById('globe');
 
     $.getJSON('assets/data/rank.json', function (data) {
+
       // Make the globe
       const globe = new DAT.Globe(container)
 
@@ -25,29 +27,29 @@ const addGlobe = function () {
 
       setTimeout(() => {
         $('.hero__globe-particles').css('opacity', 1)
-      }, 500)
+      }, 600)
     })
   }
 }
 
+// Function: Animate lines of particles
 const animateParticles = function() {
-  $('.globe__particle').each(function (index, p) {
-    $(p).addClass('animated')
-    $(p).css('animation-delay', `${random(1, 3)}s`)
-  })
+  setTimeout(() => {
+    setInterval(() => {
+      $('.globe__particle').each(function (index, p) {
+        $(p).css('animation-delay', `${random(1, 4)}s`)
+      })
+    }, 1000)
+  }, 3000);
 
-  setInterval(() => {
-    $('.globe__particle').each(function (index, p) {
-      $(p).addClass('animated')
-      $(p).css('animation-delay', `${random(1, 3)}s`)
-    })
-  }, 1000)
 }
 
+// Function: Random int in range
 const random = function(min, max) {
   return min + (max - min) * Math.random()
 }
 
-addGlobe();
-animateParticles();
+// Call
+animateParticles()
+renderGlobe()
 

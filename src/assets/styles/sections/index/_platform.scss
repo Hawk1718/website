@@ -1,0 +1,97 @@
+// Platform
+.platform {
+  background: $patternLines, radial-gradient(circle 700px at 0 0, $charcoal-grey, $dark-navy-blue);
+  margin-top: 120px;
+  position: relative;
+}
+.platform__container {
+  @include isFlex(center, initial);
+  max-width: $grid-width;
+  margin: 0 auto;
+  padding-left: 100px;
+  padding-top: 120px;
+  transition: $transition25;
+}
+
+.platform__title {
+  @extend .section__title;
+  max-width: 300px;
+}
+.platform__list {
+  margin-top: 70px;
+  max-width: 385px;
+}
+.platform__item {
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    top: -25px;
+    left: -100px;
+    width: 160px;
+    height: 53px;
+    opacity: 0.2;
+    background-image: linear-gradient(to right, rgba(200, 220, 255, 0), $light-periwinkle);
+  }
+  & + .platform__item {
+    margin-top: 75px;
+  }
+}
+
+.platform__item-title {
+  font-size: 20px;
+  font-weight: 500;
+  display: block;
+}
+.platform__item-title--last {
+  max-width: 350px;
+}
+.platform__item-description {
+  font-size: 16px;
+  font-weight: 400;
+  color: $light-periwinkle;
+  margin-top: 8px;
+  max-width: 352px;
+  line-height: 1.38;
+}
+.platform__item-description--first {
+  max-width: 310px;
+}
+
+.platform__technologies {
+  @include isFlex(center, initial);
+  margin-top: 24px;
+}
+.platform__technology-img {
+  & + .platform__technology-img {
+    margin-left: 24px;
+  }
+}
+
+.platform__graphic {
+  flex: 1;
+  position: absolute;
+  max-width: 1000px;
+  right: -250px;
+  transition: $transition25;
+}
+.platform__graphic-img {
+  max-width: 100%;
+  display: block;
+  z-index: 2;
+  position: relative;
+}
+.platform__graphic-wave {
+  position: relative;
+  right: 80px;
+  display: block;
+  width: 100%;
+}
+.platform__graphic-wave--top {
+  bottom: -60px;
+  z-index: 1;
+}
+.platform__graphic-wave--bottom {
+  top: -60px;
+  z-index: 1;
+}

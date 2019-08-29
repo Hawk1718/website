@@ -1,0 +1,12 @@
+// Signup
+.signup__container {
+  max-width: $grid-width;
+  margin: 0 auto;
+  padding-left: 130px;
+  padding-top: 116px;
+  transition: $transition25;
+}
+.signup__title {
+  @extend .section__title;
+  max-width: 500px;
+}

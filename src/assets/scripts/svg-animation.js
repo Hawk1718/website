@@ -1,3 +1,4 @@
+// Libraries/plugins
 import { TweenMax } from 'gsap'
 
 // Function: Draw waves
@@ -14,15 +15,6 @@ const drawWaves = function() {
     const delay = index * 0.065 + 0.25
     TweenMax.fromTo(b, 5, { opacity: 1 }, { opacity: 0.2, immediateRender: false, delay: delay, repeat: -1 })
   })
-
-  // anime({
-  //   targets: '#wave-g__top g',
-  //   duration: 200,
-  //   opacity: 0.2,
-  //   delay: anime.stagger(50, { start: 200, easing: 'linear' }),
-  //   direction: 'reverse',
-  //   loop: true
-  // });
 }
 
 // Function: Init

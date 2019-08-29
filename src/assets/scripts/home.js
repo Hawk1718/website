@@ -1,5 +1,4 @@
 // Event: Show input of hero
-
 $('#hero__form-button').on('click', function(e) {
   if ($(this).closest('form').hasClass('active')) {
     return
@@ -29,9 +28,8 @@ function init() {
   onWindowLoadResize()
   window.addEventListener('load', onWindowLoadResize)
   window.addEventListener('resize', onWindowLoadResize)
-
-
 }
 
+// Call init
 init()
 
