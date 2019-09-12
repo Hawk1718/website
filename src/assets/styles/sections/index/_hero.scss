@@ -131,9 +131,14 @@
   display: inline-block;
 }
 .hero__backedby-img {
-  height: 24px;
+  height: 34px;
   display: inline-block;
   vertical-align: middle;
+}
+.hero__backedby-img2 {
+  height: 24px;
+  display: inline-block;
+  vertical-align: top;
 }
 .hero__title {
   @extend .section__title;
