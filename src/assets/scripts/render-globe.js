@@ -26,7 +26,7 @@ const renderGlobe = function () {
       globe.createPoints()
 
       setTimeout(() => {
-        $('.hero__globe-particles').css('opacity', 1)
+        $('.hero__globe-particles').css('opacity', 0.7)
       }, 600)
     })
   }
