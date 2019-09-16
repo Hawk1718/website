@@ -141,6 +141,16 @@ module.exports = env => {
         { from: 'assets/lib/globe.js', to: 'assets/lib/globe.js' },
         { from: 'assets/lib/three.min.js', to: 'assets/lib/three.min.js' },
         { from: 'assets/images/world.jpg', to: 'assets/images/world.jpg' },
+        { from: '../site.webmanifest', to: 'site.webmanifest' },
+        { from: '../browserconfig.xml', to: 'browserconfig.xml' },
+        { from: 'assets/images/favicons/android-chrome-96x96.png', to: 'assets/images/favicons/android-chrome-96x96.png' },
+        { from: 'assets/images/favicons/apple-touch-icon.png', to: 'assets/images/favicons/apple-touch-icon.png' },
+        { from: 'assets/images/favicons/favicon-16x16.png', to: 'assets/images/favicons/favicon-16x16.png' },
+        { from: 'assets/images/favicons/favicon-32x32.png', to: 'assets/images/favicons/favicon-32x32.png' },
+        { from: 'assets/images/favicons/mstile-150x150.png', to: 'assets/favicons/images/mstile-150x150.png' },
+        { from: 'assets/images/favicons/favicon.ico', to: 'assets/images/favicons/favicon.ico' },
+        { from: 'assets/images/favicons/safari-pinned-tab.svg', to: 'assets/images/favicons/safari-pinned-tab.svg' }
+        
 
       ]),
       new MiniCssExtractPlugin({
