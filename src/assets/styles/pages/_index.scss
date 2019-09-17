@@ -75,7 +75,7 @@
     .platform__container {
       padding-left: 50px;
     }
-    .platform__list {
+    .platform__details {
       max-width: 320px;
     }
   }
@@ -119,11 +119,11 @@
     }
     .platform__details {
       align-self: stretch;
+      max-width: 100%;
+      width: 100%;
     }
     .platform__list {
       @include isFlex(flex-start, space-between, row, nowrap);
-      max-width: 100%;
-      width: 100%;
     }
     .platform__item {
       & + .platform__item {
@@ -136,6 +136,7 @@
       max-width: 100%;
       right: 0;
       margin-left: 0;
+      top: 0;
     }
     .platform__graphic-wave {
       width: 100%;

@@ -5,22 +5,25 @@
   position: relative;
 }
 .platform__container {
-  @include isFlex(center, initial);
+  @include isFlex(flex-start, initial, row, nowrap);
   max-width: $grid-width;
   margin: 0 auto;
   padding-left: 100px;
   padding-top: 120px;
   transition: $transition25;
-  min-height: 700px;
+  min-height: 800px;
 }
 
 .platform__title {
   @extend .section__title;
   max-width: 300px;
 }
+.platform__details {
+  max-width: 385px;
+}
+
 .platform__list {
   margin-top: 70px;
-  max-width: 385px;
 }
 .platform__item {
   position: relative;
@@ -75,6 +78,7 @@
   max-width: 1000px;
   right: -250px;
   transition: $transition25;
+  top: 85px;
 }
 .platform__graphic-img {
   max-width: 100%;
