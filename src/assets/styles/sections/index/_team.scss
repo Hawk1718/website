@@ -3,6 +3,7 @@
   background: $patternLines, radial-gradient(circle 700px at 100% 100%, $charcoal-grey, $dark-navy-blue);
   transition: $transition25;
   position: relative;
+  margin-top: -140px;
 }
 .team__container {
   transition: $transition25;
@@ -23,12 +24,13 @@
 .team__members {
   @include isFlex(flex-start, space-between);
 }
+.team__members {
+  margin-top: 80px;
+}
 .team__members--first {
   z-index: 1;
 }
-.team__members--justify {
-  margin-top: -140px;
-}
+
 .team__members--center {
   justify-content: center;
 }
@@ -48,7 +50,8 @@
     left: -45px;
     width: 180px;
     height: 180px;
-    background-image: radial-gradient(rgba(255,255,255,0.25) 1px, transparent 1px), radial-gradient(rgba(255,255,255,0.25) 1px, transparent 1px);
+    background-image: radial-gradient(rgba(255, 255, 255, 0.25) 1px, transparent 1px),
+      radial-gradient(rgba(255, 255, 255, 0.25) 1px, transparent 1px);
     background-size: 20px 20px;
     z-index: -1;
   }
