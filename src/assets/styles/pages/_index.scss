@@ -9,7 +9,6 @@
   @import '@~styles/sections/index/signup';
 }
 
-
 /*
   Responsive
 */
@@ -32,9 +31,7 @@
 }
 
 @media screen and(max-width: 1366px) {
-
   .home__page {
-
     // Platform
     .platform__graphic {
       max-width: 850px;
@@ -44,12 +41,10 @@
       right: -20px;
     }
   }
-
 }
 
 @media screen and(max-width: 1280px) {
   .home__page {
-
     // Computer
     .computer {
       padding-bottom: 50px;
@@ -65,7 +60,6 @@
       right: -100px;
       transform: scale(0.8) scaleX(-1);
     }
-
   }
 }
 
@@ -83,7 +77,6 @@
 
 @media screen and(max-width: 1000px) {
   .home__page {
-
     // Hero
     .hero {
       height: auto;
@@ -152,7 +145,6 @@
     .team__container {
       padding-left: 0;
     }
-
   }
 }
 
@@ -186,7 +178,7 @@
       margin-top: 0;
     }
     .team__members--main {
-      order: 1;
+      order: 0;
     }
     .team__members--justify {
       margin-top: 0;
@@ -242,7 +234,6 @@
 
 @media screen and(max-width: 720px) {
   .home__page {
-
     // Hero
     .hero {
       padding-top: 15px;
@@ -370,10 +361,8 @@
   }
 }
 
-
 @media screen and(max-width: 480px) {
   .home__page {
-
     // Hero
     #globe {
       width: 380px;
@@ -403,16 +392,15 @@
       display: none;
     }
 
-     // Team
-     .team__container {
-       padding-top: 60px;
-     }
+    // Team
+    .team__container {
+      padding-top: 60px;
+    }
   }
 }
 
 @media screen and(max-width: 400px) {
   .home__page {
-
     // Hero
     #globe {
       width: 320px;
@@ -448,10 +436,8 @@
   }
 }
 
-
 @media screen and(max-width: 340px) {
   .home__page {
-
     // Computer
     .computer__parts-container {
       left: -20px;
