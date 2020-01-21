@@ -27,7 +27,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: ['~/plugins/i18n'],
   /*
    ** Nuxt.js dev-modules
    */
@@ -52,6 +52,12 @@ export default {
   /*
    ** Build configuration
    */
+  router: {
+    linkActiveClass: 'is-active'
+  },
+  tailwindcss: {
+    cssPath: '~/assets/css/app.scss'
+  },
   build: {
     /*
      ** You can extend webpack config here

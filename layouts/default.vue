@@ -1,55 +1,50 @@
 <template>
-  <div>
-    <nuxt />
+  <div
+    class="font-sans bg-gradient-main w-full min-h-screen tracking-wide text-blue-100"
+  >
+    <header class="py-8">
+      <div class="container">
+        <div class="flex justify-between items-center">
+          <div>
+            <img src="/images/logo.png" alt="Injective Protocol" class="h-10" />
+          </div>
+          <nav-desktop />
+        </div>
+      </div>
+    </header>
+    <main>
+      <nuxt />
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="flex justify-between">
+          <div class="flex items-center">
+            <img
+              src="/images/logo.png"
+              alt="Injective Protocol"
+              class="h-8 mr-6"
+            />
+            <p class="text-sm text-blue-200">
+              &copy; Injective Protocol Inc., 2019
+            </p>
+          </div>
+          <div class="flex justify-end">
+            <nav-footer />
+          </div>
+        </div>
+      </div>
+    </footer>
   </div>
 </template>
 
-<style>
-html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-}
+<script>
+import desktop from '~/components/navigation/desktop'
+import footer from '~/components/navigation/desktop-footer'
 
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  margin: 0;
+export default {
+  components: {
+    'nav-desktop': desktop,
+    'nav-footer': footer
+  }
 }
-
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
-}
-
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
-}
-</style>
+</script>
