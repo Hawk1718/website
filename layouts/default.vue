@@ -2,7 +2,7 @@
   <div
     class="font-sans bg-gradient-main w-full min-h-screen tracking-wide text-blue-100"
   >
-    <header class="py-8">
+    <header class="py-8 bg-gradient-light">
       <div class="container">
         <div class="flex justify-between items-center">
           <div>
@@ -11,10 +11,11 @@
           <nav-desktop />
         </div>
       </div>
+      <hero />
     </header>
-    <main>
-      <nuxt />
-    </main>
+
+    <nuxt />
+
     <footer class="footer">
       <div class="container">
         <div class="flex justify-between">
@@ -40,11 +41,13 @@
 <script>
 import desktop from '~/components/navigation/desktop'
 import footer from '~/components/navigation/desktop-footer'
+import Hero from '~/components/header/hero'
 
 export default {
   components: {
     'nav-desktop': desktop,
-    'nav-footer': footer
+    'nav-footer': footer,
+    Hero
   }
 }
 </script>

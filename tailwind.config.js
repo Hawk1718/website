@@ -6,19 +6,17 @@
  */
 const {
   fontFamily: { sans },
-  colors: { black, white }
+  colors: { black, white, transparent, yellow }
 } = require('tailwindcss/defaultTheme')
 
 module.exports = {
   theme: {
-    container: {
-      center: true,
-      padding: '1rem'
-    },
+    container: false,
     fontFamily: {
       sans: `Titillium Web, ${sans}`
     },
     colors: {
+      transparent,
       black,
       white,
       blue: {
@@ -42,14 +40,47 @@ module.exports = {
         700: '#4A5568',
         800: '#2D3748',
         900: '#1A202C'
+      },
+      yellow: {
+        500: yellow[500],
+        900: yellow[900]
       }
     },
     extend: {
       fontSize: {
         nav: '0.8rem'
+      },
+      height: {
+        globe: '35rem'
+      },
+      width: {
+        88: '22.5rem',
+        globe: '35rem'
       }
     }
   },
   variants: {},
-  plugins: []
+  plugins: [
+    function({ addComponents }) {
+      addComponents({
+        '.container': {
+          maxWidth: '100%',
+          padding: '1rem',
+          margin: '0 auto',
+          '@screen sm': {
+            maxWidth: '512px'
+          },
+          '@screen md': {
+            maxWidth: '640px'
+          },
+          '@screen lg': {
+            maxWidth: '896px'
+          },
+          '@screen xl': {
+            maxWidth: '1152px'
+          }
+        }
+      })
+    }
+  ]
 }

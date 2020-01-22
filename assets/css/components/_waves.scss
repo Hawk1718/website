@@ -1,0 +1,14 @@
+.wave {
+  @apply relative block w-full;
+  right: 80px;
+
+  &.wave--top {
+    bottom: -60px;
+    z-index: 1;
+  }
+
+  &.wave--bottom {
+    top: -60px;
+    z-index: 1;
+  }
+}
