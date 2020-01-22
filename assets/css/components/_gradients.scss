@@ -3,3 +3,63 @@
     50px 180px/180px;
   background-color: theme('colors.blue.900');
 }
+
+.bg-gradient-light {
+  background: linear-gradient(90deg, hsla(0, 0%, 100%, 0.07) 1px, transparent 0)
+      50px 180px/180px,
+    radial-gradient(circle 700px at 100% 0, #30303a, #000713);
+}
+
+.bg-gradient-light-left {
+  background: linear-gradient(90deg, hsla(0, 0%, 100%, 0.07) 1px, transparent 0)
+      50px 180px/180px,
+    radial-gradient(circle 700px at 0 0, #30303a, #000713);
+}
+
+.bg-gradient-item {
+  @apply relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: -25px;
+    left: -100px;
+    width: 160px;
+    height: 53px;
+    opacity: 0.2;
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(rgba(200, 220, 255, 0)),
+      to(#c8dcff)
+    );
+    background-image: linear-gradient(90deg, rgba(200, 220, 255, 0), #c8dcff);
+  }
+}
+
+.bg-gradient-team {
+  background: linear-gradient(90deg, hsla(0, 0%, 100%, 0.07) 1px, transparent 0)
+      50px 180px/180px,
+    radial-gradient(circle 700px at 100% 100%, #30303a, #000713);
+}
+
+.bg-member {
+  @apply relative;
+
+  &:before {
+    content: '';
+    @apply block absolute;
+    top: -30px;
+    left: -30px;
+    width: 180px;
+    height: 180px;
+    background-image: radial-gradient(
+        hsla(0, 0%, 100%, 0.25) 1px,
+        transparent 0
+      ),
+      radial-gradient(hsla(0, 0%, 100%, 0.25) 1px, transparent 0);
+    background-size: 15px 15px;
+    z-index: -1;
+  }
+}

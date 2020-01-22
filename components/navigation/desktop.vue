@@ -1,19 +1,19 @@
 <template>
   <ul class="flex">
     <li
-      @scrollToElement="scrollToElement('exchange')"
+      @click.stop="scrollToElement('exchange')"
       :class="[...$options.classes, 'pr-8']"
     >
       {{ $t('navigation.exchange') }}
     </li>
     <li
-      @scrollToElement="scrollToElement('team')"
+      @click.stop="scrollToElement('team')"
       :class="[...$options.classes, 'pr-8']"
     >
       {{ $t('navigation.team') }}
     </li>
     <li
-      @scrollToElement="scrollToElement('contact')"
+      @click.stop="scrollToElement('contact')"
       :class="[...$options.classes, 'pr-8']"
     >
       {{ $t('navigation.contact') }}
@@ -41,6 +41,8 @@ export default {
 
   methods: {
     scrollToElement(elementId) {
+      // eslint-disable-next-line no-console
+      console.log('x')
       scrollIt(document.getElementById(elementId))
     }
   }
