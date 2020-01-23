@@ -13,6 +13,9 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.6",
+    "@nuxtjs/dotenv": "^1.4.1",
+    "@nuxtjs/google-gtag": "^1.0.4",
+    "@nuxtjs/sitemap": "^2.0.1",
     "detector-webgl": "^2.0.0",
     "gsap": "^3.0.5",
     "node-sass": "^4.13.1",

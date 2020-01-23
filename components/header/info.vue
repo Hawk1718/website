@@ -41,6 +41,7 @@
             <button
               class="bg-blue-400 h-10 px-4 flex flex-col items-center justify-center"
               type="button"
+              aria-label="Submit"
             >
               <svg
                 class="fill-current text-blue-200"
