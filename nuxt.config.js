@@ -24,11 +24,7 @@ export default {
       {
         hid: 'g-site-verification',
         name: 'google-site-verification',
-<<<<<<< HEAD
         content: 'roVol1_Xx2vBVf-pZwF4GR4T8NwXQtkA49TqBB4rUVs'
-=======
-        content: ''
->>>>>>> dev
       },
       { hid: 'author', name: 'author', content: author },
       {
