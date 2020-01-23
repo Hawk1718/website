@@ -24,7 +24,7 @@ export default {
       {
         hid: 'g-site-verification',
         name: 'google-site-verification',
-        content: 'roVol1_Xx2vBVf-pZwF4GR4T8NwXQtkA49TqBB4rUVs'
+        content: '23Mg1_gUpvKFCmuEz8EzKv9eZBNEYYWJCc1KifKklgQ'
       },
       { hid: 'author', name: 'author', content: author },
       {
