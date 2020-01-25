@@ -1,0 +1,102 @@
+// Computer
+.computer {
+  margin-top: 220px;
+  padding-bottom: 150px;
+  position: relative;
+}
+.computer__container {
+  max-width: $grid-width;
+  margin: 0 auto;
+  padding-left: 130px;
+  position: relative;
+}
+.computer__info {
+  position: relative;
+  z-index: 2;
+}
+.computer__title {
+  @extend .section__title;
+}
+.computer__description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.38;
+  color: $light-periwinkle;
+  margin-top: 24px;
+  max-width: 436px;
+}
+.computer__parts {
+  position: relative;
+}
+.computer__parts-container {
+  position: relative;
+  top: -50px;
+  left: 40px;
+  right: 0;
+  margin: auto;
+  width: 520px;
+  height: 530px;
+  z-index: 1;
+  transition: $transition25;
+}
+.computer__parts-laptop {
+  max-width: 100%;
+  display: block;
+}
+.computer__part {
+  position: absolute;
+  animation-name: floating;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+.computer__parts-screen2 {
+  top: -40px;
+  left: 20px;
+  z-index: 1;
+  max-width: 61%;
+  animation-duration: 7s;
+}
+.computer__parts-screen1 {
+  top: -30px;
+  left: 50px;
+  z-index: 2;
+  max-width: 56%;
+  animation-duration: 6s;
+}
+.computer__parts-lock {
+  left: 0;
+  bottom: 20px;
+  z-index: 2;
+  width: 137px;
+  animation-duration: 6.5s;
+}
+.computer__parts-shield {
+  bottom: 80px;
+  right: -10px;
+  z-index: 2;
+  width: 178px;
+  animation-duration: 5.5s;
+}
+.computer__parts-key {
+  right: 50px;
+  bottom: 70px;
+  z-index: 2;
+  width: 175px;
+  animation-duration: 5s;
+}
+.computer__wires {
+  position: absolute;
+  top: 80px;
+}
+.computer__wires path {
+  stroke-dasharray: 680;
+  stroke-dashoffset: 680;
+  animation: dash 4s ease-out infinite alternate;
+}
+.computer__wires--left {
+  left: 0;
+}
+.computer__wires--right {
+  right: 0;
+  transform: scaleX(-1);
+}

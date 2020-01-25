@@ -1,0 +1,22 @@
+/* src/assets/styles/layout/_page.scss  */
+.section__title {
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 1.11;
+  transition: $transition25;
+}
+
+/*
+  Responsive
+*/
+@media screen and(max-width: 720px) {
+  .section__title {
+    font-size: 30px;
+  }
+}
+
+@media screen and(max-width: 480px) {
+  .section__title {
+    font-size: 27px;
+  }
+}

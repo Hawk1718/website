@@ -1,0 +1,44 @@
+@keyframes blinker {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes waveOpacity {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.2;
+  }
+}
+
+@keyframes largeInput {
+  from {
+    width: 0;
+  }
+  to {
+    width: 360px;
+  }
+}
+
+@keyframes floating {
+  from {
+    transform: translate(0,  0px);
+  }
+  65%  {
+    transform: translate(0, 15px);
+  }
+  to   {
+    transform: translate(0, -0px);
+  }
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}

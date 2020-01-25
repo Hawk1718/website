@@ -1,0 +1,26 @@
+extends ./layouts/master.pug
+
+block title
+  title Injective Protocol - Home
+
+block scripts
+  script(src='assets/lib/Detector.js')
+  script(src='assets/lib/three.min.js')
+  script(src='assets/lib/globe.js')
+
+//- block manifestBrowserconfigFiles
+//-   link(href='../manifest.json', rel='manifest')
+//-   meta(name='msapplication-config' content='../browserconfig.xml')
+
+block content
+
+  //- Home page
+  section.page.home__page
+
+    //- Sections
+    include ./sections/index/hero.pug
+    include ./sections/index/features.pug
+    include ./sections/index/platform.pug
+    include ./sections/index/computer.pug
+    include ./sections/index/team.pug
+    include ./sections/index/signup.pug

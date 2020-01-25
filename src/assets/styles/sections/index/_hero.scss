@@ -1,0 +1,196 @@
+.hero {
+  background: $patternLines, radial-gradient(circle 700px at 100% 0, $charcoal-grey, $dark-navy-blue);
+  height: 700px;
+  padding-top: 26px;
+}
+.hero__container {
+  @include isFlex(flex-start, center);
+  flex: 1;
+  padding-top: 100px;
+  transition: $transition25;
+}
+#globe {
+  width: 600px;
+  height: 600px;
+  background: transparent;
+  margin-top: -100px;
+  pointer-events: none;
+}
+.hero__globe-container {
+  position: relative;
+}
+// Globe particles
+.hero__globe-particles {
+  height: 275px;
+  position: absolute;
+  left: -150px;
+  top: 150px;
+  transition: $transition25;
+  opacity: 0;
+}
+.globe__particles-column {
+  position: relative;
+  width: 70px;
+  display: inline-block;
+}
+// Globe particle columns
+.globe__particles-column--1 {
+  height: 100px;
+}
+.globe__particles-column--2 {
+  height: 100px;
+  top: -20px;
+  left: -20px;
+}
+.globe__particles-column--3 {
+  height: 100px;
+  top: 20px;
+  left: -55px;
+}
+.globe__particles-column--4 {
+  height: 100px;
+  top: -75px;
+  left: -80px;
+}
+.globe__particles-column--5 {
+  height: 100px;
+  bottom: -50px;
+  left: -130px
+}
+.globe__particles-column--6 {
+  height: 100px;
+  top: -55px;
+  left: -160px;
+}
+.globe__particles-column--7 {
+  height: 100px;
+  bottom: -100px;
+  left: -240px;
+}
+.globe__particles-column--8 {
+  height: 100px;
+  top: -100px;
+  left: -240px;
+}
+.globe__particles-column--9 {
+  height: 100px;
+  bottom: -75px;
+  left: -325px;
+}
+
+// Globe particle
+.globe__particle {
+  position: absolute;
+  animation-name: blinker;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+  transform: translateZ(0);
+}
+
+// Add some initial delays
+@for $i from 1 through 18 {
+  .globe__particle--#{$i} {
+    animation-delay: (random(10) / 10) + 0.0065s;
+  }
+}
+
+.globe__particle--top {
+  top: 0;
+  left: 0;
+}
+.globe__particle--bottom {
+  bottom: 0;
+  left: 0;
+}
+
+.hero__globe-info {
+  font-size: 12px;
+  color: $light-periwinkle;
+  font-style: italic;
+  text-align: center;
+  margin-top: -15%;
+  position: relative;
+}
+.hero__info {
+  max-width: 500px;
+  margin-left: 50px;
+  padding-top: 35px;
+  flex: 1;
+  transition: $transition25;
+}
+.hero__backedby-text {
+  @extend .upper;
+  font-weight: 700;
+  font-size: 10px;
+  background: $goldenrod;
+  color: $black;
+  padding: 0 8px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  display: inline-block;
+}
+.hero__backedby-img {
+  height: 34px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.hero__backedby-img2 {
+  height: 24px;
+  display: inline-block;
+  vertical-align: top;
+}
+.hero__title {
+  @extend .section__title;
+  color: white;
+  margin-top: 16px;
+}
+.hero__description {
+  margin-top: 24px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: $light-periwinkle;
+  max-width: 457px;
+}
+.hero__signup {
+  @include isFlex(center, flex-start);
+  margin-top: 40px;
+}
+#hero__form-inputwithbutton__input {
+  flex: unset;
+}
+#hero__form-label {
+  width: 0;
+  opacity: 0;
+  transition: $transition25;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  display: inline-block;
+  &.active {
+    top: -20px;
+    opacity: 1;
+    width: auto;
+  }
+}
+#hero__form-input {
+  width: 0;
+  display: none;
+  &.active {
+    display: block;
+    animation: largeInput 0.6s 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+  }
+}
+#hero__form-text {
+  position: absolute;
+  left: 57px;
+  transition: $transition25;
+  margin-left: 0;
+  &.active {
+    bottom: -25px;
+    left: 0;
+  }
+
+}
