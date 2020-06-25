@@ -1,40 +1,39 @@
 // Libraries
-const path = require('path');
-const webpack = require('webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const WebpackNotifierPlugin = require('webpack-notifier');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const TerserPlugin = require('terser-webpack-plugin');
+const path = require("path");
+const webpack = require("webpack");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const WebpackNotifierPlugin = require("webpack-notifier");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const TerserPlugin = require("terser-webpack-plugin");
 
 // Files
-const utils = require('./utils')
-const plugins = require('../postcss.config');
+const utils = require("./utils");
+const plugins = require("../postcss.config");
 
 // Configuration
-module.exports = env => {
-
+module.exports = (env) => {
   return {
-    context: path.resolve(__dirname, '../src'),
+    context: path.resolve(__dirname, "../src"),
     entry: {
-      app: './app.js'
+      app: "./app.js",
     },
     output: {
-      path: path.resolve(__dirname, '../dist'),
-      publicPath: '/',
-      filename: 'assets/js/[name].[hash:7].bundle.js'
+      path: path.resolve(__dirname, "../dist"),
+      publicPath: "/",
+      filename: "assets/js/[name].[hash:7].bundle.js",
     },
     devServer: {
-      contentBase: path.resolve(__dirname, '../src'),
+      contentBase: path.resolve(__dirname, "../src"),
     },
     resolve: {
-      extensions: ['.js'],
+      extensions: [".js"],
       alias: {
-        source: path.resolve(__dirname, '../src'), // Relative path of src
-        images: path.resolve(__dirname, '../src/assets/images'), // Relative path of images
-        styles: path.resolve(__dirname, '../src/assets/styles'), // Relative path of styles
-        fonts: path.resolve(__dirname, '../src/assets/fonts'), // Relative path of fonts
-      }
+        source: path.resolve(__dirname, "../src"), // Relative path of src
+        images: path.resolve(__dirname, "../src/assets/images"), // Relative path of images
+        styles: path.resolve(__dirname, "../src/assets/styles"), // Relative path of styles
+        fonts: path.resolve(__dirname, "../src/assets/fonts"), // Relative path of fonts
+      },
     },
 
     /*
@@ -47,17 +46,19 @@ module.exports = env => {
           exclude: [/node_modules/],
           use: [
             {
-              loader: 'babel-loader',
-              options: { presets: ['es2015'] }
-            }
-          ]
+              loader: "babel-loader",
+              options: { presets: ["es2015"] },
+            },
+          ],
         },
         {
           test: /\.css$/,
           use: [
-            env === 'development' ? 'style-loader' : MiniCssExtractPlugin.loader,
+            env === "development"
+              ? "style-loader"
+              : MiniCssExtractPlugin.loader,
             {
-              loader: 'css-loader',
+              loader: "css-loader",
               options: {
                 importLoaders: 1,
                 sourceMap: true,
@@ -70,45 +71,55 @@ module.exports = env => {
         {
           test: /\.scss$/,
           use: [
-            env === 'development' ? 'style-loader' : MiniCssExtractPlugin.loader, // creates style nodes from JS strings
-            { loader: 'css-loader', options: { importLoaders: 1, minimize: true, sourceMap: true, colormin: false } }, // translates CSS into CommonJS
-            'postcss-loader',
-            'sass-loader', // compiles Sass to CSS
+            env === "development"
+              ? "style-loader"
+              : MiniCssExtractPlugin.loader, // creates style nodes from JS strings
+            {
+              loader: "css-loader",
+              options: {
+                importLoaders: 1,
+                minimize: true,
+                sourceMap: true,
+                colormin: false,
+              },
+            }, // translates CSS into CommonJS
+            "postcss-loader",
+            "sass-loader", // compiles Sass to CSS
           ],
         },
         {
           test: /\.pug$/,
           use: [
             {
-              loader: 'pug-loader'
-            }
-          ]
+              loader: "pug-loader",
+            },
+          ],
         },
         {
           test: /\.(png|jpe?g|gif|svg|ico)(\?.*)?$/,
-          loader: 'url-loader',
+          loader: "url-loader",
           options: {
             limit: 3000,
-            name: 'assets/images/[name].[hash:7].[ext]'
-          }
+            name: "assets/images/[name].[hash:7].[ext]",
+          },
         },
         {
           test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
-          loader: 'url-loader',
+          loader: "url-loader",
           options: {
             limit: 5000,
-            name: 'assets/fonts/[name].[hash:7].[ext]'
-          }
+            name: "assets/fonts/[name].[hash:7].[ext]",
+          },
         },
         {
           test: /\.(mp4)(\?.*)?$/,
-          loader: 'url-loader',
+          loader: "url-loader",
           options: {
             limit: 10000,
-            name: 'assets/videos/[name].[hash:7].[ext]'
-          }
-        }
-      ]
+            name: "assets/videos/[name].[hash:7].[ext]",
+          },
+        },
+      ],
     },
     optimization: {
       minimizer: [
@@ -124,38 +135,57 @@ module.exports = env => {
           vendors: false,
           // vendor chunk
           vendor: {
-            filename: 'assets/js/vendor.[hash:7].bundle.js',
+            filename: "assets/js/vendor.[hash:7].bundle.js",
             // sync + async chunks
-            chunks: 'all',
+            chunks: "all",
             // import file path containing node_modules
-            test: /node_modules/
-          }
-        }
-      }
+            test: /node_modules/,
+          },
+        },
+      },
     },
 
     plugins: [
       new CopyWebpackPlugin([
-        { from: 'assets/data/rank.json', to: 'assets/data/rank.json' },
-        { from: 'assets/lib/Detector.js', to: 'assets/lib/Detector.js' },
-        { from: 'assets/lib/globe.js', to: 'assets/lib/globe.js' },
-        { from: 'assets/lib/three.min.js', to: 'assets/lib/three.min.js' },
-        { from: 'assets/images/world.jpg', to: 'assets/images/world.jpg' },
-        { from: '../site.webmanifest', to: 'site.webmanifest' },
-        { from: '../browserconfig.xml', to: 'browserconfig.xml' },
-        { from: 'assets/images/favicons/android-chrome-96x96.png', to: 'assets/images/favicons/android-chrome-96x96.png' },
-        { from: 'assets/images/favicons/apple-touch-icon.png', to: 'assets/images/favicons/apple-touch-icon.png' },
-        { from: 'assets/images/favicons/favicon-16x16.png', to: 'assets/images/favicons/favicon-16x16.png' },
-        { from: 'assets/images/favicons/favicon-32x32.png', to: 'assets/images/favicons/favicon-32x32.png' },
-        { from: 'assets/images/favicons/mstile-150x150.png', to: 'assets/favicons/images/mstile-150x150.png' },
-        { from: 'assets/images/favicons/favicon.ico', to: 'assets/images/favicons/favicon.ico' },
-        { from: 'assets/images/favicons/safari-pinned-tab.svg', to: 'assets/images/favicons/safari-pinned-tab.svg' }
-        
-
+        { from: "assets/data/rank.json", to: "assets/data/rank.json" },
+        { from: "assets/lib/Detector.js", to: "assets/lib/Detector.js" },
+        { from: "assets/lib/globe.js", to: "assets/lib/globe.js" },
+        { from: "assets/lib/three.min.js", to: "assets/lib/three.min.js" },
+        { from: "assets/images/world.jpg", to: "assets/images/world.jpg" },
+        { from: "../site.webmanifest", to: "site.webmanifest" },
+        { from: "../browserconfig.xml", to: "browserconfig.xml" },
+        {
+          from: "assets/images/favicons/android-chrome-96x96.png",
+          to: "assets/images/favicons/android-chrome-96x96.png",
+        },
+        {
+          from: "assets/images/favicons/apple-touch-icon.png",
+          to: "assets/images/favicons/apple-touch-icon.png",
+        },
+        {
+          from: "assets/images/favicons/favicon-16x16.png",
+          to: "assets/images/favicons/favicon-16x16.png",
+        },
+        {
+          from: "assets/images/favicons/favicon-32x32.png",
+          to: "assets/images/favicons/favicon-32x32.png",
+        },
+        {
+          from: "assets/images/favicons/mstile-150x150.png",
+          to: "assets/favicons/images/mstile-150x150.png",
+        },
+        {
+          from: "assets/images/favicons/favicon.ico",
+          to: "assets/images/favicons/favicon.ico",
+        },
+        {
+          from: "assets/images/favicons/safari-pinned-tab.svg",
+          to: "assets/images/favicons/safari-pinned-tab.svg",
+        },
       ]),
       new MiniCssExtractPlugin({
-        filename: 'assets/css/[name].[hash:7].bundle.css',
-        chunkFilename: '[id].css',
+        filename: "assets/css/[name].[hash:7].bundle.css",
+        chunkFilename: "[id].css",
       }),
 
       /*
@@ -164,23 +194,30 @@ module.exports = env => {
 
       // Desktop page
       new HtmlWebpackPlugin({
-        filename: 'index.html',
-        template: 'views/index.pug',
-        inject: true
+        filename: "index.html",
+        template: "views/index.pug",
+        inject: true,
+      }),
+
+      // Desktop page
+      new HtmlWebpackPlugin({
+        filename: "partners.html",
+        template: "views/partners.pug",
+        inject: true,
       }),
 
       // ...utils.pages(env), Pages from /views/*.pug
       // ...utils.pages(env, 'blog'), Blog page from /views/blog/index.pug
 
       new webpack.ProvidePlugin({
-        $: 'jquery',
-        jQuery: 'jquery',
-        'window.$': 'jquery',
-        'window.jQuery': 'jquery'
+        $: "jquery",
+        jQuery: "jquery",
+        "window.$": "jquery",
+        "window.jQuery": "jquery",
       }),
       new WebpackNotifierPlugin({
-        title: 'Injective Protocol'
-      })
-    ]
-  }
+        title: "Injective Protocol",
+      }),
+    ],
+  };
 };
