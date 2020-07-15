@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 /**
  * dat.globe Javascript WebGL Globe Toolkit
  * http://dataarts.github.com/dat.globe
@@ -368,7 +370,7 @@ DAT.Globe = function(container, colorFn) {
 
   }
 
-  
+
 
   function render() {
     zoom(curZoomSpeed);
