@@ -23,7 +23,7 @@
   margin-top: 10px;
 }
 .team__members {
-  @include isFlex(flex-start);
+  @include isFlex(flex-start, start);
 }
 .team__members {
   margin-top: 80px;
