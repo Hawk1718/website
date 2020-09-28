@@ -1,7 +1,7 @@
 <template>
   <section class="core">
     <div v-scroll-reveal class="container">
-      <h2 class="sec-title core__title">Core features</h2>
+      <h2 class="sec-title core__title">{{ $t('ecosystem.heading') }}</h2>
       <div class="core__wrap">
         <div class="core-item">
           <div class="core-item__icn">
@@ -21,21 +21,15 @@
               />
             </svg>
           </div>
-          <h3 class="core-item__title">Injective chain</h3>
+          <h3 class="core-item__title">
+            {{ $t('ecosystem.injective_chain') }}
+          </h3>
           <p>
-            <strong
-              >The infrastructure powering next–generation DeFi
-              applications</strong
-            >
+            <strong>{{ $t('ecosystem.injective_chain_text') }} </strong>
           </p>
+          <p>{{ $t('ecosystem.injective_chain_text2') }}</p>
           <p>
-            Historical internal sales and traffic data received via pre-built
-            integrations with POS systems and traffic counters.
-          </p>
-          <p>
-            External influences (e.g. local weather, holidays, nearby events
-            like sports games or concerts) continuously updated by Legion’s [how
-            many] data partners.
+            {{ $t('ecosystem.injective_chain_text3') }}
           </p>
         </div>
 
@@ -57,17 +51,14 @@
               />
             </svg>
           </div>
-          <h3 class="core-item__title">Injective futures protocol</h3>
+          <h3 class="core-item__title">
+            {{ $t('ecosystem.injective_futures') }}
+          </h3>
           <p>
-            <strong
-              >Unlocking a new permissionless era of financial access</strong
-            >
+            <strong>{{ $t('ecosystem.injective_futures_text') }}</strong>
           </p>
           <p>
-            A fully decentralized peer-to-peer futures protocol supporting
-            decentralized perpetual swaps and contracts for difference (CFDs).
-            This will enable anyone to create and trade on arbitrary derivative
-            markets with just a price feed.
+            {{ $t('ecosystem.injective_futures_text2') }}
           </p>
         </div>
 
@@ -89,18 +80,13 @@
               />
             </svg>
           </div>
-          <h3 class="core-item__title">Injective exchange</h3>
+          <h3 class="core-item__title">
+            {{ $t('ecosystem.injective_exchange') }}
+          </h3>
           <p>
-            <strong
-              >Pioneering a new model of exchange as a public utility</strong
-            >
+            <strong>{{ $t('ecosystem.injective_exchange_text') }}</strong>
           </p>
-          <p>
-            A completely open-source exchange infrastructure. We turn the
-            traditional business model of exchange on its head, by eliminating
-            the technical barrier of entry for one to permissionlessly run a
-            highly performant exchange on Injective Protocol.
-          </p>
+          <p>{{ $t('ecosystem.injective_exchange_text2') }}</p>
         </div>
 
         <div class="core-item">
@@ -121,12 +107,14 @@
               />
             </svg>
           </div>
-          <h3 class="core-item__title">Injective governance</h3>
-          <p><strong>Community owned and driven</strong></p>
+          <h3 class="core-item__title">
+            {{ $t('ecosystem.injective_governance') }}
+          </h3>
           <p>
-            Injective is decentralized and governed by the community using the
-            Injective Token. Anyone can join as a stakeholder for our project
-            and have a real say in making decisions in our protocol.
+            <strong>{{ $t('ecosystem.injective_governance_text') }}</strong>
+          </p>
+          <p>
+            {{ $t('ecosystem.injective_governance_text2') }}
           </p>
         </div>
       </div>

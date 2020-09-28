@@ -32,14 +32,18 @@
           <li><NuxtLink :to="$i18n.path('')"> Home </NuxtLink></li>
           <li>
             <NuxtLink :to="$i18n.path('ecosystem')">
-              Injective Ecosystem
+              {{ $t('nav.injective_ecosystem') }}
             </NuxtLink>
           </li>
           <li>
-            <NuxtLink :to="$i18n.path('company')"> Company </NuxtLink>
+            <NuxtLink :to="$i18n.path('company')">
+              {{ $t('nav.company') }}
+            </NuxtLink>
           </li>
           <li>
-            <a href="https://medium.com/injective-labs" target="_blank">Blog</a>
+            <a href="https://medium.com/injective-labs" target="_blank">{{
+              $t('nav.blog')
+            }}</a>
           </li>
         </ul>
       </nav>

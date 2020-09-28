@@ -19,16 +19,18 @@
             />
           </svg>
         </div>
-        <h3 class="trailblazing-item__title">Learn how Injective works</h3>
+        <h3 class="trailblazing-item__title">
+          {{ $t('ecosystem.learn_how') }}
+        </h3>
         <p class="trailblazing-item__txt">
-          Get a high–level understanding of Injective’s architecture
+          {{ $t('ecosystem.learn_how_text') }}
         </p>
         <a
           href="https://docs.injectiveprotocol.com/#injective-chain"
           target="_blank"
           class="trailblazing-item__link"
         >
-          Explore the Injective docs
+          {{ $t('ecosystem.learn_how_docs') }}
           <svg
             width="8"
             height="20"

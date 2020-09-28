@@ -43,8 +43,8 @@ export default {
   computed: {
     headerClassInverted() {
       return (
-        this.$route.name.includes('privacy-policy') &&
-        this.$route.name.includes('terms-and-conditions')
+        this.$route.fullPath.includes('privacy-policy') &&
+        this.$route.fullPath.includes('terms-and-conditions')
       )
     },
   },

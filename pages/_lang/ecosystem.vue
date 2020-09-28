@@ -1,15 +1,14 @@
 <template>
   <div>
+    <!-- eslint-disable vue/no-v-html -->
     <v-top />
     <core />
     <questions />
     <wishlist>
-      <h2 class="sec-title main-form__title">
-        Start trading with <span>true freedom</span> and <br /><span
-          >unlimited</span
-        >
-        <br /><span>possibilities</span>
-      </h2>
+      <h2
+        class="sec-title main-form__title"
+        v-html="$t('ecosystem.wishlist_title')"
+      ></h2>
     </wishlist>
   </div>
 </template>

@@ -1,8 +1,4 @@
 <template>
-  <!--   include ../modules/company-top.html
-  include ../modules/our-family.html
-  include ../modules/team.html
-  include ../modules/main-form-3.html -->
   <div>
     <v-top />
     <our-family />

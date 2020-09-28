@@ -1652,12 +1652,10 @@
     <div class="container">
       <div class="main-sec__wrap">
         <h1 class="main-sec__title">
-          Fast, secure, and fully Decentralized Trading
+          {{ $t('home.hero_title') }}
         </h1>
         <p class="main-sec__txt">
-          Injective is the first layer-2 decentralized exchange protocol that
-          unlocks the full potential of decentralized derivatives and borderless
-          DeFi.
+          {{ $t('home.hero_subtitle') }}
         </p>
         <form
           action="php/mail.php"
@@ -1674,7 +1672,7 @@
             class="btn btn_l btn_green row-form__submit main-sec-form__submit"
             type="submit"
           >
-            Join waitlist
+            {{ $t('header.join_waitlist') }}
             <svg
               width="6"
               height="10"
@@ -1706,7 +1704,7 @@
                 />
               </svg>
             </span>
-            Please correct your email address
+            {{ $t('form.email_error') }}
           </div>
           <div class="row-form__ready">
             <span class="icn">
@@ -1725,7 +1723,7 @@
                 />
               </svg>
             </span>
-            Thank you! Your submission has been received.
+            {{ $t('form.thanks_waitlist') }}
           </div>
         </form>
       </div>

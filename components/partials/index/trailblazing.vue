@@ -1,15 +1,12 @@
 <template>
   <section class="trailblazing">
     <div v-scroll-reveal class="container">
-      <h2 class="sec-title trailblazing__title">
-        Trailblazing the new dawn of <br /><span
-          ><span>Decentralized</span> <br /><span>Finance</span></span
-        >
-      </h2>
-      <p class="trailblazing__txt">
-        Injective Protocol provides traders unparalleled access to new
-        decentralized derivatives markets without any restrictions.
-      </p>
+      <!-- eslint-disable vue/no-v-html -->
+      <h2
+        class="sec-title trailblazing__title"
+        v-html="$t('home.trailblazing_subtitle')"
+      ></h2>
+      <p class="trailblazing__txt">{{ $t('home.trailblazing_subtitle') }}</p>
       <ul class="trailblazing-list">
         <li class="trailblazing-item">
           <div class="trailblazing-item__icn">
@@ -29,17 +26,18 @@
               />
             </svg>
           </div>
-          <h3 class="trailblazing-item__title">Trade on anything</h3>
+          <h3 class="trailblazing-item__title">
+            {{ $t('home.trailblazing_item_1') }}
+          </h3>
           <p class="trailblazing-item__txt">
-            Injective gives you the freedom to create and trade on any
-            derivatives market of your choosing.
+            {{ $t('home.trailblazing_item_1_text') }}
           </p>
           <a
             href="https://docs.injectiveprotocol.com/#injective-chain"
             target="_blank"
             class="trailblazing-item__link"
           >
-            Learn more
+            {{ $t('home.learn_more') }}
             <svg
               width="6"
               height="10"
@@ -73,17 +71,18 @@
               />
             </svg>
           </div>
-          <h3 class="trailblazing-item__title">Earn yield</h3>
+          <h3 class="trailblazing-item__title">
+            {{ $t('home.trailblazing_item_2') }}
+          </h3>
           <p class="trailblazing-item__txt">
-            Earn cross-chain yield on Ethereum, Cosmos and other decentralized
-            networks.
+            {{ $t('home.trailblazing_item_2_text') }}
           </p>
           <a
             href="https://docs.injectiveprotocol.com/#injective-chain"
             target="_blank"
             class="trailblazing-item__link"
           >
-            Learn more
+            {{ $t('home.learn_more') }}
             <svg
               width="6"
               height="10"
@@ -117,17 +116,18 @@
               />
             </svg>
           </div>
-          <h3 class="trailblazing-item__title">Community–owned</h3>
+          <h3 class="trailblazing-item__title">
+            {{ $t('home.trailblazing_item_3') }}
+          </h3>
           <p class="trailblazing-item__txt">
-            Participate in governance and shape the future of Injective
-            Protocol.
+            {{ $t('home.trailblazing_item_3_text') }}
           </p>
           <a
             href="https://docs.injectiveprotocol.com/#injective-chain"
             target="_blank"
             class="trailblazing-item__link"
           >
-            Learn more
+            {{ $t('home.learn_more') }}
             <svg
               width="6"
               height="10"

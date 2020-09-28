@@ -27,7 +27,7 @@ export default function ({
   }
 
   // Set locale
-  store.commit('SET_LANG', locale)
+  store.commit('SET_LOCALE', locale)
   i18n.locale = store.state.locale
 
   // If route is /<defaultLocale>/... -> redirect to /...

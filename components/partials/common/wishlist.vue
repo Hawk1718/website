@@ -12,13 +12,13 @@
             type="email"
             name="email"
             class="input main-form-form__input js-val"
-            placeholder="Enter your email"
+            :placeholder="$t('form.your_email')"
           />
           <button
             class="btn btn_l btn_black row-form__submit main-form-form__submit"
             type="submit"
           >
-            Join waitlist
+            {{ $t('header.join_waitlist') }}
             <svg
               width="6"
               height="10"
@@ -50,7 +50,7 @@
                 />
               </svg>
             </span>
-            Please correct your email address
+            {{ $t('form.email_error') }}
           </div>
           <div class="row-form__ready">
             <span class="icn">
@@ -69,7 +69,7 @@
                 />
               </svg>
             </span>
-            Thank you! Your submission has been received.
+            {{ $t('form.thanks_waitlist') }}
           </div>
         </form>
       </div>

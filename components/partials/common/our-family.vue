@@ -1,7 +1,7 @@
 <template>
   <section class="our-family">
     <div v-scroll-reveal class="container">
-      <h2 class="sec-title our-family__title">Our family</h2>
+      <h2 class="sec-title our-family__title">{{ $t('common.our_family') }}</h2>
       <ul class="our-family__list">
         <li class="our-family__item">
           <img

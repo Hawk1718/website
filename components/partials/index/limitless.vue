@@ -1,18 +1,16 @@
 <template>
   <section class="limitless">
+    <!-- eslint-disable vue/no-v-html -->
     <div v-scroll-reveal class="container">
       <div class="limitless__wrap">
         <div class="limitless__header">
-          <h2 class="limitless__title">
-            Limitless trading on the first fully <br /><span>Decentralized</span
-            ><br /><span>Exchange</span>
-          </h2>
+          <h2 class="limitless__title" v-html="$t('home.limitless_title')"></h2>
           <a
             href="https://docs.injectiveprotocol.com/#introduction"
             target="_blank"
             class="btn btn_l btn_black limitless__btn"
           >
-            Learn how Injective works
+            {{ $t('ecosystem.learn_how') }}
             <svg
               width="6"
               height="10"
@@ -49,7 +47,7 @@
                     />
                   </svg>
                 </div>
-                <h3 class="faq__title">Fully decentralized</h3>
+                <h3 class="faq__title">{{ $t('home.fully_decentralized') }}</h3>
                 <div class="faq__arrow">
                   <svg
                     width="20"
@@ -69,10 +67,7 @@
               </div>
               <div class="faq__main js-accordion-hide" style="display: block">
                 <p>
-                  The Injective Chain is a fully-decentralized sidechain relayer
-                  network which serves as a layer-2 derivatives platform, trade
-                  execution coordinator (TEC), and decentralized orderbook. The
-                  core consensus is Tendermint-based.
+                  {{ $t('home.fully_decentralized_text') }}
                 </p>
               </div>
             </div>
@@ -96,7 +91,7 @@
                     />
                   </svg>
                 </div>
-                <h3 class="faq__title">Layer-2 speed</h3>
+                <h3 class="faq__title">{{ $t('home.layer2speed') }}</h3>
                 <div class="faq__arrow">
                   <svg
                     width="20"
@@ -116,11 +111,7 @@
               </div>
               <div class="faq__main js-accordion-hide">
                 <p>
-                  The Injective Chain provides a two-way Ethereum peg-zone for
-                  Ether and ERC-20 tokens to be transferred to the Injective
-                  Chain as well as an EVM-compatible execution environment for
-                  DeFi applications. The peg-zone is based off Peggy and the EVM
-                  execution is based off Ethermint.
+                  {{ $t('home.layer2speed_text') }}
                 </p>
               </div>
             </div>
@@ -144,7 +135,7 @@
                     />
                   </svg>
                 </div>
-                <h3 class="faq__title">Orderbook model</h3>
+                <h3 class="faq__title">{{ $t('home.orderbook_model') }}</h3>
                 <div class="faq__arrow">
                   <svg
                     width="20"
@@ -164,11 +155,7 @@
               </div>
               <div class="faq__main js-accordion-hide">
                 <p>
-                  Injective's Decentralized Orderbook is a fully decentralized
-                  0x-based orderbook enabling sidechain order relay with
-                  on-chain settlement - a decentralized implementation of the
-                  traditionally centralized off-chain order relay used by nearly
-                  all central limit order book decentralized exchanges.
+                  {{ $t('home.orderbook_model_text') }}
                 </p>
               </div>
             </div>
@@ -192,7 +179,7 @@
                     />
                   </svg>
                 </div>
-                <h3 class="faq__title">Unlimited markets</h3>
+                <h3 class="faq__title">{{ $t('home.unlimited_markets') }}</h3>
                 <div class="faq__arrow">
                   <svg
                     width="20"
@@ -212,9 +199,7 @@
               </div>
               <div class="faq__main js-accordion-hide">
                 <p>
-                  Market creation is entirely open and permissionless. This
-                  enables anyone to create a market using only a price feed and
-                  deploy it the larger Injective ecosystem.
+                  {{ $t('home.unlimited_markets_text') }}
                 </p>
               </div>
             </div>
@@ -237,7 +222,7 @@
                     />
                   </svg>
                 </div>
-                <h3 class="faq__title">Zero gas fees</h3>
+                <h3 class="faq__title">{{ $t('home.zero_gas_fees') }}</h3>
                 <div class="faq__arrow">
                   <svg
                     width="20"
@@ -256,13 +241,7 @@
                 </div>
               </div>
               <div class="faq__main js-accordion-hide">
-                <p>
-                  Given the unique layer-2 structure, Injective is able to avoid
-                  both network congestion and the associated high gas fees. This
-                  zero gas fee structure can enable anyone to trade freely
-                  without having to worry about high gas fees or network
-                  latencies.
-                </p>
+                <p>{{ $t('home.zero_gas_fees_text') }}</p>
               </div>
             </div>
           </div>

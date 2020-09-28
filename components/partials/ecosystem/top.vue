@@ -1025,17 +1025,14 @@
     <div class="container">
       <div class="top-sec__wrap">
         <h1 class="top-sec__title">
-          Injective Protocol, a fully decentralized Layer-2 DeFi protocol
+          {{ $t('ecosystem.hero_title') }}
         </h1>
         <div class="top-sec__txt">
-          <p>
-            A robust, highly parameterizable DeFi protocol supporting a diverse
-            array of derivatives including CFDs, perpetual swaps and more.
-          </p>
+          <p>{{ $t('ecosystem.hero_subtitle') }}</p>
         </div>
         <div class="top-sec__bar">
           <button class="btn btn_l btn_green top-sec__green js-open-popup">
-            Join waitlist
+            {{ $t('header.join_waitlist') }}
             <svg
               width="6"
               height="10"
@@ -1054,8 +1051,9 @@
             href="https://docs.injectiveprotocol.com/#introduction "
             target="_blank"
             class="btn btn_l btn_transition top-sec__transition"
-            >Explore the docs</a
           >
+            {{ $t('ecosystem.learn_how_docs') }}
+          </a>
         </div>
       </div>
     </div>

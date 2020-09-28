@@ -1025,18 +1025,14 @@
     <div class="container">
       <div class="top-sec__wrap">
         <h1 class="top-sec__title">
-          Creating a truly free and Decentralized Financial Network for everyone
+          {{ $t('company.hero_title') }}
         </h1>
         <div class="top-sec__txt">
           <p>
-            Our mission is to create a more free and inclusive financial system
-            through decentralization.
+            {{ $t('company.hero_subtitle') }}
           </p>
           <p>
-            By providing the unrestricted and unprecedented ability to express
-            diverse views in the decentralized financial markets, we are
-            striving to empower individuals with the ability to more efficiently
-            allocate capital in our society.
+            {{ $t('company.hero_subtitle2') }}
           </p>
         </div>
         <div class="top-sec__bar">
@@ -1045,7 +1041,7 @@
             target="_blank"
             class="btn btn_l btn_green top-sec__green"
           >
-            See open roles
+            {{ $t('company.see_open_roles') }}
             <svg
               width="6"
               height="10"

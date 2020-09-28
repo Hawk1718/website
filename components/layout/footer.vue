@@ -137,40 +137,43 @@
         </div>
         <div class="footer__main">
           <div class="footer__main-col">
-            <h3 class="footer__main-title">Explore</h3>
+            <h3 class="footer__main-title">{{ $t('footer.explore') }}</h3>
             <nav class="footer-nav">
               <ul>
                 <li>
                   <a href="javascript:void(0);">
-                    Exchange <small>Coming soon</small>
+                    {{ $t('footer.exchange') }}
+                    <small>{{ $t('footer.coming_soon') }}</small>
                   </a>
                 </li>
                 <li>
                   <NuxtLink :to="$i18n.path('ecosystem')">
-                    Injective Ecosystem
+                    {{ $t('nav.injective_ecosystem') }}
                   </NuxtLink>
                 </li>
                 <li>
                   <a href="https://medium.com/injective-labs" target="_blank">
-                    Blog
+                    {{ $t('nav.blog') }}
                   </a>
                 </li>
               </ul>
             </nav>
           </div>
           <div class="footer__main-col">
-            <h3 class="footer__main-title">About</h3>
+            <h3 class="footer__main-title">{{ $t('nav.about') }}</h3>
             <nav class="footer-nav">
               <ul>
                 <li>
-                  <NuxtLink :to="$i18n.path('company')"> Company </NuxtLink>
+                  <NuxtLink :to="$i18n.path('company')">
+                    {{ $t('nav.company') }}
+                  </NuxtLink>
                 </li>
                 <li>
                   <a
                     href="https://angel.co/company/injective-protocol/jobs"
                     target="_blank"
                   >
-                    Careers
+                    {{ $t('footer.careers') }}
                     <span class="icn last">
                       <svg
                         width="20"
@@ -187,14 +190,14 @@
                         />
                       </svg>
                     </span>
-                    <small>We are hiring</small>
+                    <small>{{ $t('footer.we_are_hiring') }}</small>
                   </a>
                 </li>
               </ul>
             </nav>
           </div>
           <div class="footer__main-col">
-            <h3 class="footer__main-title">Developers</h3>
+            <h3 class="footer__main-title">{{ $t('footer.developers') }}</h3>
             <div class="footer-nav">
               <ul>
                 <li>
@@ -235,14 +238,14 @@
                         />
                       </svg>
                     </span>
-                    Documentation
+                    {{ $t('footer.documentation') }}
                   </a>
                 </li>
               </ul>
             </div>
           </div>
           <div class="footer__main-col">
-            <h3 class="footer__main-title">Connect</h3>
+            <h3 class="footer__main-title">{{ $t('footer.connect') }}</h3>
             <div class="footer-nav">
               <ul>
                 <li>
@@ -317,7 +320,7 @@
                         />
                       </svg>
                     </span>
-                    Contact us
+                    {{ $t('footer.contact_us') }}
                   </a>
                 </li>
               </ul>
@@ -328,19 +331,28 @@
       <div class="footer__bottom">
         <ul class="footer__links">
           <li>
+            <img
+              v-for="locale in visibleLocales"
+              :key="`locale-${locale.name}`"
+              :src="`${locale.flag}`"
+              class="locale"
+              :alt="locale.name"
+              @click="changeLocale(locale)"
+            />
+          </li>
+          <li>
             <NuxtLink :to="$i18n.path('terms-and-conditions')">
-              Terms and Conditions
+              {{ $t('footer.terms_and_conditions') }}
             </NuxtLink>
           </li>
           <li>
             <NuxtLink :to="$i18n.path('privacy-policy')">
-              Privacy Policy
+              {{ $t('footer.privacy_policy') }}
             </NuxtLink>
           </li>
         </ul>
         <p class="footer__copyright">
-          Copyright © {{ new Date().getFullYear() }} Injective Labs, Inc. All
-          rights reserved.
+          {{ $t('footer.copyright') }}
         </p>
       </div>
     </div>
@@ -349,6 +361,36 @@
 
 <script>
 export default {
-  //
+  data() {
+    return {
+      locales: [
+        {
+          name: 'English',
+          flag: '/flags/us.png',
+          locale: 'en',
+        },
+        {
+          name: 'Chinese',
+          flag: '/flags/cn.png',
+          locale: 'zh',
+        },
+      ],
+    }
+  },
+
+  computed: {
+    visibleLocales() {
+      return this.locales.filter(({ locale }) => locale !== this.$i18n.locale)
+    },
+  },
+
+  methods: {
+    changeLocale({ locale }) {
+      this.$i18n.locale = locale
+      this.$store.commit('SET_LOCALE', locale)
+
+      return this.$router.push(this.$i18n.path(this.$route.fullPath))
+    },
+  },
 }
 </script>

@@ -1,18 +1,18 @@
 <template>
   <section class="main-form">
+    <!-- eslint-disable vue/no-v-html -->
     <div v-scroll-reveal class="container">
       <div class="main-form__wrap">
-        <h2 class="sec-title main-form__title main-form__title_parts">
-          Help us build the future of <br /><span
-            ><span>Decentralized</span> <br /><span>Finance</span></span
-          >
-        </h2>
+        <h2
+          class="sec-title main-form__title main-form__title_parts"
+          v-html="$t('company.heading')"
+        ></h2>
         <a
           href="https://angel.co/company/injective-protocol/jobs"
           target="_blank"
           class="btn btn_l btn_black main-form__link"
         >
-          See open roles
+          {{ $t('company.see_open_roles') }}
           <svg
             width="6"
             height="10"
