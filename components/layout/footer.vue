@@ -354,6 +354,7 @@
       </div>
       <div class="footer__bottom">
         <ul class="footer__links">
+          <!--
           <li>
             <img
               v-for="locale in visibleLocales"
@@ -364,6 +365,7 @@
               @click="changeLocale(locale)"
             />
           </li>
+          -->
           <li>
             <NuxtLink :to="$i18n.path('terms-and-conditions')">
               {{ $t('footer.terms_and_conditions') }}

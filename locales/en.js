@@ -14,7 +14,7 @@ export default {
     thanks_waitlist: 'Thank you! Your submission has been received.',
   },
   header: {
-    join_waitlist: 'Join Waitlist',
+    join_waitlist: 'Exchange Waitlist',
   },
   ecosystem: {
     wishlist_title:
@@ -42,7 +42,7 @@ export default {
     injective_exchange_text:
       'Pioneering a new model of exchange as a public utility',
     injective_exchange_text2:
-      'A completely open-source exchange infrastructure. We turn the traditional business model of exchange on its head, by eliminating the technical barrier of entry for one to permissionlessly run a highly performant exchange on Injective Protocol.',
+      'A completely open-source exchange infrastructure that disintermediates the current centralized exchange model. Injective eliminates the technical barriers of entry for anyone to trade on a highly performant exchange.',
     injective_governance: 'Injective Governance',
     injective_governance_text: 'Community owned and driven',
     injective_governance_text2:

@@ -14,7 +14,6 @@
       <Nuxt />
     </main>
     <v-footer />
-    <v-popup />
   </div>
 </template>
 
@@ -23,14 +22,12 @@ import Intro from '~/components/layout/intro.vue'
 import Header from '~/components/layout/header.vue'
 import MobileHeader from '~/components/layout/mobile-header.vue'
 import Footer from '~/components/layout/footer.vue'
-import Popup from '~/components/layout/popup.vue'
 
 export default {
   components: {
     'v-intro': Intro,
     'v-header': Header,
     'v-footer': Footer,
-    'v-popup': Popup,
     'v-mobile-header': MobileHeader,
   },
 
