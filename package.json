@@ -20,7 +20,9 @@
     }
   },
   "dependencies": {
+    "@nuxtjs/google-gtag": "^1.0.4",
     "@nuxtjs/pwa": "latest",
+    "@nuxtjs/sitemap": "^2.4.0",
     "animate.css": "^4.1.1",
     "jquery": "^3.5.1",
     "normalize.css": "^8.0.1",

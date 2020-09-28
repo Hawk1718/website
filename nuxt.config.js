@@ -129,10 +129,21 @@ export default {
    ** Nuxt.js dev-modules
    */
   buildModules: [],
+
+  'google-gtag': {
+    id: 'UA-148360411-1',
+  },
+
+  sitemap: {
+    hostname: 'https://injectiveprotocol.com',
+    gzip: true,
+  },
+
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/pwa'],
+  modules: ['@nuxtjs/pwa', '@nuxtjs/google-gtag', '@nuxtjs/sitemap'],
+
   router: {
     middleware: 'i18n',
   },
