@@ -19,23 +19,100 @@ export default {
    ** See https://nuxtjs.org/api/configuration-head
    */
   head: {
-    title: process.env.npm_package_name || '',
+    title: 'Fast, Secure, and Fully Decentralized Trading',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'msapplication-TileColor', content: '#da532c' },
+      { name: 'theme-color', content: '#fff' },
       {
-        hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || '',
+        content:
+          'Injective is the first layer-2 decentralized exchange protocol that unlocks the full potential of decentralized derivatives and borderless DeFi',
       },
+      {
+        name: 'keywords',
+        content:
+          'Injective is the first layer-2 decentralized exchange protocol that unlocks the full potential of decentralized derivatives and borderless DeFi',
+      },
+      { property: 'og:type', content: 'website' },
+      { property: 'og:url', content: 'https://www.injectiveprotocol.com' },
+      {
+        property: 'og:image',
+        content: 'https://www.injectiveprotocol.com/img/og/og.jpg',
+      },
+      { property: 'og:image:type', content: 'image/jpeg' },
+      { property: 'og:image:width', content: '1024' },
+      { property: 'og:image:height', content: '512' },
+      {
+        property: 'og:title',
+        content: 'Fast, Secure, and Fully Decentralized Trading',
+      },
+      {
+        property: 'og:description',
+        content:
+          'Injective is the first layer-2 decentralized exchange protocol that unlocks the full potential of decentralized derivatives and borderless DeFi',
+      },
+      { property: 'og:locale', content: 'En' },
+      {
+        property: 'og:site_name',
+        content: 'https://www.injectiveprotocol.com',
+      },
+      { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:site', content: 'https://www.injectiveprotocol.com' },
+      {
+        name: 'twitter:title',
+        content: 'Fast, Secure, and Fully Decentralized Trading',
+      },
+      {
+        name: 'twitter:description',
+        content:
+          'Injective is the first layer-2 decentralized exchange protocol that unlocks the full potential of decentralized derivatives and borderless DeFi',
+      },
+      { name: 'twitter:creator', content: 'injectiveprotocol' },
+      {
+        name: 'twitter:image:src',
+        content: 'https://www.injectiveprotocol.com/img/og/twitter.jpg',
+      },
+      { name: 'twitter:domain', content: 'https://www.injectiveprotocol.com.' },
+      { name: 'theme-color', content: '#1A202C' },
+      { name: 'msapplication-navbutton-color', content: '#1A202C' },
+      { name: 'apple-mobile-web-app-status-bar-style', content: '#1A202C' },
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'icon', type: 'image/x-icon', href: '/img/favicon/favicon.ico' },
       {
         rel: 'stylesheet',
         body: true,
         href:
           'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap',
+      },
+      {
+        rel: 'apple-touch-icon',
+        sizes: '152x152',
+        href: '/img/favicon/apple-touch-icon.png',
+      },
+      {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '32x32',
+        href: '/img/favicon/favicon-32x32.png',
+      },
+      {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '16x16',
+        href: '/img/favicon/favicon-16x16.png',
+      },
+      { rel: 'manifest', href: '/img/favicon/site.webmanifest' },
+      {
+        rel: 'mask-icon',
+        href: '/img/favicon/safari-pinned-tab.svg',
+        color: '#5bbad5',
+      },
+      {
+        rel: 'image_src',
+        href: 'https://www.injectiveprotocol.com/img/og/og.jpg',
       },
     ],
   },
