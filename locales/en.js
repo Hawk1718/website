@@ -18,7 +18,7 @@ export default {
   },
   ecosystem: {
     wishlist_title:
-      'Start trading with<span>true freedom</span> and < br /> <span >unlimited</span> <br /><span>possibilities</span>',
+      'Start trading with<span>true freedom</span> and <br /> <span >unlimited</span> <br /><span>possibilities</span>',
     hero_title:
       'Injective Protocol, a fully decentralized Layer-2 DeFi protocol',
     hero_subtitle:

@@ -8,7 +8,7 @@
             <div>
               <h2
                 class="sec-title questions__title"
-                v-html="$t('ecosystem.question_title')"
+                v-html="$t('ecosystem.questions_title')"
               ></h2>
               <p>
                 <strong>{{ $t('ecosystem.question_1') }}</strong>

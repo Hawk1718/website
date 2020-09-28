@@ -16,6 +16,10 @@ export default ({ app, store }) => {
   })
 
   i18n.path = (link) => {
+    if (link.endsWith('/')) {
+      link.slice(0, link.length - 1)
+    }
+
     if (i18n.locale === i18n.fallbackLocale) {
       return `/${link}`
     }

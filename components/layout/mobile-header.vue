@@ -4,7 +4,7 @@
     <div class="mob-menu__container">
       <div class="mob-menu__header">
         <NuxtLink :to="$i18n.path('')" class="header-logo">
-          <img src="img/svg/logo-revers.svg" alt="Injective Protocol" />
+          <img src="/img/svg/logo-revers.svg" alt="Injective Protocol" />
         </NuxtLink>
         <button
           class="btn close mob-menu__close js-open-menu"

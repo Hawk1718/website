@@ -4,7 +4,7 @@
       <!-- eslint-disable vue/no-v-html -->
       <h2
         class="sec-title trailblazing__title"
-        v-html="$t('home.trailblazing_subtitle')"
+        v-html="$t('home.trailblazing_title')"
       ></h2>
       <p class="trailblazing__txt">{{ $t('home.trailblazing_subtitle') }}</p>
       <ul class="trailblazing-list">

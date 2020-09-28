@@ -104,7 +104,6 @@ export default {
         sizes: '16x16',
         href: '/img/favicon/favicon-16x16.png',
       },
-      { rel: 'manifest', href: '/img/favicon/site.webmanifest' },
       {
         rel: 'mask-icon',
         href: '/img/favicon/safari-pinned-tab.svg',

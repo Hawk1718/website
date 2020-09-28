@@ -4,7 +4,7 @@
       <div class="footer__wrap">
         <div class="footer__bar">
           <NuxtLink :to="$i18n.path('')" class="footer-logo">
-            <img src="img/svg/logo.svg" alt="Injective Protocol" />
+            <img src="/img/svg/logo.svg" alt="Injective Protocol" />
           </NuxtLink>
           <ul class="footer-soc">
             <li>
@@ -389,7 +389,7 @@ export default {
       this.$i18n.locale = locale
       this.$store.commit('SET_LOCALE', locale)
 
-      return this.$router.push(this.$i18n.path(this.$route.fullPath))
+      this.$router.push({ name: this.$route.name, params: { lang: locale } })
     },
   },
 }

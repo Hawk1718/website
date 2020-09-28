@@ -3,7 +3,7 @@
     <header id="js-header" class="header">
       <div class="header__container">
         <NuxtLink :to="$i18n.path('')" class="header-logo">
-          <img src="img/svg/logo-color.svg" alt="Injective Protocol" />
+          <img src="/img/svg/logo-color.svg" alt="Injective Protocol" />
         </NuxtLink>
         <nav class="header-nav">
           <ul>
