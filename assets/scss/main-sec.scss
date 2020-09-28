@@ -1,0 +1,83 @@
+.main-sec {
+  position: relative;
+  background: linear-gradient(0deg, #1a202c, #1a202c);
+  overflow: hidden;
+  &__wrap {
+    height: 100vh;
+    min-height: 720px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 680px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+  }
+  &__title {
+    margin-bottom: 16px;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 73px;
+    text-align: center;
+    letter-spacing: -0.022em;
+    background: linear-gradient(
+      90deg,
+      #195a6c 0%,
+      #1e779a 14%,
+      #27a7e3 20%,
+      #2abaff 28%,
+      #1ddaf0 33%,
+      #0effe0 50%,
+      #1ddaf0 67%,
+      #2abaff 72%,
+      #27a7e3 80%,
+      #1e779a 86%,
+      #195a6c 100%
+    );
+    background-size: 200% auto;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: shine 7.25s linear infinite;
+    @media only screen and (max-width: 767px) {
+      animation: none;
+    }
+  }
+  &__txt {
+    margin-bottom: 40px;
+    font-size: 24px;
+    line-height: 34px;
+    text-align: center;
+    letter-spacing: -0.019em;
+    color: #fff;
+  }
+  @media only screen and (max-width: 767px) {
+    &__wrap {
+      height: 100vh;
+      min-height: 480px;
+      max-width: 288px;
+    }
+    &__title {
+      font-size: 24px;
+      line-height: 34px;
+      letter-spacing: -0.019em;
+    }
+    &__txt {
+      font-size: 18px;
+      line-height: 24px;
+      letter-spacing: -0.014em;
+    }
+  }
+}
+
+@keyframes shine {
+  to {
+    background-position: -200% center;
+  }
+}
+.main-sec-form {
+  &__input {
+    border-color: #91faef;
+  }
+}

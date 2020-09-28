@@ -17,9 +17,7 @@ $ yarn
 2. Compile the app
 
 ```bash
-$ yarn install
-$ gulp
-$ gulp imgOpt #optimize images
+$ yarn run dev
 ```
 
 ## 📖 Documentation

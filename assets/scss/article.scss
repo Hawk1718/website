@@ -1,0 +1,25 @@
+.article {
+  border-top: 72px solid #1a202c;
+  padding: 40px 0;
+  font-size: 16px;
+  line-height: 20px;
+  &__wrap {
+    max-width: 680px;
+  }
+  p {
+    margin: 2.4em 0;
+  }
+  h1 {
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 44px;
+    letter-spacing: -0.022em;
+    margin-bottom: 24px;
+  }
+  a {
+    color: #3182ce;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
