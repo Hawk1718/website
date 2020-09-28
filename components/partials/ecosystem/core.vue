@@ -28,9 +28,6 @@
             <strong>{{ $t('ecosystem.injective_chain_text') }} </strong>
           </p>
           <p>{{ $t('ecosystem.injective_chain_text2') }}</p>
-          <p>
-            {{ $t('ecosystem.injective_chain_text3') }}
-          </p>
         </div>
 
         <div class="core-item">

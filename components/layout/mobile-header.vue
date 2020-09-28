@@ -41,9 +41,12 @@
             </NuxtLink>
           </li>
           <li>
-            <a href="https://medium.com/injective-labs" target="_blank">{{
-              $t('nav.blog')
-            }}</a>
+            <a
+              href="https://medium.com/injective-labs"
+              target="_blank"
+              rel="noreferrer"
+              >{{ $t('nav.blog') }}</a
+            >
           </li>
         </ul>
       </nav>

@@ -28,6 +28,7 @@
         <a
           href="https://docs.injectiveprotocol.com/#injective-chain"
           target="_blank"
+          rel="noreferrer"
           class="trailblazing-item__link"
         >
           {{ $t('ecosystem.learn_how_docs') }}

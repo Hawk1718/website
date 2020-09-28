@@ -11,6 +11,7 @@
               <a
                 href="https://discord.com/invite/pJZqagr"
                 target="_blank"
+                rel="noreferrer"
                 title="Discord"
               >
                 <span class="icn">
@@ -32,6 +33,7 @@
               <a
                 href="https://t.me/joininjective"
                 target="_blank"
+                rel="noreferrer"
                 title="Telegram"
               >
                 <span class="icn">
@@ -53,6 +55,7 @@
               <a
                 href="https://twitter.com/injectivelabs"
                 target="_blank"
+                rel="noreferrer"
                 title="Twitter"
               >
                 <span class="icn">
@@ -74,6 +77,7 @@
               <a
                 href="https://www.facebook.com/injectiveprotocol"
                 target="_blank"
+                rel="noreferrer"
                 title="Facebook"
               >
                 <span class="icn">
@@ -95,6 +99,7 @@
               <a
                 href="https://github.com/InjectiveLabs"
                 target="_blank"
+                rel="noreferrer"
                 title="GitHub"
               >
                 <span class="icn">
@@ -116,6 +121,7 @@
               <a
                 href="https://www.reddit.com/r/injective/"
                 target="_blank"
+                rel="noreferrer"
                 title="Reddit"
               >
                 <span class="icn">
@@ -152,7 +158,11 @@
                   </NuxtLink>
                 </li>
                 <li>
-                  <a href="https://medium.com/injective-labs" target="_blank">
+                  <a
+                    href="https://medium.com/injective-labs"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     {{ $t('nav.blog') }}
                   </a>
                 </li>
@@ -172,6 +182,7 @@
                   <a
                     href="https://angel.co/company/injective-protocol/jobs"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     {{ $t('footer.careers') }}
                     <span class="icn last">
@@ -222,6 +233,7 @@
                   <a
                     href="https://docs.injectiveprotocol.com/#introduction"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <span class="icn">
                       <svg
@@ -249,7 +261,11 @@
             <div class="footer-nav">
               <ul>
                 <li>
-                  <a href="https://t.me/joininjective" target="_blank">
+                  <a
+                    href="https://t.me/joininjective"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <span class="icn">
                       <svg
                         width="24"
@@ -267,7 +283,11 @@
                   </a>
                 </li>
                 <li>
-                  <a href="https://twitter.com/injectivelabs" target="_blank">
+                  <a
+                    href="https://twitter.com/injectivelabs"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <span class="icn">
                       <svg
                         width="20"
@@ -285,7 +305,11 @@
                   </a>
                 </li>
                 <li>
-                  <a href="https://discord.com/invite/pJZqagr" target="_blank">
+                  <a
+                    href="https://discord.com/invite/pJZqagr"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <span class="icn">
                       <svg
                         width="24"

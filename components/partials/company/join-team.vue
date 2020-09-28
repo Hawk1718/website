@@ -10,6 +10,7 @@
         <a
           href="https://angel.co/company/injective-protocol/jobs"
           target="_blank"
+          rel="noreferrer"
           class="btn btn_l btn_black main-form__link"
         >
           {{ $t('company.see_open_roles') }}

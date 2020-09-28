@@ -10,6 +10,7 @@
               <a
                 href="https://www.linkedin.com/in/joshfelker/"
                 target="_blank"
+                rel="noreferrer"
                 class="team-item__link"
                 title="LinkedIn"
               >
@@ -36,6 +37,7 @@
               <a
                 href="https://www.linkedin.com/in/charleslu1/"
                 target="_blank"
+                rel="noreferrer"
                 class="team-item__link"
                 title="LinkedIn"
               >
@@ -62,6 +64,7 @@
               <a
                 href="https://www.linkedin.com/in/aweigend/"
                 target="_blank"
+                rel="noreferrer"
                 class="team-item__link"
                 title="LinkedIn"
               >
@@ -88,6 +91,7 @@
               <a
                 href="https://www.linkedin.com/in/shiyaowang/"
                 target="_blank"
+                rel="noreferrer"
                 class="team-item__link"
                 title="LinkedIn"
               >
@@ -114,6 +118,7 @@
               <a
                 href="https://www.linkedin.com/in/bobbycho01/"
                 target="_blank"
+                rel="noreferrer"
                 class="team-item__link"
                 title="LinkedIn"
               >
@@ -140,6 +145,7 @@
               <a
                 href="https://www.linkedin.com/in/sandeep-nailwal-60709a33/"
                 target="_blank"
+                rel="noreferrer"
                 class="team-item__link"
                 title="LinkedIn"
               >
@@ -166,6 +172,7 @@
               <a
                 href=""
                 target="_blank"
+                rel="noreferrer"
                 class="team-item__link"
                 title="LinkedIn"
               >
@@ -186,6 +193,7 @@
               <a
                 href="https://www.linkedin.com/in/calvinliu/"
                 target="_blank"
+                rel="noreferrer"
                 class="team-item__link"
                 title="Twitter"
               >
@@ -208,8 +216,8 @@
         </div>
       </div>
     </div>
-    <div class="team__main wow fadeInUp">
-      <div class="container">
+    <div class="team__main">
+      <div v-scroll-reveal class="container">
         <h2 class="sec-title team__title">Our team</h2>
         <div class="team__wrap">
           <div class="team-item">
@@ -219,6 +227,7 @@
               <a
                 href="https://www.linkedin.com/in/ericchenmelt/"
                 target="_blank"
+                rel="noreferrer"
                 class="team-item__link"
                 title="LinkedIn"
               >
@@ -239,6 +248,7 @@
               <a
                 href="https://twitter.com/ericinjective"
                 target="_blank"
+                rel="noreferrer"
                 class="team-item__link"
                 title="Twitter"
               >
@@ -265,6 +275,7 @@
               <a
                 href="https://www.linkedin.com/in/albertchon/"
                 target="_blank"
+                rel="noreferrer"
                 class="team-item__link"
                 title="LinkedIn"
               >
@@ -295,6 +306,7 @@
               <a
                 href="https://www.linkedin.com/in/markuswaas/"
                 target="_blank"
+                rel="noreferrer"
                 class="team-item__link"
                 title="LinkedIn"
               >
@@ -321,6 +333,7 @@
               <a
                 href="https://www.linkedin.com/in/bangjelkoski/"
                 target="_blank"
+                rel="noreferrer"
                 class="team-item__link"
                 title="LinkedIn"
               >
@@ -351,6 +364,7 @@
               <a
                 href="https://www.linkedin.com/in/xinran-xu-2545b480/"
                 target="_blank"
+                rel="noreferrer"
                 class="team-item__link"
                 title="LinkedIn"
               >
@@ -377,6 +391,7 @@
               <a
                 href="https://www.linkedin.com/in/bshevchenko/"
                 target="_blank"
+                rel="noreferrer"
                 class="team-item__link"
                 title="LinkedIn"
               >

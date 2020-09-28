@@ -35,6 +35,7 @@
           <a
             href="https://docs.injectiveprotocol.com/#injective-chain"
             target="_blank"
+            rel="noreferrer"
             class="trailblazing-item__link"
           >
             {{ $t('home.learn_more') }}
@@ -80,6 +81,7 @@
           <a
             href="https://docs.injectiveprotocol.com/#injective-chain"
             target="_blank"
+            rel="noreferrer"
             class="trailblazing-item__link"
           >
             {{ $t('home.learn_more') }}
@@ -125,6 +127,7 @@
           <a
             href="https://docs.injectiveprotocol.com/#injective-chain"
             target="_blank"
+            rel="noreferrer"
             class="trailblazing-item__link"
           >
             {{ $t('home.learn_more') }}

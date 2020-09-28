@@ -32,9 +32,7 @@ export default {
     injective_chain_text:
       'The infrastructure powering next–generation DeFi applications',
     injective_chain_text2:
-      'Historical internal sales and traffic data received via pre-built integrations with POS systems and traffic counters.',
-    injective_chain_text3:
-      'External influences (e.g. local weather, holidays, nearby events like sports games or concerts) continuously updated by Legion’s [how many]data partners.',
+      'A layer-2 Cosmos zone that hosts the first trustless and fully decentralized exchange protocol. We have built the first fully decentralized orderbook, trade execution coordinator, order matcher and order execution environment.',
     injective_futures: 'Injective Futures Protocol',
     injective_futures_text:
       'Unlocking a new permissionless era of financial access',
