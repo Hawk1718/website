@@ -29,12 +29,15 @@
           </ul>
         </nav>
         <div class="header__bar">
-          <button class="btn btn_m btn_transition header-btn js-open-popup">
+          <button
+            class="btn btn_m btn_transition header-btn js-open-popup"
+            @click.stop="$emit('popup-toggled')"
+          >
             {{ $t('header.join_waitlist') }}
           </button>
           <button
             class="btn burger header-btn js-open-menu"
-            @click.stop="$emit('mobileMenuToggled')"
+            @click.stop="$emit('mobile-menu-toggled')"
           >
             <svg
               width="24"

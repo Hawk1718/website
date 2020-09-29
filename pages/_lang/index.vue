@@ -1,16 +1,10 @@
 <template>
   <div>
-    <!-- eslint-disable vue/no-v-html -->
     <v-top />
     <our-family />
     <limitless />
     <trailblazing />
-    <wishlist>
-      <h2
-        class="sec-title main-form__title"
-        v-html="$t('home.wishlist_title')"
-      ></h2>
-    </wishlist>
+    <waitlist />
   </div>
 </template>
 
@@ -19,11 +13,11 @@ import Top from '~/components/partials/index/top'
 import OurFamily from '~/components/partials/common/our-family'
 import Limitless from '~/components/partials/index/limitless'
 import Trailblazing from '~/components/partials/index/trailblazing'
-import Wishlist from '~/components/partials/common/wishlist'
+import Waitlist from '~/components/partials/index/waitlist'
 
 export default {
   components: {
-    Wishlist,
+    Waitlist,
     'v-top': Top,
     OurFamily,
     Limitless,

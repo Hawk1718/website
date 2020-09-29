@@ -17,8 +17,8 @@ export default {
     join_waitlist: 'Exchange Waitlist',
   },
   ecosystem: {
-    wishlist_title:
-      'Start trading with<span>true freedom</span> and <br /> <span >unlimited</span> <br /><span>possibilities</span>',
+    waitlist_title:
+      'Start trading with<span>true freedom</span> and <br/> <span>unlimited</span> <br/> <span>possibilities</span>',
     hero_title:
       'Injective Protocol, a fully decentralized Layer-2 DeFi protocol',
     hero_subtitle:
@@ -89,8 +89,8 @@ export default {
     copyright: `Copyright © ${new Date().getFullYear()} Injective Labs, Inc. All rights reserved.`,
   },
   home: {
-    wishlist_title:
-      'Start trading with <span>true freedom</span> and <br /><span > unlimited</span <br /><span>possibilities</span>',
+    waitlist_title:
+      'Start trading with <span>true freedom</span> and <br /><span> unlimited</span> <br /><span>possibilities</span>',
     hero_title: 'Fast, secure, and fully Decentralized Trading',
     hero_subtitle:
       'Injective is the first layer-2 decentralized exchange protocol that unlocks the full potential of decentralized derivatives and borderless DeFi.',

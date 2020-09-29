@@ -122,6 +122,10 @@ input[type='search'] {
       }
     }
   }
+  &[disabled] {
+    opacity: 0.975;
+    cursor: not-allowed;
+  }
 }
 .close {
   width: 24px;
@@ -426,5 +430,25 @@ svg {
       top: 20px;
       transform: translate(-55%, -50px);
     }
+  }
+}
+
+.input-error {
+  font-size: 0.85rem;
+  color: #e53e3e;
+  display: flex;
+  position: absolute;
+  margin-top: 0.25rem;
+}
+
+.form-success {
+  font-size: 0.85rem;
+  color: #38a169;
+  display: none;
+  margin-top: 0.25rem;
+  align-items: center;
+
+  &.show {
+    display: flex;
   }
 }

@@ -1031,7 +1031,10 @@
           <p>{{ $t('ecosystem.hero_subtitle') }}</p>
         </div>
         <div class="top-sec__bar">
-          <button class="btn btn_l btn_green top-sec__green js-open-popup">
+          <button
+            class="btn btn_l btn_green top-sec__green js-open-popup"
+            @click.stop.prevent="$root.$emit('popup-toggled')"
+          >
             {{ $t('header.join_waitlist') }}
             <svg
               width="6"

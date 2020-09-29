@@ -20,6 +20,12 @@ export default {
    */
   head: {
     title: 'Fast, Secure, and Fully Decentralized Trading',
+    script: [
+      {
+        src: 'https://referlist.co/resources/referlist.js',
+        body: true,
+      },
+    ],
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -169,5 +175,6 @@ export default {
         'window.jQuery': 'jquery',
       }),
     ],
+    transpile: ['vee-validate/dist/rules'],
   },
 }

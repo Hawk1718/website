@@ -327,7 +327,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="mailto:Contact@InjectiveProtocol.com">
+                  <a href="mailto:contact@injectiveprotocol.com">
                     <span class="icn">
                       <svg
                         width="20"
@@ -354,7 +354,6 @@
       </div>
       <div class="footer__bottom">
         <ul class="footer__links">
-          <!--
           <li>
             <img
               v-for="locale in visibleLocales"
@@ -365,7 +364,6 @@
               @click="changeLocale(locale)"
             />
           </li>
-          -->
           <li>
             <NuxtLink :to="$i18n.path('terms-and-conditions')">
               {{ $t('footer.terms_and_conditions') }}
@@ -414,7 +412,6 @@ export default {
     changeLocale({ locale }) {
       this.$i18n.locale = locale
       this.$store.commit('SET_LOCALE', locale)
-
       this.$router.push({ name: this.$route.name, params: { lang: locale } })
     },
   },
