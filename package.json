@@ -20,10 +20,12 @@
     }
   },
   "dependencies": {
+    "@nuxtjs/axios": "^5.12.2",
     "@nuxtjs/google-gtag": "^1.0.4",
     "@nuxtjs/pwa": "latest",
     "@nuxtjs/sitemap": "^2.4.0",
     "animate.css": "^4.1.1",
+    "dotenv": "^8.2.0",
     "jquery": "^3.5.1",
     "normalize.css": "^8.0.1",
     "nuxt": "latest",

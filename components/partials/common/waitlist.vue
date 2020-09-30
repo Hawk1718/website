@@ -108,25 +108,29 @@ export default {
     }
   },
 
-  mounted() {
-    //
-  },
-
   methods: {
     onSubmit() {
-      this.$refs['form-success'].classList.add('show')
+      this.$axios
+        .$get(process.env.MAILCHIMP_API_ENDPOINT, {
+          params: {
+            email: this.email,
+          },
+        })
+        .then(() => {
+          this.$refs['form-success'].classList.add('show')
 
-      // Reset the form
-      this.email = ''
+          // Reset the form
+          this.email = ''
 
-      // Wait until the models are updated in the UI
-      this.$nextTick(() => {
-        this.$refs.form.reset()
-      })
+          // Wait until the models are updated in the UI
+          this.$nextTick(() => {
+            this.$refs.form.reset()
+          })
 
-      setTimeout(() => {
-        this.$refs['form-success'].classList.remove('show')
-      }, 1500)
+          setTimeout(() => {
+            this.$refs['form-success'].classList.remove('show')
+          }, 3000)
+        })
     },
   },
 }

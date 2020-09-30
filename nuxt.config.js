@@ -147,10 +147,18 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/pwa', '@nuxtjs/google-gtag', '@nuxtjs/sitemap'],
+  modules: [
+    '@nuxtjs/pwa',
+    '@nuxtjs/google-gtag',
+    '@nuxtjs/sitemap',
+    '@nuxtjs/axios',
+  ],
 
   router: {
     middleware: 'i18n',
+  },
+  env: {
+    MAILCHIMP_API_ENDPOINT: process.env.MAILCHIMP_API_ENDPOINT,
   },
   /*
    ** Plugins to load before mounting the App
