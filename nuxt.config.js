@@ -144,6 +144,12 @@ export default {
     gzip: true,
   },
 
+  toast: {
+    position: 'bottom-right',
+    duration: 6000,
+    theme: 'bubble',
+  },
+
   /*
    ** Nuxt.js modules
    */
@@ -152,6 +158,7 @@ export default {
     '@nuxtjs/google-gtag',
     '@nuxtjs/sitemap',
     '@nuxtjs/axios',
+    '@nuxtjs/toast',
   ],
 
   router: {

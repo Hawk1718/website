@@ -30,11 +30,21 @@
         </nav>
         <div class="header__bar">
           <button
-            class="btn btn_m btn_transition header-btn js-open-popup"
+            class="btn btn_m btn_transition header-btn"
+            style="margin-right: 0.5rem"
             @click.stop="$emit('popup-toggled')"
           >
             {{ $t('header.join_waitlist') }}
           </button>
+          <a
+            href="https://t.me/joininjective"
+            role="button"
+            target="_blank"
+            rel="noreferrer"
+            class="btn btn_m btn_transition header-btn js-open-popup"
+          >
+            {{ $t('header.chat') }}
+          </a>
           <button
             class="btn burger header-btn js-open-menu"
             @click.stop="$emit('mobile-menu-toggled')"

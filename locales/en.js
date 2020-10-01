@@ -12,8 +12,10 @@ export default {
     your_email: 'email@example.com',
     email_error: 'Please correct your email address',
     thanks_waitlist: 'Thank you! Your submission has been received.',
+    email_exists: 'Email already registered',
   },
   header: {
+    chat: 'Chat',
     join_waitlist: 'Exchange Waitlist',
   },
   ecosystem: {
