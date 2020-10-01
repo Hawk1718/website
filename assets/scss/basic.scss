@@ -124,7 +124,7 @@ input[type='search'] {
   }
   &[disabled] {
     opacity: 0.975;
-    cursor: not-allowed;
+    pointer-events: none;
   }
 }
 .close {
