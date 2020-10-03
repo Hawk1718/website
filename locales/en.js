@@ -89,6 +89,7 @@ export default {
     terms_and_conditions: 'Terms and Conditions',
     privacy_policy: 'Privacy Policy',
     copyright: `Copyright © ${new Date().getFullYear()} Injective Labs, Inc. All rights reserved.`,
+    media_kit: 'Media Kit',
   },
   home: {
     waitlist_title:
