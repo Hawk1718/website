@@ -106,7 +106,7 @@ export default {
       'The Injective Chain provides a two-way Ethereum peg-zone for Ether and ERC-20 tokens to be transferred to the Injective Chain as well as an EVM-compatible execution environment for DeFi applications. The peg-zone is based off Peggy and the EVM execution is based off Ethermint.',
     orderbook_model: 'Orderbook Model',
     orderbook_model_text:
-      "Injective's Decentralized Orderbook is a fully decentralized 0x-based orderbook enabling sidechain order relay with on - chain settlement - a decentralized implementation of the traditionally centralized off- chain order relay used by nearly all central limit order book decentralized exchanges.",
+      "Injective's Orderbook is a fully decentralized 0x-based orderbook enabling sidechain order relay with on - chain settlement - a decentralized implementation of the traditionally centralized off-chain order relay used by nearly all central limit order book decentralized exchanges.",
     unlimited_markets: 'Unlimited Markets',
     unlimited_markets_text:
       'Market creation is entirely open and permissionless. This enables anyone to create a market using only a price feed and deploy it the larger Injective ecosystem.',
