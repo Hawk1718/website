@@ -15,6 +15,11 @@ export default {
   },
   header: {
     join_waitlist: '交易平台等待名单',
+
+    // Todo:: translate
+    chat: 'Chat',
+    join_the_future:
+      'Join the Future of <br /><span>Decentralized Finance</span>',
   },
   ecosystem: {
     waitlist_title:
@@ -66,6 +71,9 @@ export default {
     hero_subtitle2:
       '通过给予个人在去中心化金融市场中不受限制地表达各自观点的权力，我们致力于使个人获得更有效地在社会中分配资本的能力。',
     see_open_roles: '查看招聘信息',
+
+    // Todo::translate
+    our_team: 'Our Team',
   },
   footer: {
     explore: '查阅更多',
@@ -80,6 +88,9 @@ export default {
     terms_and_conditions: 'Terms and Conditions',
     privacy_policy: '隐私协议',
     copyright: `Copyright © ${new Date().getFullYear()} Injective Labs, Inc. All rights reserved.`,
+
+    // Todo::translate
+    media_kit: 'Media Kit',
   },
   home: {
     waitlist_title:

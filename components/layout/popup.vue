@@ -27,7 +27,7 @@
         </svg>
       </button>
       <h2 class="popup__header">
-        Join the Future of <br /><span>Decentralized Finance</span>
+        {{ $t('header.join_the_future') }}
       </h2>
       <client-only>
         <waitlist

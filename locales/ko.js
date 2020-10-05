@@ -15,6 +15,11 @@ export default {
   },
   header: {
     join_waitlist: '거래소 대기자 명단',
+
+    // Todo:: translate
+    chat: 'Chat',
+    join_the_future:
+      'Join the Future of <br /><span>Decentralized Finance</span>',
   },
   ecosystem: {
     waitlist_title:
@@ -67,6 +72,9 @@ export default {
     hero_subtitle2:
       '탈중앙형 금융시장에서 다양한 견해를 표현할 수 있는 무제한적이고 전례 없는 능력을 제공함으로써, 우리 사회에서 자본을 보다 효율적으로 배분할 수 있는 능력을 개인에게 부여하기 위해 노력하고 있습니다.',
     see_open_roles: '모집하는 직책을 확인해보세요',
+
+    // Todo::translate
+    our_team: 'Our Team',
   },
   footer: {
     explore: '탐험하기',
@@ -81,6 +89,9 @@ export default {
     terms_and_conditions: '이용약관',
     privacy_policy: '개인 정보 정책',
     copyright: `Copyright © ${new Date().getFullYear()} Injective Labs, Inc. All rights reserved.`,
+
+    // Todo::translate
+    media_kit: 'Media Kit',
   },
   home: {
     waitlist_title:

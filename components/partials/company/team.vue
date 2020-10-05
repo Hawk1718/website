@@ -218,7 +218,7 @@
     </div>
     <div class="team__main">
       <div v-scroll-reveal class="container">
-        <h2 class="sec-title team__title">Our team</h2>
+        <h2 class="sec-title team__title">{{ $t('company.our_team') }}</h2>
         <div class="team__wrap">
           <div class="team-item">
             <h3 class="team-item__name">Eric Chen</h3>

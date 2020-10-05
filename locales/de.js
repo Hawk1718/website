@@ -17,6 +17,10 @@ export default {
   header: {
     chat: 'Chat',
     join_waitlist: 'Exchange Warteliste',
+
+    // Todo:: translate
+    join_the_future:
+      'Join the Future of <br /><span>Decentralized Finance</span>',
   },
   ecosystem: {
     waitlist_title:
@@ -73,6 +77,9 @@ export default {
     hero_subtitle2:
       'Durch die uneingeschränkte und beispiellose Möglichkeit, auf den dezentralen Finanzmärkten unterschiedliche Ansichten zu vertreten, möchten wir Einzelpersonen die Möglichkeit geben, Kapital in unserer Gesellschaft effizienter zuzuweisen.',
     see_open_roles: 'Siehe offene Stellen',
+
+    // Todo::translate
+    our_team: 'Our Team',
   },
   footer: {
     explore: 'Erkunde',
@@ -87,6 +94,8 @@ export default {
     terms_and_conditions: 'Terms and Conditions',
     privacy_policy: 'Privacy Policy',
     copyright: `Copyright © ${new Date().getFullYear()} Injective Labs, Inc. All rights reserved.`,
+
+    // Todo::translate
     media_kit: 'Media Kit',
   },
   home: {
