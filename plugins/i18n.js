@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import VueI18n from 'vue-i18n'
 import en from './../locales/en'
+import de from './../locales/de'
+import ru from './../locales/ru'
 import zh from './../locales/zh'
 
 Vue.use(VueI18n)
@@ -11,6 +13,8 @@ export default ({ app, store }) => {
     fallbackLocale: 'en',
     messages: {
       en,
+      de,
+      ru,
       zh,
     },
   })
