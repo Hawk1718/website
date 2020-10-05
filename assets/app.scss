@@ -19,3 +19,9 @@
 @import './scss/questions.scss';
 @import './scss/team.scss';
 @import './scss/article.scss';
+
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;

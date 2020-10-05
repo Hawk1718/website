@@ -145,6 +145,11 @@ export default {
     gzip: true,
   },
 
+  tailwindcss: {
+    cssPath: '~/assets/css/app.scss',
+    configPath: './tailwind.config.js',
+  },
+
   toast: {
     position: 'bottom-right',
     duration: 6000,
@@ -160,6 +165,7 @@ export default {
     '@nuxtjs/sitemap',
     '@nuxtjs/axios',
     '@nuxtjs/toast',
+    '@nuxtjs/tailwindcss',
   ],
 
   router: {
