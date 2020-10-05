@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueI18n from 'vue-i18n'
-import { en, de, ru, ko, defaultLocale } from '~/locales'
+import { en, de, ru, ko, zh, defaultLocale } from '~/locales'
 
 Vue.use(VueI18n)
 
@@ -13,6 +13,7 @@ export default ({ app, store }) => {
       de,
       ru,
       ko,
+      zh,
     },
   })
 

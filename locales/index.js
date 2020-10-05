@@ -10,6 +10,7 @@ export const locales = [
   englishLocale,
   deutscheLocale,
   koreanLocale,
+  chineseLocale,
   russianLocale,
 ]
 
