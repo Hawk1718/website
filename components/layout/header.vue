@@ -26,7 +26,35 @@
                 {{ $t('nav.blog') }}
               </a>
             </li>
+            <li>
+              <button
+                type="button"
+                class="btn"
+                @click.stop="toggleLocaleDropdown"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M4,12c0-0.899,0.156-1.762,0.431-2.569L6,11l2,2 v2l2,2l1,1v1.931C7.061,19.436,4,16.072,4,12z M18.33,16.873C17.677,16.347,16.687,16,16,16v-1c0-1.104-0.896-2-2-2h-4v-2v-1 c1.104,0,2-0.896,2-2V7h1c1.104,0,2-0.896,2-2V4.589C17.928,5.778,20,8.65,20,12C20,13.835,19.373,15.522,18.33,16.873z"
+                  />
+                </svg>
+              </button>
+            </li>
           </ul>
+          <div class="dropdown-menu right" :class="{ open: localeDropdown }">
+            <a
+              v-for="locale in visibleLocales"
+              :key="`locale-${locale.name}`"
+              :href="$i18n.pathFromLocale($route.fullPath, locale.locale)"
+              class="dropdown-item"
+            >
+              {{ locale.name }}
+            </a>
+          </div>
         </nav>
         <div class="header__bar">
           <button
@@ -85,7 +113,22 @@
 </template>
 
 <script>
+import { clientLocales } from '~/locales'
+
 export default {
+  data() {
+    return {
+      locales: clientLocales,
+      localeDropdown: false,
+    }
+  },
+
+  computed: {
+    visibleLocales() {
+      return this.locales.filter(({ locale }) => locale !== this.$i18n.locale)
+    },
+  },
+
   mounted() {
     $(window).on('scroll', function () {
       if ($(window).scrollTop() > $(window).height()) {
@@ -94,6 +137,18 @@ export default {
         $('#js-header').removeClass('fix')
       }
     })
+  },
+
+  methods: {
+    changeLocale({ locale }) {
+      this.$i18n.locale = locale
+      this.$store.commit('SET_LOCALE', locale)
+      this.$router.push({ name: this.$route.name, params: { lang: locale } })
+    },
+
+    toggleLocaleDropdown() {
+      this.localeDropdown = !this.localeDropdown
+    },
   },
 }
 </script>

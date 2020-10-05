@@ -379,18 +379,6 @@
       </div>
       <div class="footer__bottom">
         <ul class="footer__links">
-          <!--
-          <li>
-            <img
-              v-for="locale in visibleLocales"
-              :key="`locale-${locale.name}`"
-              :src="`${locale.flag}`"
-              class="locale"
-              :alt="locale.name"
-              @click="changeLocale(locale)"
-            />
-          </li>
-          -->
           <li>
             <NuxtLink :to="$i18n.path('terms-and-conditions')">
               {{ $t('footer.terms_and_conditions') }}
@@ -409,48 +397,3 @@
     </div>
   </footer>
 </template>
-
-<script>
-export default {
-  data() {
-    return {
-      locales: [
-        {
-          name: 'English',
-          flag: '/flags/us.png',
-          locale: 'en',
-        },
-        {
-          name: 'German',
-          flag: '/flags/de.png',
-          locale: 'de',
-        },
-        {
-          name: 'Russian',
-          flag: '/flags/ru.png',
-          locale: 'ru',
-        },
-        {
-          name: 'Chinese',
-          flag: '/flags/cn.png',
-          locale: 'zh',
-        },
-      ],
-    }
-  },
-
-  computed: {
-    visibleLocales() {
-      return this.locales.filter(({ locale }) => locale !== this.$i18n.locale)
-    },
-  },
-
-  methods: {
-    changeLocale({ locale }) {
-      this.$i18n.locale = locale
-      this.$store.commit('SET_LOCALE', locale)
-      this.$router.push({ name: this.$route.name, params: { lang: locale } })
-    },
-  },
-}
-</script>

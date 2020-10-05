@@ -45,8 +45,30 @@
               href="https://medium.com/injective-labs"
               target="_blank"
               rel="noreferrer"
-              >{{ $t('nav.blog') }}</a
             >
+              {{ $t('nav.blog') }}
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://t.me/joininjective"
+              role="button"
+              target="_blank"
+              rel="noreferrer"
+              style="cursor: pointer"
+            >
+              <span style="margin-right: 0.25rem">{{ $t('header.chat') }}</span>
+            </a>
+          </li>
+          <li class="mobile-locale">
+            <a
+              v-for="locale in visibleLocales"
+              :key="`mobile-locale-${locale.name}`"
+              :href="$i18n.pathFromLocale($route.fullPath, locale.locale)"
+              class="mobile-locale-item"
+            >
+              {{ locale.name }}
+            </a>
           </li>
         </ul>
       </nav>
@@ -55,11 +77,25 @@
 </template>
 
 <script>
+import { clientLocales } from '~/locales'
+
 export default {
   props: {
     isOpen: {
       required: true,
       type: Boolean,
+    },
+  },
+
+  data() {
+    return {
+      locales: clientLocales,
+    }
+  },
+
+  computed: {
+    visibleLocales() {
+      return this.locales.filter(({ locale }) => locale !== this.$i18n.locale)
     },
   },
 }

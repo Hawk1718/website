@@ -1,6 +1,8 @@
+import { locales, defaultLocale } from '~/locales'
+
 export const state = () => ({
-  locales: ['en', 'de', 'ru', 'zh'],
-  locale: 'en',
+  locales,
+  locale: defaultLocale,
 })
 
 export const mutations = {
