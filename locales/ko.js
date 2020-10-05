@@ -65,7 +65,7 @@ export default {
   },
   company: {
     heading:
-      '미래를 만들 수 있도록 도와주세요 <br /><span><span>탈중앙형 금융의</span> <br /><span>Finance</span></span>',
+      '미래를 만들 수 있도록 도와주세요 <br /><span><span>탈중앙형 금융의</span>',
     hero_title: '모두를 위한 진정한 자유로운 탈중앙형 금융 네트워크를 만듭니다',
     hero_subtitle:
       '인젝티브의 사명은 탈중앙화를 통해 보다 자유롭고 포용적인 금융시스템을 만드는 것입니다.',

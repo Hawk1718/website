@@ -23,7 +23,7 @@ export default {
   },
   ecosystem: {
     waitlist_title:
-      '开启交易的无限可能Start trading with<span>true freedom</span> and <br/> <span>unlimited</span> <br/> <span>possibilities</span>',
+      '开启交易的<span>无限可能</span>',
     hero_title: 'Injective Protocol, 一个完全去中心化的 Layer-2 DeFi 协议',
     hero_subtitle:
       '一个强大的、可高度参数化的DeFi协议，以支持去中心化的差价合约(CFD)、永续掉期等各类衍生品市场',
@@ -48,7 +48,7 @@ export default {
     injective_governance_text2:
       'Injective 是去中心化的，社区通过通证实现治理功能，任何通证持有人均可参与并且对整个协议的治理拥有发言权。',
     questions_title:
-      'Injective解决了哪些问题<span>What problem does</span> <br /><span> Injective solve?</span>',
+      '<span>Injective</span>解决了哪些问题',
     question_1:
       'Injective 将权力移交至用户，让用户实现真正自由和去中心化的交易。',
     question_2:
@@ -56,7 +56,7 @@ export default {
     question_3:
       'Injective不认同去中心化即牺牲了效率和用户体验，并致力于将高性能、无限制和完全去中心化的交易协议的愿景变为现实。',
     question_title_2:
-      '<span>How is</span> <br /><span>Injective Different?</span>',
+      '<span>Injective</span> <br /><span>有何不同?</span>',
     question_4: '开拓全新的去中心化金融.',
     question_5:
       'Injective Protocol 与其他交易平台的根本区别在于，我们使“交易”成为一种去中心化的“公共设施”，从而使我们的用户和社区从平台中获取价值。',
@@ -65,7 +65,7 @@ export default {
   },
   company: {
     heading:
-      '与我们共同打造 <br /><span><span> 去中心化</span> <br /><span>金融</span></span>的未来',
+      '与我们共同打造 <br /><span><span> 去中心化金融</span></span>的未来',
     hero_title: '为所有用户打造一个完全自由的去中心化金融网络',
     hero_subtitle: '我们的使命是通过权力下放建立一个更加自由和包容的金融体系。',
     hero_subtitle2:
@@ -94,12 +94,12 @@ export default {
   },
   home: {
     waitlist_title:
-      '开启交易的无限可能Start trading with <span>true freedom</span> and <br /><span> unlimited</span> <br /><span>possibilities</span>',
+      '开启交易的<span>无限可能</span> ',
     hero_title: '快速、安全、完全去中心化交易',
     hero_subtitle:
       'Injective是业内首个 layer-2 去中心化交易协议，可释放无边界去中心化金融的全部潜力。',
     limitless_title:
-      '在首个完全去中心化交易平台上进行无限制交易Limitless trading on the first fully<br /> <span>Decentralized</span><br /><span>Exchange</span>',
+      '在首个<br /> <span>完全去中心化</span><br /><span>交易平台上<br /> <span>进行无限制交易</span>',
     fully_decentralized: '完全去中心化',
     fully_decentralized_text:
       'Injective 链是一个完全去中心化的侧链网络，可用作 layer-2 衍生品平台、交易协调器 (TEC) 和去中心化的订单簿。其核心共识基于Tendermint。',
@@ -116,7 +116,7 @@ export default {
     zero_gas_fees_text:
       '基于独特的layer-2结构，Injective能够避免网络堵塞及其产生的高昂gas费用。0 gas费可以使用户自由交易，而不必担心高额手续费或网络延迟。',
     trailblazing_title:
-      '开拓去中心化金融的新曙光Trailblazing the new dawn of <br /><span> <span>Decentralized</span> <br /><span>Finance</span></span> ',
+      '开拓去中心化金融的<br /><span> <span>新曙光</span></span>',
     trailblazing_subtitle:
       'Injective Protocol 为交易者提供了前所未有的进入去中心化衍生品市场的机会。',
     trailblazing_item_1: '可交易任何市场',
