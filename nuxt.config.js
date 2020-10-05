@@ -1,5 +1,5 @@
 import { ProvidePlugin } from 'webpack'
-import { locales, defaultLocale } from './locales'
+import { locales, defaultLocale, englishLocale } from './locales'
 
 const pages = [
   '/',
@@ -21,6 +21,9 @@ export default {
    */
   head: {
     title: 'Fast, Secure, and Fully Decentralized Trading',
+    htmlAttrs: {
+      lang: englishLocale,
+    },
     script: [
       {
         src: 'https://referlist.co/resources/referlist.js',
@@ -160,7 +163,7 @@ export default {
    ** Nuxt.js modules
    */
   modules: [
-    // '@nuxtjs/pwa',
+    '@nuxtjs/pwa',
     '@nuxtjs/google-gtag',
     '@nuxtjs/sitemap',
     '@nuxtjs/axios',

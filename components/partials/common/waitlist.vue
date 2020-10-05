@@ -9,10 +9,11 @@
       <slot></slot>
       <form :class="formClass" @submit.prevent="onSubmit">
         <validation-provider v-slot="{ errors }" rules="required|email">
-          <label for="email" style="position: absolute; opacity: 0"
+          <label :for="`email_${_uid}`" style="position: absolute; font-size: 0"
             >Email</label
           >
           <input
+            :id="`email_${_uid}`"
             v-model="email"
             type="email"
             name="email"
