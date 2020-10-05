@@ -1,4 +1,5 @@
 import { ProvidePlugin } from 'webpack'
+import { locales, defaultLocale } from './locales'
 
 const pages = [
   '/',
@@ -174,10 +175,10 @@ export default {
   plugins: ['~/plugins/i18n.js', { src: '~/plugins/reveal', ssr: false }],
   generate: {
     routes: pages.reduce((routes, page) => {
-      const dePage = `/de${page === '/' ? '' : page}`
-      const ruPage = `/ru${page === '/' ? '' : page}`
-      const zhPage = `/zh${page === '/' ? '' : page}`
-      return [...routes, page, dePage, ruPage, zhPage]
+      const newPages = locales
+        .filter((locale) => locale !== defaultLocale)
+        .map((locale) => `/${locale}${page === '/' ? '' : page}`)
+      return [...routes, page, ...newPages]
     }, []),
   },
   /*
