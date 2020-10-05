@@ -421,6 +421,16 @@ export default {
           locale: 'en',
         },
         {
+          name: 'German',
+          flag: '/flags/de.png',
+          locale: 'de',
+        },
+        {
+          name: 'Russian',
+          flag: '/flags/ru.png',
+          locale: 'ru',
+        },
+        {
           name: 'Chinese',
           flag: '/flags/cn.png',
           locale: 'zh',

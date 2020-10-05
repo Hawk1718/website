@@ -20,7 +20,7 @@ export default {
   },
   ecosystem: {
     waitlist_title:
-      'Start trading with<span>true freedom</span> and <br/> <span>unlimited</span> <br/> <span>possibilities</span>',
+      'Start trading with<span>true freedom</span> and <br/> <span>unlimited</span> <br/> <span>possibilities</span>.',
     hero_title:
       'Injective Protocol, a fully decentralized Layer-2 DeFi protocol',
     hero_subtitle:
@@ -54,7 +54,7 @@ export default {
     question_1:
       'Injective brings power back to the people by enabling truly free and decentralized trading for everyone.',
     question_2:
-      'Many DEXs today claim to be decentralized but are actually centralized in most aspects besides custody.From restricting access to certain user demographics, retaining proprietary control over exchange infrastructure, to even requiring KYC in some cases, every central limit orderbook DEX that we have seen has centralized components that allow traders to be subject to the will of a some omnipotent authority.This is the fundamental problem that Injective solves.',
+      'Many DEXs today claim to be decentralized but are actually centralized in most aspects besides custody. From restricting access to certain user demographics, retaining proprietary control over exchange infrastructure, to even requiring KYC in some cases, every central limit orderbook DEX that we have seen has centralized components that allow traders to be subject to the will of a some omnipotent authority. This is the fundamental problem that Injective solves.',
     question_3:
       'The common rationale against full decentralization is that efficiency and user experience are sacrificed.We at Injective reject this notion and have committed ourselves to turning the vision of a highly performant, permissionless, and fully- decentralized exchange protocol into reality.',
     question_title_2:

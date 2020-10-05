@@ -174,8 +174,10 @@ export default {
   plugins: ['~/plugins/i18n.js', { src: '~/plugins/reveal', ssr: false }],
   generate: {
     routes: pages.reduce((routes, page) => {
+      const dePage = `/de${page === '/' ? '' : page}`
+      const ruPage = `/ru${page === '/' ? '' : page}`
       const zhPage = `/zh${page === '/' ? '' : page}`
-      return [...routes, page, zhPage]
+      return [...routes, page, dePage, ruPage, zhPage]
     }, []),
   },
   /*
