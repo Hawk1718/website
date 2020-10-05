@@ -128,7 +128,7 @@ export default {
     trailblazing_item_1: 'Trade on anything',
     trailblazing_item_1_text:
       'Injective gives you the freedom to create and trade on any derivatives market of your choosing.',
-    learn_more: 'Learn more',
+    learn_more: 'Read more in our docs',
     trailblazing_item_2: 'Earn Yield',
     trailblazing_item_2_text:
       'Earn cross-chain yield on Ethereum, Cosmos and other decentralized networks.',

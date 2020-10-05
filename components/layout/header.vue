@@ -30,6 +30,7 @@
               <button
                 type="button"
                 class="btn"
+                aria-label="Language"
                 @click.stop="toggleLocaleDropdown"
               >
                 <svg

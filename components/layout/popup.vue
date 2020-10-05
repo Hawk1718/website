@@ -26,9 +26,7 @@
           />
         </svg>
       </button>
-      <h2 class="popup__header">
-        {{ $t('header.join_the_future') }}
-      </h2>
+      <h2 class="popup__header" v-html="$t('header.join_the_future')"></h2>
       <client-only>
         <waitlist
           input-class="main-form-form__input"

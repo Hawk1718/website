@@ -237,7 +237,11 @@
             <div class="footer-nav">
               <ul>
                 <li>
-                  <a href="https://github.com/InjectiveLabs" target="_blank">
+                  <a
+                    href="https://github.com/InjectiveLabs"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <span class="icn">
                       <svg
                         width="24"

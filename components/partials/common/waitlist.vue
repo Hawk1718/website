@@ -9,6 +9,9 @@
       <slot></slot>
       <form :class="formClass" @submit.prevent="onSubmit">
         <validation-provider v-slot="{ errors }" rules="required|email">
+          <label for="email" style="position: absolute; opacity: 0"
+            >Email</label
+          >
           <input
             v-model="email"
             type="email"
