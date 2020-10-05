@@ -51,7 +51,7 @@ export default {
     question_3:
       'Injective不认同去中心化即牺牲了效率和用户体验，并致力于将高性能、无限制和完全去中心化的交易协议的愿景变为现实。',
     question_title_2:
-      '<span>How is</span> <br /><span>Injective Different?</span>',
+      '<span>Injective</span> <br /><span>有何不同?</span>',
     question_4: '开拓全新的去中心化金融.',
     question_5:
       'Injective Protocol 与其他交易平台的根本区别在于，我们使“交易”成为一种去中心化的“公共设施”，从而使我们的用户和社区从平台中获取价值。',
@@ -88,7 +88,7 @@ export default {
     hero_subtitle:
       'Injective是业内首个 layer-2 去中心化交易协议，可释放无边界去中心化金融的全部潜力。',
     limitless_title:
-      '在首个完全去中心化交易平台上<br /> <span>进行</span><br /><span>无限制交易</span>',
+      '在首个<br /> <span>完全去中心化</span><br /><span>交易平台上进行<br /> <span>无限制交易</span><br /><span>',
     fully_decentralized: '完全去中心化',
     fully_decentralized_text:
       'Injective 链是一个完全去中心化的侧链网络，可用作 layer-2 衍生品平台、交易协调器 (TEC) 和去中心化的订单簿。其核心共识基于Tendermint。',
