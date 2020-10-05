@@ -60,7 +60,7 @@ export default {
   },
   company: {
     heading:
-      '与我们共同打造 <br /><span><span> 去中心化</span> <br /><span>金融</span></span>的未来',
+      '与我们共同打造 <br /><span><span> 去中心化金融</span></span>的未来',
     hero_title: '为所有用户打造一个完全自由的去中心化金融网络',
     hero_subtitle: '我们的使命是通过权力下放建立一个更加自由和包容的金融体系。',
     hero_subtitle2:
@@ -88,7 +88,7 @@ export default {
     hero_subtitle:
       'Injective是业内首个 layer-2 去中心化交易协议，可释放无边界去中心化金融的全部潜力。',
     limitless_title:
-      '在首个<br /> <span>完全去中心化交易平台上</span><br /><span>进行<br /> <span>无限制交易<span>',
+      '在首个<br /> <span>完全去中心化</span><br /><span>交易平台上进行<br /> <span>无限制交易</span>',
     fully_decentralized: '完全去中心化',
     fully_decentralized_text:
       'Injective 链是一个完全去中心化的侧链网络，可用作 layer-2 衍生品平台、交易协调器 (TEC) 和去中心化的订单簿。其核心共识基于Tendermint。',
