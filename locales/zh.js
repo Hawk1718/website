@@ -22,8 +22,7 @@ export default {
       'Join the Future of <br /><span>Decentralized Finance</span>',
   },
   ecosystem: {
-    waitlist_title:
-      '开启交易的<span>无限可能</span>',
+    waitlist_title: '开启交易的<span>无限可能</span>',
     hero_title: 'Injective Protocol, 一个完全去中心化的 Layer-2 DeFi 协议',
     hero_subtitle:
       '一个强大的、可高度参数化的DeFi协议，以支持去中心化的差价合约(CFD)、永续掉期等各类衍生品市场',
@@ -47,16 +46,14 @@ export default {
     injective_governance_text: '社区自治和驱动。',
     injective_governance_text2:
       'Injective 是去中心化的，社区通过通证实现治理功能，任何通证持有人均可参与并且对整个协议的治理拥有发言权。',
-    questions_title:
-      '<span>Injective</span>解决了哪些问题',
+    questions_title: '<span>Injective</span>解决了哪些问题',
     question_1:
       'Injective 将权力移交至用户，让用户实现真正自由和去中心化的交易。',
     question_2:
       '当今众多去中心化交易平台在除了托管方面都具备相当中心化的设计。从限制某些地域的用户访问、保持对交易基础结构的专有控制、到在某些情况下要求KYC，我们看到的使用“中央限价订单簿”模型的去中心化交易所都具有中心化的组件，使交易者服从于其权威。这是Injective要解决的根本问题。',
     question_3:
       'Injective不认同去中心化即牺牲了效率和用户体验，并致力于将高性能、无限制和完全去中心化的交易协议的愿景变为现实。',
-    question_title_2:
-      '<span>Injective</span> <br /><span>有何不同?</span>',
+    question_title_2: '<span>Injective</span> <br /><span>有何不同?</span>',
     question_4: '开拓全新的去中心化金融.',
     question_5:
       'Injective Protocol 与其他交易平台的根本区别在于，我们使“交易”成为一种去中心化的“公共设施”，从而使我们的用户和社区从平台中获取价值。',
@@ -93,8 +90,7 @@ export default {
     media_kit: 'Media Kit',
   },
   home: {
-    waitlist_title:
-      '开启交易的<span>无限可能</span> ',
+    waitlist_title: '开启交易的<span>无限可能</span> ',
     hero_title: '快速、安全、完全去中心化交易',
     hero_subtitle:
       'Injective是业内首个 layer-2 去中心化交易协议，可释放无边界去中心化金融的全部潜力。',
