@@ -56,7 +56,7 @@ export default {
     question_1:
       'Injective bringt wieder Einfluss zurück zu den Menschen, indem es einen wirklich freien und dezentralen Handel für alle ermöglicht.',
     question_2:
-      'Viele DEXs behaupten heute, dezentralisiert zu sein, sind aber in den meisten Aspekten neben der Verwaltung tatsächlich zentralisiert. Von der Einschränkung des Zugriffs auf bestimmte Benutzerdemografien über die Beibehaltung der proprietären Kontrolle über die Exchange-Infrastruktur bis hin zur Anforderung von KYC, hat jede zentrale Limit-Orderbuch DEX, die wir gesehen haben zentralisierte Komponenten, die es Händlern ermöglichen, dem Willen einer allmächtigen Autorität zu unterliegen. Dies ist das grundlegende Problem, das Injective löst.',
+      'Viele DEXs behaupten heute, dezentralisiert zu sein, sind aber in den meisten Aspekten neben der Verwaltung tatsächlich zentralisiert. Von der Einschränkung des Zugriffs auf bestimmte Benutzerdemografien über die Beibehaltung der proprietären Kontrolle über die Exchange-Infrastruktur hat jede zentrale Limit-Orderbuch DEX, die wir gesehen haben, zentralisierte Komponenten, die es Händlern ermöglichen, dem Willen einer allmächtigen Autorität zu unterliegen. Dies ist das grundlegende Problem, das Injective löst.',
     question_3:
       'Das Grundprinzip gegen eine vollständige Dezentralisierung ist, dass Effizienz und Benutzererfahrung geopfert werden. Wir von Injective lehnen diesen Gedanken ab und haben uns verpflichtet, die Vision eines hochleistungsfähigen und vollständig dezentralisierten Exchange-Protokolls mit freiem Zugriff in die Realität umzusetzen.',
     question_title_2:
