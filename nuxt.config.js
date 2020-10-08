@@ -169,6 +169,13 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/toast',
     '@nuxtjs/tailwindcss',
+    [
+      '@netsells/nuxt-hotjar',
+      {
+        id: '2031687',
+        sv: '6',
+      },
+    ],
   ],
 
   router: {

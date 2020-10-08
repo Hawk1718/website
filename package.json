@@ -20,6 +20,7 @@
     }
   },
   "dependencies": {
+    "@netsells/nuxt-hotjar": "^0.1.2",
     "@nuxtjs/axios": "^5.12.2",
     "@nuxtjs/google-gtag": "^1.0.4",
     "@nuxtjs/pwa": "latest",
