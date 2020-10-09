@@ -1,128 +1,139 @@
 export default {
   nav: {
-    injective_ecosystem: 'Hệ sinh thái của Injective Protocol',
+    injective_ecosystem: 'Injective Ecosystem',
     blog: 'Blog',
-    about: 'Thông tin',
-    company: 'Công ty',
+    about: 'About',
+    company: 'Company',
   },
   common: {
-    our_family: 'Gia đình của chúng tôi',
+    our_family: 'Our Family',
   },
   form: {
     your_email: 'email@example.com',
-    email_error: 'Vui lòng kiểm tra lại địa chỉ email',
-    thanks_waitlist: 'Cám ơn! Chúng tôi đã nhận được yêu cầu của bạn.',
+    email_error: 'Please correct your email address',
+    thanks_waitlist: 'Thank you! Your submission has been received.',
+    email_exists: 'Email already registered',
   },
   header: {
-    join_waitlist: 'Tham gia danh sách chờ',
+    chat: 'Chat',
+    join_waitlist: 'Exchange Waitlist',
+    join_the_future:
+      'Join the Future of <br /><span>Decentralized Finance</span>',
   },
   ecosystem: {
     waitlist_title:
-      'Bắt đầu giao dịch với<span>sự tự do thật sự</span> và <br/> <span>không giới hạn</span> <br/> <span>những khả năng</span>',
+      'Start trading with<span>true freedom</span> and <br/> <span>unlimited</span> <br/> <span>possibilities</span>.',
     hero_title:
-      'Injective Protocol, một giao thức Layer-2 Defi hoàn toàn phi tập trung',
+      'Injective Protocol, a fully decentralized Layer-2 DeFi protocol',
     hero_subtitle:
-      ' Một giao thức DeFi được tham số hóa mạnh mẽ, hiệu suất cao hỗ trợ một loạt các dẫn xuất, bao gồm CFD, hoán đổi vô thời hạn và hơn thế nữa.',
-    learn_how: 'Tìm hiểu thêm về cách hoạt động của Injective Protocol',
-    learn_how_text: 'Tìm hiểu sâu hơn về kiến trúc của Injective Protocol',
-    learn_how_docs: 'Khám phá các tài liệu của chúng tôi',
-    heading: 'Những tính năng cốt lõi',
-    injective_chain: 'Chuỗi Injective',
+      'A robust, highly parameterizable DeFi protocol supporting a diverse array of derivatives including CFDs, perpetual swaps and more.',
+    learn_how: 'Learn how Injective works',
+    learn_how_text:
+      'Get a high–level understanding of Injective’s architecture',
+    learn_how_docs: 'Explore our docs',
+    heading: 'Core Features',
+    injective_chain: 'Injective Chain',
     injective_chain_text:
-      'Cơ sở hạ tầng hỗ trợ cho các ứng dụng DeFi thế hệ tiếp theo',
+      'The infrastructure powering next–generation DeFi applications',
     injective_chain_text2:
-      'Layer-2 Cosmos Zone lưu trữ giao thức giao dịch hoàn toàn phi tập trung đáng tin cậy đầu tiên trên thế giới. Chúng tôi đã xây dựng sổ lệnh hoàn toàn phi tập trung đầu tiên trên thế giới, điều phối thực hiện giao dịch, trình khớp lệnh và môi trường khớp lệnh.',
-    injective_futures: 'Giao thức tương lai Injective',
+      'A layer-2 Cosmos zone that hosts the first trustless and fully decentralized exchange protocol. We have built the first fully decentralized orderbook, trade execution coordinator, order matcher and order execution environment.',
+    injective_futures: 'Injective Futures Protocol',
     injective_futures_text:
-      'Mở ra một kỷ nguyên mới cho việc truy cập tài chính không bị kiểm soát',
+      'Unlocking a new permissionless era of financial access',
     injective_futures_text2:
-      'Một giao thức tương lai ngang hàng hoàn toàn phi tập trung hỗ trợ tính năng hoán đổi vĩnh viễn phi tập trung và các hợp đồng chênh lệch (CFD). Điều này sẽ cho phép bất kỳ ai cũng có thể tạo và giao dịch trên các thị trường phái sinh tùy ý chỉ với một nguồn cấp dữ liệu giá.',
-    injective_exchange: 'Sàn giao dịch Injective',
+      'A fully decentralized peer-to-peer futures protocol supporting decentralized perpetual swaps and contracts for difference(CFDs). This will enable anyone to create and trade on arbitrary derivative markets with just a price feed.',
+    injective_exchange: 'Injective Exchange',
     injective_exchange_text:
-      ' Đi tiên phong trong một mô hình trao đổi mới như một tiện ích công cộng',
+      'Pioneering a new model of exchange as a public utility',
     injective_exchange_text2:
-      'Cơ sở hạ tầng sàn giao dịch phi tập trung với mã nguồn mở. Chúng tôi thay đổi mô hình kinh doanh của sàn giao dịch truyền thống bằng cách loại bỏ rào cản kỹ thuật gia nhập để một người có thể vận hành sàn phi tập trung một cách phân quyền và mang lại hiệu quả cao trên Injective Protocol.',
-    injective_governance: 'Quản trị Injective',
-    injective_governance_text: ' Do cộng đồng sở hữu và thúc',
+      'A completely open-source exchange infrastructure that disintermediates the current centralized exchange model. Injective eliminates the technical barriers of entry for anyone to trade on a highly performant exchange.',
+    injective_governance: 'Injective Governance',
+    injective_governance_text: 'Community owned and driven',
     injective_governance_text2:
-      'Injective hoàn toàn phi tập trung và được quản lý bởi cộng đồng bằng cách sử dụng Injective Token. Bất kỳ ai cũng có thể tham gia với tư cách là một bên liên quan cho dự án của chúng tôi và có tiếng nói thực sự trong việc đưa ra quyết định trong giao thức của chúng tôi.',
+      'Injective is decentralized and governed by the community using the Injective Token. Anyone can join as a stakeholder for our project and have a real say in making decisions in our protocol.',
     questions_title:
-      '<span>Những vấn đề nào sẽ được</span> <br /><span> giải quyết bởi Injective?</span>',
+      '<span>What problem does</span> <br /><span> Injective solve?</span>',
     question_1:
-      'Injective trao quyền làm chủ cho người dùng bằng cách cho phép giao miễn phí và phi tập trung cho tất cả mọi người.',
+      'Injective brings power back to the people by enabling truly free and decentralized trading for everyone.',
     question_2:
-      'Nhiều DEX ngày nay tuyên bố là phi tập trung nhưng thực sự là tập trung ở hầu hết các khía cạnh ngoài quyền lưu ký.Từ việc hạn chế quyền truy cập vào một số nhân khẩu học người dùng nhất định, duy trì quyền kiểm soát độc quyền đối với cơ sở hạ tầng trao đổi, mọi sổ lệnh giới hạn trung tâm DEX mà chúng tôi đã thấy đều có các thành phần tập trung cho phép các nhà giao dịch tuân theo ý muốn của một cơ quan toàn năng nào đó.Đây là vấn đề cơ bản mà Injective sẽ giải quyết.',
+      'Many DEXs today claim to be decentralized but are actually centralized in most aspects besides custody. From restricting access to certain user demographics, retaining proprietary control over exchange infrastructure, every central limit orderbook DEX that we have seen has centralized components that allow traders to be subject to the will of a some omnipotent authority. This is the fundamental problem that Injective solves.',
     question_3:
-      ' Cơ sở lý luận chung chống lại phân quyền hoàn toàn là hiệu quả và trải nghiệm người dùng bị hy sinh. Chúng tôi tại Injective bác bỏ quan điểm này và đã cam kết biến tầm nhìn về một giao thức trao đổi có hiệu suất cao, phân quyền và hoàn toàn phi tập trung thành hiện thực.',
+      'The common rationale against full decentralization is that efficiency and user experience are sacrificed.We at Injective reject this notion and have committed ourselves to turning the vision of a highly performant, permissionless, and fully- decentralized exchange protocol into reality.',
     question_title_2:
-      '<span>Injective</span> <br /><span>khác biệt như thế nào?</span>',
-    question_4: ' Đi tiên phong trong một nền kinh tế phi tập trung mới.',
+      '<span>How is</span> <br /><span>Injective Different?</span>',
+    question_4: 'Pioneering a new decentralized economy.',
     question_5:
-      'Sự khác biệt cơ bản lớn nhất giữa Injective Protocol và các sàn giao dịch khác là chúng tôi làm cho việc giao dịch trở thành một tiện ích công cộng phi tập trung, mang lại cho người dùng và cộng đồng của chúng tôi những giá trị có được từ giao thức trao đổi của chúng tôi.',
+      'The biggest fundamental difference between Injective Protocol and other exchanges is that we make exchange a decentralized public utility which gives our users and community the resultant value capture from our exchange protocol.',
     question_6:
-      'Công nghệ của chúng tôi mang đến một trật tự tăng tốc bằng cách mở rộng quy mô thực hiện và thanh toán giao dịch trên layer 2 ở trạng thái hoàn toàn phi tập trung. Bản chất hoàn toàn phi tập trung của Injective cho phép các cá nhân tạo và giao dịch các thị trường phái sinh mà ngay cả các sàn giao dịch tập trung cũng không thể hỗ trợ.',
+      'Our technology brings an order of magnitude speedup by scaling trade execution and settlement on layer- 2 all while being fully decentralized.Injective’s fully decentralized nature uniquely allows individuals to permissionlessly create and trade derivative markets that even centralized exchanges cannot support.',
   },
   company: {
     heading:
-      'Giúp chúng tôi xây dựng tương lai của<br /><span><span> Tài chính</span> <br /><span>phi tập trung</span></span>',
+      'Help us build the future of <br /><span><span> Decentralized</span> <br /><span>Finance</span></span>',
     hero_title:
-      'Tạo lập một mạng lưới tài chính phi tập trung miễn phí cho mọi người',
+      'Creating a truly free and Decentralized Financial Network for everyone',
     hero_subtitle:
-      ' Nhiệm vụ của chúng tôi là tạo ra một hệ thống tài chính tự do và toàn diện hơn thông qua tính phân quyền.',
+      'Our mission is to create a more free and inclusive financial system through decentralization.',
     hero_subtitle2:
-      'Bằng cách cung cấp khả năng không hạn chế và chưa từng có để thể hiện các quan điểm đa dạng trong thị trường tài chính phi tập trung, chúng tôi đang cố gắng trao quyền cho các cá nhân có khả năng phân bổ vốn hiệu quả hơn trong xã hội của chúng tôi.',
-    see_open_roles: ' Xem thêm về các vài trò',
+      'By providing the unrestricted and unprecedented ability to express diverse views in the decentralized financial markets, we are striving to empower individuals with the ability to more efficiently allocate capital in our society.',
+    see_open_roles: 'See open roles',
+
+    // Todo::translate
+    our_team: 'Our Team',
   },
   footer: {
-    explore: 'Khám phá',
-    exchange: 'Giao dịch',
-    coming_soon: 'Sắp có',
-    careers: 'Nghề nghiệp',
-    we_are_hiring: 'Chúng tôi đang tuyển dụng',
-    developers: 'Lập trình viên',
-    documentation: 'Tài liệu tham khảo',
-    connect: 'Kết nối',
-    contact_us: 'Liên hệ với chúng tôi',
-    terms_and_conditions: 'Các điều khoản và qui định',
-    privacy_policy: 'Chính sách riêng tư',
-    copyright: `Bản quyền thuộc về ${new Date().getFullYear()} Injective Labs, Inc. Mọi quyền lợi đã được bảo lưu (Nghiêm cầm sao chép).`,
+    explore: 'Explore',
+    exchange: 'Exchange',
+    coming_soon: 'Coming soon',
+    careers: 'Careers',
+    we_are_hiring: 'We are hiring',
+    developers: 'Developers',
+    documentation: 'Documentation',
+    connect: 'Connect',
+    contact_us: 'Contact us',
+    terms_and_conditions: 'Terms and Conditions',
+    privacy_policy: 'Privacy Policy',
+    copyright: `Copyright © ${new Date().getFullYear()} Injective Labs, Inc. All rights reserved.`,
+
+    // Todo::translate
+    media_kit: 'Media Kit',
   },
   home: {
     waitlist_title:
-      'Bắt đầu giao dịch với <span>sự tự do thật sự</span> và <br /><span> không giới hạn</span> <br /><span>những khả năng</span>',
-    hero_title: 'Nhanh, An toàn và giao dịch hoàn toàn phi tập trung',
+      'Start trading with <span>true freedom</span> and <br /><span> unlimited</span> <br /><span>possibilities</span>',
+    hero_title: 'Fast, secure, and fully Decentralized Trading',
     hero_subtitle:
-      ' Injective là giao thức trao đổi layer2 phi tập trung đầu tiên mở khóa tất cả tiềm năng của thị trường giao dịch phái sinh phi tập trung và DeFi không biên giới.',
+      'Injective is the first layer-2 decentralized exchange protocol that unlocks the full potential of decentralized derivatives and borderless DeFi.',
     limitless_title:
-      'Giao dịch không giới hạn trên <br /> <span>sàn giao dịch</span><br /><span>phi tập trung đầu tiên</span>',
-    fully_decentralized: 'Hoàn toàn phi tập trung',
+      'Limitless trading on the first fully<br /> <span>Decentralized</span><br /><span>Exchange</span>',
+    fully_decentralized: 'Fully decentralized',
     fully_decentralized_text:
-      'Injective Chain là một mạng chuyển tiếp sidechain phi tập trung hoàn toàn, đóng vai trò như một nền tảng phái sinh lớp 2, điều phối viên thực hiện giao dịch (TEC) và sổ lệnh phi tập trung. Sự đồng thuận cốt lõi được dựa trên Tendermint.',
-    layer2speed: 'Tốc độ của Layer2',
+      'The Injective Chain is a fully-decentralized sidechain relayer network which serves as a layer- 2 derivatives platform, trade execution coordinator(TEC), and decentralized orderbook.The core consensus is Tendermint- based.',
+    layer2speed: 'Layer-2 Speed',
     layer2speed_text:
-      'Injective Chain cung cấp vùng chốt Ethereum hai chiều cho Ether và các token ERC-20 được chuyển sang Injective Chain cũng như môi trường thực thi tương thích EVM cho các ứng dụng DeFi. Vùng chốt dựa trên Peggy và việc thực thi EVM dựa trên Ethermint.',
-    orderbook_model: 'Mô hình sổ lệnh',
+      'The Injective Chain provides a two-way Ethereum peg-zone for Ether and ERC-20 tokens to be transferred to the Injective Chain as well as an EVM-compatible execution environment for DeFi applications. The peg-zone is based off Peggy and the EVM execution is based off Ethermint.',
+    orderbook_model: 'Orderbook Model',
     orderbook_model_text:
-      'Sổ lệnh phi tập trung của Injective là một sổ lệnh hoàn toàn phi tập trung dựa trên nền tảng 0x cho phép chuyển tiếp các lệnh sidechain thông qua việc thanh toán “on-chain” - một hình thức vận hành phi tập trung của việc chuyển tiếp lệnh tập trung“off-chain” truyền thống vốn được sử dụng bởi hầu hết tất cả các sàn giao dịch phi tập trung trong sổ lệnh giới hạn trung tâm.',
-    unlimited_markets: ' Thị trường không giới hạn',
+      "Injective's Orderbook is a fully decentralized 0x-based orderbook enabling sidechain order relay with on - chain settlement - a decentralized implementation of the traditionally centralized off-chain order relay used by nearly all central limit order book decentralized exchanges.",
+    unlimited_markets: 'Unlimited Markets',
     unlimited_markets_text:
-      'Việc tạo thị trường để giao dịch là hoàn toàn mở và miễn phí. Do đó bất kỳ ai cũng có thể tạo thị trường chỉ bằng cách sử dụng nguồn cấp dữ liệu giá cả và triển khai chúng một cách hiệu quả trong hệ sinh thái rộng lớn của Injective.',
-    zero_gas_fees: 'Phí gas bằng 0',
+      'Market creation is entirely open and permissionless. This enables anyone to create a market using only a price feed and deploy it the larger Injective ecosystem.',
+    zero_gas_fees: 'Zero Gas Fees',
     zero_gas_fees_text:
-      ' Với cấu trúc layer 2 độc đáo, Injective có thể tránh được cả việc tắc nghẽn mạng và các vấn đề về phí gas cao. Cấu trúc phí gas bằng 0 này cho phép bất kỳ ai cũng có thể giao dịch tự do mà không phải lo lắng về phí gas cao hoặc mạng chậm trễ.',
+      'Given the unique layer-2 structure, Injective is able to avoid both network congestion and the associated high gas fees.This zero gas fee structure can enable anyone to trade freely without having to worry about high gas fees or network latencies.',
     trailblazing_title:
-      'Dẫn đầu cho bình minh mới của <br /><span> <span>tài chính</span> <br /><span>phi tập trung</span></span> ',
+      'Trailblazing the new dawn of <br /><span> <span>Decentralized</span> <br /><span>Finance</span></span> ',
     trailblazing_subtitle:
-      ' Giao thức Injective cung cấp cho các nhà giao dịch quyền truy cập không giới hạn vào các thị trường phái sinh phi tập trung mới mà không có bất kỳ sự hạn chế nào.',
-    trailblazing_item_1: 'Giao dịch mọi thứ',
+      'Injective Protocol provides traders unparalleled access to new decentralized derivatives markets without any restrictions.',
+    trailblazing_item_1: 'Trade on anything',
     trailblazing_item_1_text:
-      ' Injective cho phép bạn tự do tạo và giao dịch trên bất kỳ thị trường phái sinh nào mà bạn chọn.',
-    learn_more: 'Tìm hiểu thêm',
-    trailblazing_item_2: 'Hưởng lợi nhuận',
+      'Injective gives you the freedom to create and trade on any derivatives market of your choosing.',
+    learn_more: 'Read more in our docs',
+    trailblazing_item_2: 'Earn Yield',
     trailblazing_item_2_text:
-      ' Hưởng lợi nhuận cross-chain trên Ethereum, Cosmos và các mạng phi tập trung khác.',
-    trailblazing_item_3: ' Cộng đồng nắm quyền sở hữu',
+      'Earn cross-chain yield on Ethereum, Cosmos and other decentralized networks.',
+    trailblazing_item_3: 'Community–owned',
     trailblazing_item_3_text:
-      ' Tham gia quản trị và định hướng tương lai của Injective Protocol.',
+      'Participate in governance and shape the future of Injective Protocol.',
   },
 }
