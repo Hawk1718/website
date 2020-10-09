@@ -4,7 +4,7 @@ export const koreanLocale = 'ko'
 export const russianLocale = 'ru'
 export const chineseLocale = 'zh'
 export const japaneseLocale = 'ja'
-export const vietnameseLocale = 'ja'
+export const vietnameseLocale = 'vi'
 
 export const defaultLocale = englishLocale
 
