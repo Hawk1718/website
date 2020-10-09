@@ -23,9 +23,9 @@ export default {
       'Injective Protocol, một giao thức Layer-2 Defi hoàn toàn phi tập trung',
     hero_subtitle:
       ' Một giao thức DeFi được tham số hóa mạnh mẽ, hiệu suất cao hỗ trợ một loạt các dẫn xuất, bao gồm CFD, hoán đổi vô thời hạn và hơn thế nữa.',
-    learn_how: 'Tìm hiểu thêm về cách hoạt động của Injective Protocol',
+    learn_how: 'Tìm hiểu thêm',
     learn_how_text: 'Tìm hiểu sâu hơn về kiến trúc của Injective Protocol',
-    learn_how_docs: 'Khám phá các tài liệu của chúng tôi',
+    learn_how_docs: 'Khám phá',
     heading: 'Những tính năng cốt lõi',
     injective_chain: 'Chuỗi Injective',
     injective_chain_text:
