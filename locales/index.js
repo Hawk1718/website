@@ -28,7 +28,7 @@ export const clientLocales = [
     locale: deutscheLocale,
   },
   {
-    name: '汉语',
+    name: '中文',
     locale: chineseLocale,
   },
   {
