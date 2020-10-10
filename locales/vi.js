@@ -18,14 +18,14 @@ export default {
   },
   ecosystem: {
     waitlist_title:
-      'Bắt đầu giao dịch với<span>sự tự do thật sự</span> và <br/> <span>không giới hạn</span> <br/> <span>những khả năng</span>',
+      'Bắt đầu giao dịch<span>với sự tự do thật sự</span><br/> <span>và không giới hạn</span>',
     hero_title:
       'Injective Protocol, một giao thức Layer-2 Defi hoàn toàn phi tập trung',
     hero_subtitle:
-      ' Một giao thức DeFi được tham số hóa mạnh mẽ, hiệu suất cao hỗ trợ một loạt các dẫn xuất, bao gồm CFD, hoán đổi vô thời hạn và hơn thế nữa.',
-    learn_how: 'Tìm hiểu thêm',
+      'Một giao thức DeFi được tham số hóa mạnh mẽ, hiệu suất cao hỗ trợ một loạt các dẫn xuất, bao gồm CFD, hoán đổi vô thời hạn và hơn thế nữa.',
+    learn_how: 'Tìm hiểu thêm về cách hoạt động của Injective Protocol',
     learn_how_text: 'Tìm hiểu sâu hơn về kiến trúc của Injective Protocol',
-    learn_how_docs: 'Khám phá',
+    learn_how_docs: 'Khám phá các tài liệu của chúng tôi',
     heading: 'Những tính năng cốt lõi',
     injective_chain: 'Chuỗi Injective',
     injective_chain_text:
@@ -49,9 +49,9 @@ export default {
     questions_title:
       '<span>Những vấn đề nào sẽ được</span> <br /><span> giải quyết bởi Injective?</span>',
     question_1:
-      'Injective trao quyền làm chủ cho người dùng bằng cách cho phép giao miễn phí và phi tập trung cho tất cả mọi người.',
+      ' Injective trao quyền làm chủ cho người dùng bằng cách cho phép giao miễn phí và phi tập trung cho tất cả mọi người.',
     question_2:
-      'Nhiều DEX ngày nay tuyên bố là phi tập trung nhưng thực sự là tập trung ở hầu hết các khía cạnh ngoài quyền lưu ký.Từ việc hạn chế quyền truy cập vào một số nhân khẩu học người dùng nhất định, duy trì quyền kiểm soát độc quyền đối với cơ sở hạ tầng trao đổi, mọi sổ lệnh giới hạn trung tâm DEX mà chúng tôi đã thấy đều có các thành phần tập trung cho phép các nhà giao dịch tuân theo ý muốn của một cơ quan toàn năng nào đó.Đây là vấn đề cơ bản mà Injective sẽ giải quyết.',
+      'Nhiều DEX ngày nay tuyên bố là phi tập trung nhưng thực sự là tập trung ở hầu hết các khía cạnh ngoài quyền lưu ký.Từ việc hạn chế quyền truy cập vào một số nhân khẩu học người dùng nhất định, duy trì quyền kiểm soát độc quyền đối với cơ sở hạ tầng trao đổi, thậm chí yêu cầu KYC trong một số trường hợp, mọi sổ lệnh giới hạn trung tâm DEX mà chúng tôi đã thấy đều có các thành phần tập trung cho phép các nhà giao dịch tuân theo ý muốn của một cơ quan toàn năng nào đó.Đây là vấn đề cơ bản mà Injective sẽ giải quyết.',
     question_3:
       ' Cơ sở lý luận chung chống lại phân quyền hoàn toàn là hiệu quả và trải nghiệm người dùng bị hy sinh. Chúng tôi tại Injective bác bỏ quan điểm này và đã cam kết biến tầm nhìn về một giao thức trao đổi có hiệu suất cao, phân quyền và hoàn toàn phi tập trung thành hiện thực.',
     question_title_2:
@@ -94,7 +94,7 @@ export default {
     hero_subtitle:
       ' Injective là giao thức trao đổi layer2 phi tập trung đầu tiên mở khóa tất cả tiềm năng của thị trường giao dịch phái sinh phi tập trung và DeFi không biên giới.',
     limitless_title:
-      'Giao dịch không giới hạn trên <br /> <span>sàn giao dịch</span><br /><span>phi tập trung đầu tiên</span>',
+      'Giao dịch không giới hạn trên <br /> <span>sàn giao dịch phi tập trung đầu tiên</span>',
     fully_decentralized: 'Hoàn toàn phi tập trung',
     fully_decentralized_text:
       'Injective Chain là một mạng chuyển tiếp sidechain phi tập trung hoàn toàn, đóng vai trò như một nền tảng phái sinh lớp 2, điều phối viên thực hiện giao dịch (TEC) và sổ lệnh phi tập trung. Sự đồng thuận cốt lõi được dựa trên Tendermint.',
