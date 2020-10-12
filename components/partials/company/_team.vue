@@ -373,7 +373,7 @@ export default {
           },
         },
         {
-          name: 'Xinran X.',
+          name: 'Xinran Xu',
           position: 'Business Development',
           bio: '',
           image: '/team/empty.png',
