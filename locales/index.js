@@ -5,6 +5,7 @@ export const russianLocale = 'ru'
 export const chineseLocale = 'zh'
 export const japaneseLocale = 'ja'
 export const vietnameseLocale = 'vi'
+export const frenchLocale = 'vi'
 
 export const defaultLocale = englishLocale
 
@@ -16,6 +17,7 @@ export const locales = [
   russianLocale,
   japaneseLocale,
   vietnameseLocale,
+  frenchLocale,
 ]
 
 export const clientLocales = [
@@ -26,6 +28,10 @@ export const clientLocales = [
   {
     name: 'Deutsch',
     locale: deutscheLocale,
+  },
+  {
+    name: 'Français',
+    locale: frenchLocale,
   },
   {
     name: '汉语',
@@ -58,3 +64,4 @@ export { default as ru } from './ru'
 export { default as zh } from './zh'
 export { default as ja } from './ja'
 export { default as vi } from './vi'
+export { default as fr } from './fr'
