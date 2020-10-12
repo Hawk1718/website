@@ -117,7 +117,7 @@ export default {
       "Injective's Orderbook is a fully decentralized 0x-based orderbook enabling sidechain order relay with on - chain settlement - a decentralized implementation of the traditionally centralized off-chain order relay used by nearly all central limit order book decentralized exchanges.",
     unlimited_markets: 'Unlimited Markets',
     unlimited_markets_text:
-      'Market creation is entirely open and permissionless. This enables anyone to create a market using only a price feed and deploy it the larger Injective ecosystem.',
+      'Market creation is entirely open and permissionless. This enables anyone to create a market using only a price feed and deploy it to the larger Injective ecosystem.',
     zero_gas_fees: 'Zero Gas Fees',
     zero_gas_fees_text:
       'Given the unique layer-2 structure, Injective is able to avoid both network congestion and the associated high gas fees.This zero gas fee structure can enable anyone to trade freely without having to worry about high gas fees or network latencies.',

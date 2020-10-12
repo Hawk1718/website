@@ -34,7 +34,7 @@ export const clientLocales = [
     locale: frenchLocale,
   },
   {
-    name: '汉语',
+    name: '中文',
     locale: chineseLocale,
   },
   {
