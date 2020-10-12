@@ -12,13 +12,6 @@
         </li>
         <li class="our-family__item">
           <img
-            src="/img/pic/our-family/altonomy.png"
-            style="width: 150px"
-            alt="Altonomy"
-          />
-        </li>
-        <li class="our-family__item">
-          <img
             src="/img/pic/our-family/pantera.png"
             style="width: 162px"
             alt="Pantera"

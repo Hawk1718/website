@@ -296,11 +296,11 @@
             </div>
           </div>
           <div class="team-item">
-            <h3 class="team-item__name">Max K.</h3>
-            <p class="team-item__txt">Senior engineer</p>
+            <h3 class="team-item__name">Max Kupriianov</h3>
+            <p class="team-item__txt">Principal engineer</p>
           </div>
           <div class="team-item">
-            <h3 class="team-item__name">Markus W.</h3>
+            <h3 class="team-item__name">Markus Waas</h3>
             <p class="team-item__txt">Core engineer</p>
             <div class="team-item__bar">
               <a
@@ -327,7 +327,7 @@
             </div>
           </div>
           <div class="team-item">
-            <h3 class="team-item__name">Bojan A.</h3>
+            <h3 class="team-item__name">Bojan Angjelkoski</h3>
             <p class="team-item__txt">Core engineer</p>
             <div class="team-item__bar">
               <a
@@ -354,11 +354,11 @@
             </div>
           </div>
           <div class="team-item">
-            <h3 class="team-item__name">Alexandros A.</h3>
+            <h3 class="team-item__name">Alex Athanasopulos</h3>
             <p class="team-item__txt">Core engineer</p>
           </div>
           <div class="team-item">
-            <h3 class="team-item__name">Xinran X.</h3>
+            <h3 class="team-item__name">Xinran Xu</h3>
             <p class="team-item__txt">BD</p>
             <div class="team-item__bar">
               <a
@@ -385,8 +385,8 @@
             </div>
           </div>
           <div class="team-item">
-            <h3 class="team-item__name">Boris S.</h3>
-            <p class="team-item__txt">Technical PM</p>
+            <h3 class="team-item__name">Boris Shevchenko</h3>
+            <p class="team-item__txt">Technical Product Manager</p>
             <div class="team-item__bar">
               <a
                 href="https://www.linkedin.com/in/bshevchenko/"
