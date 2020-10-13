@@ -79,7 +79,7 @@ export default {
     see_open_roles: 'Siehe offene Stellen',
 
     // Todo::translate
-    our_team: 'Our Team',
+    our_team: 'Unser Team',
   },
   footer: {
     explore: 'Erkunde',

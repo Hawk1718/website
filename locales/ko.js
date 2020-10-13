@@ -74,7 +74,7 @@ export default {
     see_open_roles: '모집하는 직책을 확인해보세요',
 
     // Todo::translate
-    our_team: 'Our Team',
+    our_team: '우리 팀',
   },
   footer: {
     explore: '탐험하기',
