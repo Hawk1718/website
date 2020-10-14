@@ -51,12 +51,10 @@ export const clientLocales = [
     name: 'Русский',
     locale: russianLocale,
   },
-  /*
   {
     name: '日本語',
     locale: japaneseLocale,
   },
-  */
   {
     name: 'Tiếng Việt',
     locale: vietnameseLocale,

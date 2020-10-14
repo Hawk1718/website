@@ -1,139 +1,135 @@
 export default {
   nav: {
-    injective_ecosystem: 'Injective Ecosystem',
-    blog: 'Blog',
-    about: 'About',
-    company: 'Company',
+    injective_ecosystem: 'インジェクティブ エコシステム',
+    blog: 'ブログ',
+    about: '私たちについて',
+    company: '会社概要',
   },
   common: {
-    our_family: 'Our Family',
+    our_family: '私たちのパートナー',
   },
   form: {
     your_email: 'email@example.com',
-    email_error: 'Please correct your email address',
-    thanks_waitlist: 'Thank you! Your submission has been received.',
-    email_exists: 'Email already registered',
+    email_error: '正しいメールアドレスを入力してください',
+    thanks_waitlist:
+      'ありがとうございます! あなたのメールアドレスが送信されました。.',
+    email_exists: '既に登録済みのメールアドレスです。',
   },
   header: {
-    chat: 'Chat',
-    join_waitlist: 'Exchange Waitlist',
-    join_the_future:
-      'Join the Future of <br /><span>Decentralized Finance</span>',
+    chat: 'チャット',
+    join_waitlist: '待機リストに登録',
+    join_the_future: '<span>分散型金融</span><br />の未来に参加する',
   },
   ecosystem: {
     waitlist_title:
-      'Start trading with<span>true freedom</span> and <br/> <span>unlimited</span> <br/> <span>possibilities</span>.',
+      '<span>真の自由</span>と<br/><span>無限</span><br/>の可能性を求めて取引をはじめる',
     hero_title:
-      'Injective Protocol, a fully decentralized Layer-2 DeFi protocol',
+      'インジェクトプロトコルは、完全に分散化されたレイヤ2 DeFiプロトコル',
     hero_subtitle:
-      'A robust, highly parameterizable DeFi protocol supporting a diverse array of derivatives including CFDs, perpetual swaps and more.',
-    learn_how: 'Learn how Injective works',
-    learn_how_text:
-      'Get a high–level understanding of Injective’s architecture',
-    learn_how_docs: 'Explore our docs',
-    heading: 'Core Features',
-    injective_chain: 'Injective Chain',
+      'CFDsや永久スワップなどの多様なデリバティブをサポートする堅牢でパラメータ設定が可能なDeFiプロトコル',
+    learn_how: 'インジェクティブの仕組みを学ぶ',
+    learn_how_text: 'インジェクティブのアーキテクチャに関する詳細',
+    learn_how_docs: 'ドキュメントを確認',
+    heading: 'コア機能',
+    injective_chain: 'インジェクティブチェーン',
     injective_chain_text:
-      'The infrastructure powering next–generation DeFi applications',
+      '次世代のDeFiアプリケーションを強化するインフラストラクチャ',
     injective_chain_text2:
-      'A layer-2 Cosmos zone that hosts the first trustless and fully decentralized exchange protocol. We have built the first fully decentralized orderbook, trade execution coordinator, order matcher and order execution environment.',
-    injective_futures: 'Injective Futures Protocol',
-    injective_futures_text:
-      'Unlocking a new permissionless era of financial access',
+      '初のトラストレスで完全な分散型の取引所プロトコルをホストするレイヤー2 Cosmosゾーン。我々は、完全に分散化されたオーダーブック、取引執行コーディネーター、オーダーマッチング、オーダー実行環境を構築しました。',
+    injective_futures: 'インジェクティブ先物プロトコル',
+    injective_futures_text: '金融の新しいパーミッションレス時代の開幕',
     injective_futures_text2:
-      'A fully decentralized peer-to-peer futures protocol supporting decentralized perpetual swaps and contracts for difference(CFDs). This will enable anyone to create and trade on arbitrary derivative markets with just a price feed.',
-    injective_exchange: 'Injective Exchange',
-    injective_exchange_text:
-      'Pioneering a new model of exchange as a public utility',
+      '分散型の永久スワップと差金決済（CFDs）をサポートする完全な分散型のピアツーピア先物プロトコルです。これにより、誰もが価格フィードのみで任意のデリバティブ市場を作成し、取引することができるようになります。',
+    injective_exchange: 'インジェクティブ取引所',
+    injective_exchange_text: '公共事業として新しい取引モデルの開拓',
     injective_exchange_text2:
-      'A completely open-source exchange infrastructure that disintermediates the current centralized exchange model. Injective eliminates the technical barriers of entry for anyone to trade on a highly performant exchange.',
-    injective_governance: 'Injective Governance',
-    injective_governance_text: 'Community owned and driven',
+      '現在の中央集権的な取引所モデルを不要とする完全にオープンソースな取引所インフラストラクチャです。インジェクティブは、パフォーマンスの高い取引所で誰もが取引できるようにするための技術的な参入障壁を取り除きます。',
+    injective_governance: 'インジェクティブガバナンス',
+    injective_governance_text: 'コミュニティによる所有と推進',
     injective_governance_text2:
-      'Injective is decentralized and governed by the community using the Injective Token. Anyone can join as a stakeholder for our project and have a real say in making decisions in our protocol.',
+      'インジェクティブは分散化されており、インジェクティブ・トークンを使用してコミュニティによって管理されています。誰でもプロジェクトのステークホルダーとして参加することができ、私たちのプロトコルで意思決定を行う際の発言権を持つことができます。',
     questions_title:
-      '<span>What problem does</span> <br /><span> Injective solve?</span>',
+      '<span>インジェクティブは</span> <br /><span>どのような問題を解決してくれるのでしょうか?</span>',
     question_1:
-      'Injective brings power back to the people by enabling truly free and decentralized trading for everyone.',
+      'インジェクティブは真に自由な分散型の取引を可能にすることで、すべての人に力を取り戻します。',
     question_2:
-      'Many DEXs today claim to be decentralized but are actually centralized in most aspects besides custody. From restricting access to certain user demographics, retaining proprietary control over exchange infrastructure, every central limit orderbook DEX that we have seen has centralized components that allow traders to be subject to the will of a some omnipotent authority. This is the fundamental problem that Injective solves.',
+      '今、多くのDEXは分散化されていると主張しているものの、実際にはカストディ以外のほとんどの側面で中央集権化されています。特定のユーザー層へのアクセス制限から、取引所インフラストラクチャに対する独自のコントロールの保持まで、私たちが見てきたすべてのセントラル・リミット・オーダー・ブックDEXは、トレーダーが全能の権力者の意思に従うことを可能にする中央集権的なコンポーネントを持っています。これは、インジェクティブが解決する根本的な問題です。',
     question_3:
-      'The common rationale against full decentralization is that efficiency and user experience are sacrificed.We at Injective reject this notion and have committed ourselves to turning the vision of a highly performant, permissionless, and fully- decentralized exchange protocol into reality.',
+      '完全な分散化に反対する一般的な理論的根拠は、効率性とユーザーエクスペリエンスが犠牲になるということです。インジェクティブではこの概念を否定し、高パフォーマンス、パーミッションレスで、完全に分散化されたプロトコルのビジョンを現実のものにすることに専念しています。',
     question_title_2:
-      '<span>How is</span> <br /><span>Injective Different?</span>',
-    question_4: 'Pioneering a new decentralized economy.',
+      '<span>インジェクティブとは</span> <br /><span>どう違うのか?</span>',
+    question_4: '新しい分散型エコシステムの開拓',
     question_5:
-      'The biggest fundamental difference between Injective Protocol and other exchanges is that we make exchange a decentralized public utility which gives our users and community the resultant value capture from our exchange protocol.',
+      'インジェクトプロトコルと他の取引所との根本的な最大の違いは、私たちが取引所を分散型の公共事業とし、その結果として、ユーザーとコミュニティは取引所プロトコルから得られる価値を獲得できます。',
     question_6:
-      'Our technology brings an order of magnitude speedup by scaling trade execution and settlement on layer- 2 all while being fully decentralized.Injective’s fully decentralized nature uniquely allows individuals to permissionlessly create and trade derivative markets that even centralized exchanges cannot support.',
+      '私たちの技術は、完全に分散化されている一方で、取引の実行と決済をレイヤー2でスケーリングすることで、桁違いのスピードアップをもたらします。インジェクティブの完全に分散化された性質は、中央集権的な取引所でさえサポートできないデリバティブ市場を、個人が独自で許可なく作成して取引することを可能にします。',
   },
   company: {
     heading:
-      'Help us build the future of <br /><span><span> Decentralized</span> <br /><span>Finance</span></span>',
-    hero_title:
-      'Creating a truly free and Decentralized Financial Network for everyone',
+      '<span><span>分散型</span><br /><span>金融</span></span>の未来を構築するために協力してください',
+    hero_title: '真に自由で分散型の金融ネットワークをみんなで構築する',
     hero_subtitle:
-      'Our mission is to create a more free and inclusive financial system through decentralization.',
+      '私たちの使命は、地方分権を通じて、より自由で包括的な金融システムを作ることです。',
     hero_subtitle2:
-      'By providing the unrestricted and unprecedented ability to express diverse views in the decentralized financial markets, we are striving to empower individuals with the ability to more efficiently allocate capital in our society.',
-    see_open_roles: 'See open roles',
+      '分散型金融市場において、これまでにない自由で多様な意見を表明する能力を提供することで、個人がより効率的に資本を社会に配分することを目指しています。',
+    see_open_roles: 'オープンロールを見る',
 
     // Todo::translate
-    our_team: 'Our Team',
+    our_team: '私たちのチーム',
   },
   footer: {
-    explore: 'Explore',
-    exchange: 'Exchange',
+    explore: 'エクスプローラー',
+    exchange: '取引所',
     coming_soon: 'Coming soon',
-    careers: 'Careers',
-    we_are_hiring: 'We are hiring',
-    developers: 'Developers',
-    documentation: 'Documentation',
-    connect: 'Connect',
-    contact_us: 'Contact us',
-    terms_and_conditions: 'Terms and Conditions',
-    privacy_policy: 'Privacy Policy',
-    copyright: `Copyright © ${new Date().getFullYear()} Injective Labs, Inc. All rights reserved.`,
+    careers: '採用情報',
+    we_are_hiring: '採用中',
+    developers: '開発者',
+    documentation: 'ドキュメンテーション',
+    connect: 'コネクト',
+    contact_us: '私たちにコンタクト',
+    terms_and_conditions: '利用規約',
+    privacy_policy: 'プライバシーポリシー',
+    copyright: `Copyright © ${new Date().getFullYear()} Injective Labs, Inc. すべての権利を保有しています。`,
 
     // Todo::translate
-    media_kit: 'Media Kit',
+    media_kit: 'メディアキット',
   },
   home: {
     waitlist_title:
-      'Start trading with <span>true freedom</span> and <br /><span> unlimited</span> <br /><span>possibilities</span>',
-    hero_title: 'Fast, secure, and fully Decentralized Trading',
+      '<span>無限の</span><br /><span>可能性を秘めた</span><br />取引を開始',
+    hero_title: '高速で安全な完全に分散化された取引',
     hero_subtitle:
-      'Injective is the first layer-2 decentralized exchange protocol that unlocks the full potential of decentralized derivatives and borderless DeFi.',
+      'インジェクティブは、分散型デリバティブとボーダーレスなDeFiの可能性を完全に引き出す、最初のレイヤー2分散型プロトコルです。',
     limitless_title:
-      'Limitless trading on the first fully<br /> <span>Decentralized</span><br /><span>Exchange</span>',
-    fully_decentralized: 'Fully decentralized',
+      '最初の完全な<span>分散型</span><br /><span>取引所</span><br />での無制限取引',
+    fully_decentralized: '完全に分散化',
     fully_decentralized_text:
-      'The Injective Chain is a fully-decentralized sidechain relayer network which serves as a layer- 2 derivatives platform, trade execution coordinator(TEC), and decentralized orderbook.The core consensus is Tendermint- based.',
-    layer2speed: 'Layer-2 Speed',
+      'インジェクティブチェーンは完全に分散化されたサイドチェーン・リレイヤー・ネットワークであり、レイヤー2のデリバティブプラットフォーム、取引実行コーディネーター(TEC)、分散化されたオーダーブックとして機能します。コア・コンセンサスはテンダーミントベースです。',
+    layer2speed: 'レイヤー2の速度',
     layer2speed_text:
-      'The Injective Chain provides a two-way Ethereum peg-zone for Ether and ERC-20 tokens to be transferred to the Injective Chain as well as an EVM-compatible execution environment for DeFi applications. The peg-zone is based off Peggy and the EVM execution is based off Ethermint.',
-    orderbook_model: 'Orderbook Model',
+      'インジェクティブチェーンは、EtherやERC-20トークンをインジェクティブチェーンに転送するための双方向のEthereumペグゾーンと、DeFiアプリケーションのためのEVM対応の実行環境を提供します。ペグゾーンはPeggyをベースにしており、EVMの実行はEthermintをベースにしています。',
+    orderbook_model: 'オーダーブックモデル',
     orderbook_model_text:
-      "Injective's Orderbook is a fully decentralized 0x-based orderbook enabling sidechain order relay with on - chain settlement - a decentralized implementation of the traditionally centralized off-chain order relay used by nearly all central limit order book decentralized exchanges.",
-    unlimited_markets: 'Unlimited Markets',
+      'インジェクティブのオーダーブックは、完全に分散化された0xベースのオーダーブックで、オンチェーン決済でサイドチェーンのオーダーリレーを可能にします。',
+    unlimited_markets: 'アンリミテッドマーケット',
     unlimited_markets_text:
-      'Market creation is entirely open and permissionless. This enables anyone to create a market using only a price feed and deploy it the larger Injective ecosystem.',
-    zero_gas_fees: 'Zero Gas Fees',
+      'マーケットの作成は完全にオープンでパーミッションレスです。これにより、誰でも価格フィードのみを使用して市場を作成し、より大きなインジェクティブなエコシステムを展開することが可能になります。',
+    zero_gas_fees: 'ガス料金ゼロ',
     zero_gas_fees_text:
-      'Given the unique layer-2 structure, Injective is able to avoid both network congestion and the associated high gas fees.This zero gas fee structure can enable anyone to trade freely without having to worry about high gas fees or network latencies.',
+      'インジェクティブは、独自のレイヤー2構造を採用することで、ネットワークの混雑やそれに伴う高額なガス料金を回避することができます。',
     trailblazing_title:
-      'Trailblazing the new dawn of <br /><span> <span>Decentralized</span> <br /><span>Finance</span></span> ',
+      '<span><span>分散型</span><br /><span>金融</span></span><br />の新たな幕開けに向けて',
     trailblazing_subtitle:
-      'Injective Protocol provides traders unparalleled access to new decentralized derivatives markets without any restrictions.',
-    trailblazing_item_1: 'Trade on anything',
+      'インジェクティブプロトコルは、トレーダーに無制限の新しい分散型デリバティブ市場への比類のなきアクセスを提供します。',
+    trailblazing_item_1: 'なんでも取引する',
     trailblazing_item_1_text:
-      'Injective gives you the freedom to create and trade on any derivatives market of your choosing.',
-    learn_more: 'Read more in our docs',
-    trailblazing_item_2: 'Earn Yield',
+      'インジェクティブは、選択したデリバティブ市場で自由に作成および取引することを可能にします。',
+    learn_more: '詳細はドキュメントをご覧ください。',
+    trailblazing_item_2: '利回りを稼ぐ',
     trailblazing_item_2_text:
-      'Earn cross-chain yield on Ethereum, Cosmos and other decentralized networks.',
-    trailblazing_item_3: 'Community–owned',
+      'EthereumやCosmosなどの分散型ネットワークでクロスチェーン・イールドを獲得します。',
+    trailblazing_item_3: 'コミュニティを所有',
     trailblazing_item_3_text:
-      'Participate in governance and shape the future of Injective Protocol.',
+      'ガバナンスに参加し、インジェクティブプロトコルの未来を構築します。',
   },
 }
