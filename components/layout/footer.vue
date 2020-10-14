@@ -9,7 +9,7 @@
           <ul class="footer-soc">
             <li>
               <a
-                href="https://discord.com/invite/pJZqagr"
+                href="https://discord.gg/NK4qdbv"
                 target="_blank"
                 rel="noreferrer"
                 title="Discord"
