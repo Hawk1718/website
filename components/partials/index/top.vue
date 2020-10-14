@@ -2,7 +2,8 @@
   <section class="main-sec">
     <div class="bg bg_1">
       <client-only>
-        <waves />
+        <!-- <waves /> -->
+        <v-video />
       </client-only>
     </div>
     <div class="container">
@@ -29,12 +30,15 @@
 
 <script>
 import Waves from './waves'
+import Video from './video'
 import Waitlist from '~/components/partials/common/waitlist'
 
 export default {
   components: {
     Waitlist,
+    // eslint-disable-next-line vue/no-unused-components
     Waves,
+    'v-video': Video,
   },
 }
 </script>

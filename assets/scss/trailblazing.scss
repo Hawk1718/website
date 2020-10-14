@@ -109,6 +109,9 @@
     &:hover {
       transform: translateY(-16px);
     }
+    &:nth-child(2) {
+      background-color: #ebf8ff;
+    }
   }
   @media only screen and (max-width: 767px) {
     display: block;
