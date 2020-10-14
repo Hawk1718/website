@@ -2,8 +2,8 @@
   <section class="main-sec">
     <div class="bg bg_1">
       <client-only>
-        <!-- <waves /> -->
-        <v-video />
+        <waves />
+        <!-- <v-video /> -->
       </client-only>
     </div>
     <div class="container">
@@ -36,8 +36,8 @@ import Waitlist from '~/components/partials/common/waitlist'
 export default {
   components: {
     Waitlist,
-    // eslint-disable-next-line vue/no-unused-components
     Waves,
+    // eslint-disable-next-line vue/no-unused-components
     'v-video': Video,
   },
 }

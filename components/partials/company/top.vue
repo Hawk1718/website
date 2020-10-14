@@ -2,8 +2,8 @@
   <section class="top-sec">
     <div class="bg bg_2">
       <client-only>
-        <!-- <waves /> -->
-        <v-video />
+        <waves />
+        <!-- <v-video /> -->
       </client-only>
     </div>
     <div class="container">
@@ -53,8 +53,8 @@ import Video from './video'
 
 export default {
   components: {
-    // eslint-disable-next-line vue/no-unused-components
     Waves,
+    // eslint-disable-next-line vue/no-unused-components
     'v-video': Video,
   },
 }
